@@ -5,8 +5,8 @@
       <SearchBar @search="updateSearchQuery" />
       <CategoryFilter :categories="categories" @filter="updateCategoryFilter" />
     </div>
-    <div v-if="paginatedData.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <DataCard v-for="data in paginatedData" :key="data.id" :data="data" />
+    <div v-if="paginatedMsmes.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <MsmeCard v-for="msme in paginatedMsmes" :key="msme.id" :msme="msme" />
     </div>
     <div v-else class="text-center text-gray-500">
       <p>Tidak ada UMKM yang ditemukan.</p>
@@ -16,48 +16,49 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import datas from '~/data/datas.json'
-import DataCard from '~/components/DataCard.vue'
-import SearchBar from '~/components/SearchBar.vue'
+import { computed, ref } from 'vue'
 import CategoryFilter from '~/components/CategoryFilter.vue'
+import MsmeCard from '~/components/MsmeCard.vue'
 import Pagination from '~/components/Pagination.vue'
+import SearchBar from '~/components/SearchBar.vue'
+import msmes from '~/data/msme.json'
+console.log(msmes);
 
-const alldatas = ref(datas)
+const allMsmes = ref(msmes)
 const searchQuery = ref('')
 const categoryFilter = ref('')
 const currentPage = ref(1)
 const itemsPerPage = 6
 
 const categories = computed(() => {
-  const allCategories = alldatas.value.map(data => data.category)
+  const allCategories = allMsmes.value.map(msme => msme.category)
   return ['Semua', ...new Set(allCategories)]
 })
 
-const filtereddatas = computed(() => {
-  let result = alldatas.value
+const filteredMsmes = computed(() => {
+  let result = allMsmes.value
 
   if (searchQuery.value) {
-    result = result.filter(data =>
-      data.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+    result = result.filter(msme =>
+      msme.name.toLowerCase().includes(searchQuery.value.toLowerCase())
     )
   }
 
   if (categoryFilter.value && categoryFilter.value !== 'Semua') {
-    result = result.filter(data => data.category === categoryFilter.value)
+    result = result.filter(msme => msme.category === categoryFilter.value)
   }
 
   return result
 })
 
 const totalPages = computed(() => {
-  return Math.ceil(filtereddatas.value.length / itemsPerPage)
+  return Math.ceil(filteredMsmes.value.length / itemsPerPage)
 })
 
-const paginatedData = computed(() => {
+const paginatedMsmes = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage
   const end = start + itemsPerPage
-  return filtereddatas.value.slice(start, end)
+  return filteredMsmes.value.slice(start, end)
 })
 
 const updateSearchQuery = (query) => {

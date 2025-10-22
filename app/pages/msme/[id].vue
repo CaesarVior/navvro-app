@@ -16,7 +16,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import msmes from '~/data/msmes.json'
+import msmes from '~/msme/msmes.json'
 
 const route = useRoute()
 const msme = ref(null)
