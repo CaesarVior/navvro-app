@@ -1,33 +1,34 @@
-<style>
-  .color-primary {
-    background-color: #FF8747;
-  }
-</style>
-
 <template>
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Bagian Kiri: Logo -->
-      <div class="flex-1">
-        <NuxtLink to="/" class="text-2xl font-bold text-gray-800">UMKM Direktori</NuxtLink>
-      </div>
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <NuxtLink to="/" class="text-2xl font-bold text-gray-800">UMKM Direktori</NuxtLink>
 
-      <!-- Bagian Tengah: Menu -->
-      <nav class="hidden md:flex space-x-8">
-        <NuxtLink to="/" class="text-gray-600 font-semibold hover:text-orange-500 transition-colors">Beranda</NuxtLink>
-        <NuxtLink to="/produk" class="text-gray-600 font-semibold hover:text-orange-500 transition-colors">Produk</NuxtLink>
-        <NuxtLink to="/kategori" class="text-gray-600 font-semibold hover:text-orange-500 transition-colors">Kategori</NuxtLink>
+      <nav class="hidden md:flex space-x-6">
+        <NuxtLink to="/" class="text-gray-600 hover:text-orange-500">Beranda</NuxtLink>
+        <NuxtLink to="/produk" class="text-gray-600 hover:text-orange-500">Produk</NuxtLink>
+        <NuxtLink to="/kategori" class="text-gray-600 hover:text-orange-500">Kategori</NuxtLink>
       </nav>
 
-      <!-- Bagian Kanan: Search Bar -->
       <div class="flex-1 flex justify-end">
-        <div class="flex items-center">
-          <input type="text" placeholder="Cari..." class=" color-primary px-4 py-2 focus:outline-none focus:ring-1 focus:ring-orange-500 rounded-full text-white placeholder-white">
-          <!-- <button class="bg-orange-500 text-white px-4 py-2 rounded-r-md hover:bg-orange-600">
-            Cari
-          </button> -->
+        <div class="hidden sm:flex items-center w-80">
+          <slot name="search">
+            <!-- fallback search input (unused when slot provided) -->
+            <input
+              type="text"
+              placeholder="Cari UMKM..."
+              class="w-full px-3 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              @input="$emit('search', $event.target.value)"
+            />
+          </slot>
         </div>
+        <button class="ml-4 inline-flex items-center px-3 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 md:hidden" @click="$emit('toggle-mobile-menu')">
+          Menu
+        </button>
       </div>
     </div>
   </header>
 </template>
+
+<script setup>
+defineEmits(['search', 'toggle-mobile-menu'])
+</script>

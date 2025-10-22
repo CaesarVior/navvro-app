@@ -1,18 +1,24 @@
 <template>
-  <div class="container mx-auto p-4">
-    <h1 class="text-4xl font-bold text-center my-8">Daftar UMKM</h1>
+  <TheHeader @search="updateSearchQuery">
+    <template #search>
+      <SearchBar @search="updateSearchQuery" />
+    </template>
+  </TheHeader>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">Daftar UMKM</h1>
     <div class="flex flex-col md:flex-row gap-4 mb-8">
       <SearchBar @search="updateSearchQuery" />
       <CategoryFilter :categories="categories" @filter="updateCategoryFilter" />
     </div>
-    <div v-if="paginatedMsmes.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div v-if="paginatedMsmes.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <MsmeCard v-for="msme in paginatedMsmes" :key="msme.id" :msme="msme" />
     </div>
     <div v-else class="text-center text-gray-500">
       <p>Tidak ada UMKM yang ditemukan.</p>
     </div>
     <Pagination :current-page="currentPage" :total-pages="totalPages" @page-change="changePage" />
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -21,6 +27,7 @@ import CategoryFilter from '~/components/CategoryFilter.vue'
 import MsmeCard from '~/components/MsmeCard.vue'
 import Pagination from '~/components/Pagination.vue'
 import SearchBar from '~/components/SearchBar.vue'
+import TheHeader from '~/components/TheHeader.vue'
 import msmes from '~/data/msme.json'
 console.log(msmes);
 

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // Using PostCSS + @tailwindcss/postcss instead of the @nuxtjs/tailwindcss module
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/css/global.css'],
 
   postcss: {
     plugins: {
@@ -13,6 +13,14 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-
-  modules: ['@nuxtjs/tailwindcss']
+  app: {
+    head: {
+      script: [
+        { src: 'https://cdn.tailwindcss.com', defer: true }
+      ]
+    }
+  },
+  // Removed `@nuxtjs/tailwindcss` to avoid the Nuxt module injecting the old
+  // `tailwindcss` PostCSS plugin. Tailwind is configured via the
+  // `@tailwindcss/postcss` plugin above.
 })
