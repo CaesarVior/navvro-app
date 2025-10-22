@@ -1,9 +1,17 @@
+<style>
+  .primary-collor {
+    background-color: #FFF3E0;
+  }
+</style>
+
 <template>
   <TheHeader @search="updateSearchQuery">
     <template #search>
       <SearchBar @search="updateSearchQuery" />
     </template>
   </TheHeader>
+
+  <TheAbout />
 
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">Daftar UMKM</h1>
@@ -27,6 +35,7 @@ import CategoryFilter from '~/components/CategoryFilter.vue'
 import MsmeCard from '~/components/MsmeCard.vue'
 import Pagination from '~/components/Pagination.vue'
 import SearchBar from '~/components/SearchBar.vue'
+import TheAbout from '~/components/TheAbout.vue'
 import TheHeader from '~/components/TheHeader.vue'
 import msmes from '~/data/msme.json'
 console.log(msmes);

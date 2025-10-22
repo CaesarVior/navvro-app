@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white shadow sticky top-0 z-50">
+  <header :class="[ 'primary-collor sticky top-0 z-50', scrolled ? 'shadow' : '']">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
       <NuxtLink to="/" class="text-2xl font-bold text-gray-800">UMKM Direktori</NuxtLink>
 
@@ -12,7 +12,6 @@
       <div class="flex-1 flex justify-end">
         <div class="hidden sm:flex items-center w-80">
           <slot name="search">
-            <!-- fallback search input (unused when slot provided) -->
             <input
               type="text"
               placeholder="Cari UMKM..."
@@ -30,5 +29,22 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrolled = ref(false)
+
+function onScroll() {
+  scrolled.value = window.scrollY > 10
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+})
+
 defineEmits(['search', 'toggle-mobile-menu'])
 </script>
