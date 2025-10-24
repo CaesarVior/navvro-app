@@ -15,8 +15,8 @@
                     </p>
                 </div>
 
-                <div class="flex justify-center">
-                    <img src="/images/img-about.png" alt="About image" class="w-full h-auto rounded-lg shadow-sm object-cover" />
+                <div class="flex justify-end">
+                    <img src="/images/img-about.png" alt="About image" class="w-100" />
                 </div>
             </section>
         </main>

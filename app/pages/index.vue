@@ -2,7 +2,14 @@
   .primary-collor {
     background-color: #FFF3E0;
   }
+  .orange-primary {
+    color: #FF8A00;
+  }
+  .color-text {
+    color: #473C3E;
+  }
 </style>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
 <template>
   <TheHeader @search="updateSearchQuery">
@@ -38,7 +45,6 @@ import SearchBar from '~/components/SearchBar.vue'
 import TheAbout from '~/components/TheAbout.vue'
 import TheHeader from '~/components/TheHeader.vue'
 import msmes from '~/data/msme.json'
-console.log(msmes);
 
 const allMsmes = ref(msmes)
 const searchQuery = ref('')
