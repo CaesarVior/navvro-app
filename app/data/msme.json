@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Warung Kopi Bahagia",
+    "category": "Kuliner",
+    "description": "Warung kopi dengan biji kopi pilihan dari seluruh Indonesia.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bengkel Motor Cepat",
+    "category": "Otomotif",
+    "description": "Bengkel motor dengan pelayanan cepat dan suku cadang asli.",
+    "image": "/images/foto-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Toko Kelontong Serba Ada",
+    "category": "Ritel",
+    "description": "Menjual berbagai macam kebutuhan sehari-hari.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pangkas Rambut Modern",
+    "category": "Jasa",
+    "description": "Gaya rambut modern untuk pria dan wanita.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Kerajinan Tangan Unik",
+    "category": "Kerajinan",
+    "description": "Produk kerajinan tangan unik dan berkualitas.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Restoran Padang Sederhana",
+    "category": "Kuliner",
+    "description": "Masakan Padang dengan resep turun-temurun.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Cuci Mobil Kinclong",
+    "category": "Otomotif",
+    "description": "Cuci mobil dengan teknologi modern, bersih dan kinclong.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Butik Fashion Wanita",
+    "category": "Fashion",
+    "description": "Koleksi busana wanita terbaru dan trendy.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Jasa Desain Grafis",
+    "category": "Jasa",
+    "description": "Menerima jasa desain logo, brosur, dan lainnya.",
+    "image": "/images/foto-1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Toko Kue Lezat",
+    "category": "Kuliner",
+    "description": "Berbagai macam kue basah dan kering untuk acara spesial.",
+    "image": "/images/foto-1.jpg"
+  }
+]
