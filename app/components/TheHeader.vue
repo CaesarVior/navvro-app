@@ -19,7 +19,7 @@
             <input
               type="text"
               placeholder="Cari UMKM..."
-              class="w-full px-4 py-2 border rounded-full focus:ring-blue-500 primary-collor placeholder-white text-white" style="background-color: #FF8A00; border-radius: 100%; place-content: white;"
+              class="w-full px-4 py-2 border rounded-full bg-primary text-white placeholder-white"
               @input="$emit('search', $event.target.value)"
             />
           </slot>
@@ -27,6 +27,11 @@
 
       </div>
     </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   </header>
 </template>
 
