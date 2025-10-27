@@ -11,14 +11,12 @@
         <NuxtLink to="/" class="text-gray-600 hover:text-orange-500"
           >Beranda</NuxtLink
         >
-        //
-        <NuxtLink to="/produk" class="text-gray-600 hover:text-orange-500"
+        <!-- <NuxtLink to="/produk" class="text-gray-600 hover:text-orange-500"
           >Produk</NuxtLink
-        >
-        //
-        <NuxtLink to="/kategori" class="text-gray-600 hover:text-orange-500"
+        > -->
+        <!-- <NuxtLink to="/kategori" class="text-gray-600 hover:text-orange-500"
           >Kategori</NuxtLink
-        >
+        > -->
       </nav>
 
       <div class="flex-1 flex justify-end">
