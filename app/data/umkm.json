@@ -1,222 +1,222 @@
-[
-    {
-        "id": 1,
-        "nama": "Toko 1",
-        "kategori": "fnb",
-        "lokasi": "Jl. Kembang Kertas no.28, Kota Malang",
-        "detail": "Toko ini menyediakan berbagai macam makanan dan minuman",
-        "fotoToko": "images/toko/foto-1.jpg",
-        "produk": [
-            {
-                "nama": "bakso",
-                "harga": 4000,
-                "kategori": "makanan",
-                "fotoProduk": "images/produk/foto-1-bakso.jpg"
-            },
-            {
-                "nama": "es teh",
-                "harga": 5000,
-                "kategori": "minuman",
-                "fotoProduk": "images/produk/foto-1-es-teh.jpg"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "nama": "Toko 2",
-        "kategori": "ATK",
-        "lokasi": "Jl. Soekarno Hatta, Kota Malang",
-        "detail": "Toko ini menyediakan berbagai macam alat tulis",
-        "fotoToko": "images/toko/foto-2.jpg",
-        "produk": [
-            {
-                "nama": "pensil",
-                "harga": 4000,
-                "kategori": "alat tulis",
-                "fotoProduk": "images/produk/foto-2-pensil.jpg"
-            },
-            {
-                "nama": "penghapus",
-                "harga": 5000,
-                "kategori": "alat tulis",
-                "fotoProduk": "images/produk/foto-2-penghapus.jpg"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "nama": "Toko 3 Elektronik",
-        "kategori": "elektronik",
-        "lokasi": "Jl. Veteran no. 15, Kota Malang",
-        "detail": "Menjual HP, laptop, dan aksesoris",
-        "fotoToko": "images/toko/foto-3.jpg",
-        "produk": [
-            {
-                "nama": "Mouse Wireless",
-                "harga": 150000,
-                "kategori": "aksesoris pc",
-                "fotoProduk": "images/produk/foto-3-mouse-wireless.jpg"
-            },
-            {
-                "nama": "Headset Bluetooth",
-                "harga": 300000,
-                "kategori": "audio",
-                "fotoProduk": "images/produk/foto-3-headset-bluetooth.jpg"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "nama": "Toko 4 Fashion",
-        "kategori": "pakaian",
-        "lokasi": "Mall Olympic Garden, Kota Malang",
-        "detail": "Pakaian pria dan wanita terbaru",
-        "fotoToko": "images/toko/foto-4.jpg",
-        "produk": [
-            {
-                "nama": "Kaos Polos",
-                "harga": 80000,
-                "kategori": "pria",
-                "fotoProduk": "images/produk/foto-4-kaos-polos.jpg"
-            },
-            {
-                "nama": "Kemeja Flanel",
-                "harga": 220000,
-                "kategori": "pria",
-                "fotoProduk": "images/produk/foto-4-kemeja-flanel.jpg"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "nama": "Toko 5 Buku",
-        "kategori": "buku",
-        "lokasi": "Jl. Basuki Rahmat, Kota Malang",
-        "detail": "Toko buku dan alat tulis terlengkap",
-        "fotoToko": "images/toko/foto-5.jpg",
-        "produk": [
-            {
-                "nama": "Novel Bumi",
-                "harga": 99000,
-                "kategori": "fiksi",
-                "fotoProduk": "images/produk/foto-5-novel-bumi.jpg"
-            },
-            {
-                "nama": "Buku Tulis Sinar Dunia",
-                "harga": 50000,
-                "kategori": "alat tulis",
-                "fotoProduk": "images/produk/foto-5-buku-tulis.jpg"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "nama": "Toko 6 Kopi",
-        "kategori": "fnb",
-        "lokasi": "Jl. Ijen no. 90, Kota Malang",
-        "detail": "Spesialis kopi susu gula aren",
-        "fotoToko": "images/toko/foto-6.jpg",
-        "produk": [
-            {
-                "nama": "Kopi Susu Aren",
-                "harga": 22000,
-                "kategori": "minuman",
-                "fotoProduk": "images/produk/foto-6-kopi-susu-aren.jpg"
-            },
-            {
-                "nama": "Roti Coklat",
-                "harga": 15000,
-                "kategori": "makanan",
-                "fotoProduk": "images/produk/foto-6-roti-coklat.jpg"
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "nama": "Toko 7 Olahraga",
-        "kategori": "olahraga",
-        "lokasi": "Matos Lt. 3, Kota Malang",
-        "detail": "Peralatan dan sepatu olahraga original",
-        "fotoToko": "images/toko/foto-7.jpg",
-        "produk": [
-            {
-                "nama": "Sepatu Lari",
-                "harga": 1200000,
-                "kategori": "sepatu",
-                "fotoProduk": "images/produk/foto-7-sepatu-lari.jpg"
-            },
-            {
-                "nama": "Raket Badminton",
-                "harga": 450000,
-                "kategori": "peralatan",
-                "fotoProduk": "images/produk/foto-7-raket-badminton.jpg"
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "nama": "Toko 8 Kosmetik",
-        "kategori": "kosmetik",
-        "lokasi": "Mog Lt. 1, Kota Malang",
-        "detail": "Produk kesehatan dan kecantikan",
-        "fotoToko": "images/toko/foto-8.jpg",
-        "produk": [
-            {
-                "nama": "Sunscreen Wajah",
-                "harga": 55000,
-                "kategori": "skincare",
-                "fotoProduk": "images/produk/foto-8-sunscreen-wajah.jpg"
-            },
-            {
-                "nama": "Lipstik Matte",
-                "harga": 120000,
-                "kategori": "makeup",
-                "fotoProduk": "images/produk/foto-8-lipstik-matte.jpg"
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "nama": "Toko 9 Sembako",
-        "kategori": "sembako",
-        "lokasi": "Pasar Besar Malang",
-        "detail": "Kebutuhan pokok rumah tangga",
-        "fotoToko": "images/toko/foto-9.jpg",
-        "produk": [
-            {
-                "nama": "Beras 5kg",
-                "harga": 65000,
-                "kategori": "bahan pokok",
-                "fotoProduk": "images/produk/foto-9-beras-5kg.jpg"
-            },
-            {
-                "nama": "Minyak Goreng 2L",
-                "harga": 32000,
-                "kategori": "bahan pokok",
-                "fotoProduk": "images/produk/foto-9-minyak-goreng-2l.jpg"
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "nama": "Toko 10 Petshop",
-        "kategori": "hewan peliharaan",
-        "lokasi": "Jl. Candi Panggung, Kota Malang",
-        "detail": "Makanan dan aksesoris hewan",
-        "fotoToko": "images/toko/foto-10.jpg",
-        "produk": [
-            {
-                "nama": "Whiskas 1kg",
-                "harga": 80000,
-                "kategori": "makanan kucing",
-                "fotoProduk": "images/produk/foto-10-whiskas-1kg.jpg"
-            },
-            {
-                "nama": "Pasir Gumpal 5L",
-                "harga": 45000,
-                "kategori": "aksesoris",
-                "fotoProduk": "images/produk/foto-10-pasir-gumpal-5l.jpg"
-            }
-        ]
-    }
-]
+// [
+//     {
+//         "id": 1,
+//         "nama": "Toko 1",
+//         "kategori": "fnb",
+//         "lokasi": "Jl. Kembang Kertas no.28, Kota Malang",
+//         "detail": "Toko ini menyediakan berbagai macam makanan dan minuman",
+//         "fotoToko": "images/toko/foto-1.jpg",
+//         "produk": [
+//             {
+//                 "nama": "bakso",
+//                 "harga": 4000,
+//                 "kategori": "makanan",
+//                 "fotoProduk": "images/produk/foto-1-bakso.jpg"
+//             },
+//             {
+//                 "nama": "es teh",
+//                 "harga": 5000,
+//                 "kategori": "minuman",
+//                 "fotoProduk": "images/produk/foto-1-es-teh.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 2,
+//         "nama": "Toko 2",
+//         "kategori": "ATK",
+//         "lokasi": "Jl. Soekarno Hatta, Kota Malang",
+//         "detail": "Toko ini menyediakan berbagai macam alat tulis",
+//         "fotoToko": "images/toko/foto-2.jpg",
+//         "produk": [
+//             {
+//                 "nama": "pensil",
+//                 "harga": 4000,
+//                 "kategori": "alat tulis",
+//                 "fotoProduk": "images/produk/foto-2-pensil.jpg"
+//             },
+//             {
+//                 "nama": "penghapus",
+//                 "harga": 5000,
+//                 "kategori": "alat tulis",
+//                 "fotoProduk": "images/produk/foto-2-penghapus.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 3,
+//         "nama": "Toko 3 Elektronik",
+//         "kategori": "elektronik",
+//         "lokasi": "Jl. Veteran no. 15, Kota Malang",
+//         "detail": "Menjual HP, laptop, dan aksesoris",
+//         "fotoToko": "images/toko/foto-3.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Mouse Wireless",
+//                 "harga": 150000,
+//                 "kategori": "aksesoris pc",
+//                 "fotoProduk": "images/produk/foto-3-mouse-wireless.jpg"
+//             },
+//             {
+//                 "nama": "Headset Bluetooth",
+//                 "harga": 300000,
+//                 "kategori": "audio",
+//                 "fotoProduk": "images/produk/foto-3-headset-bluetooth.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 4,
+//         "nama": "Toko 4 Fashion",
+//         "kategori": "pakaian",
+//         "lokasi": "Mall Olympic Garden, Kota Malang",
+//         "detail": "Pakaian pria dan wanita terbaru",
+//         "fotoToko": "images/toko/foto-4.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Kaos Polos",
+//                 "harga": 80000,
+//                 "kategori": "pria",
+//                 "fotoProduk": "images/produk/foto-4-kaos-polos.jpg"
+//             },
+//             {
+//                 "nama": "Kemeja Flanel",
+//                 "harga": 220000,
+//                 "kategori": "pria",
+//                 "fotoProduk": "images/produk/foto-4-kemeja-flanel.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 5,
+//         "nama": "Toko 5 Buku",
+//         "kategori": "buku",
+//         "lokasi": "Jl. Basuki Rahmat, Kota Malang",
+//         "detail": "Toko buku dan alat tulis terlengkap",
+//         "fotoToko": "images/toko/foto-5.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Novel Bumi",
+//                 "harga": 99000,
+//                 "kategori": "fiksi",
+//                 "fotoProduk": "images/produk/foto-5-novel-bumi.jpg"
+//             },
+//             {
+//                 "nama": "Buku Tulis Sinar Dunia",
+//                 "harga": 50000,
+//                 "kategori": "alat tulis",
+//                 "fotoProduk": "images/produk/foto-5-buku-tulis.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 6,
+//         "nama": "Toko 6 Kopi",
+//         "kategori": "fnb",
+//         "lokasi": "Jl. Ijen no. 90, Kota Malang",
+//         "detail": "Spesialis kopi susu gula aren",
+//         "fotoToko": "images/toko/foto-6.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Kopi Susu Aren",
+//                 "harga": 22000,
+//                 "kategori": "minuman",
+//                 "fotoProduk": "images/produk/foto-6-kopi-susu-aren.jpg"
+//             },
+//             {
+//                 "nama": "Roti Coklat",
+//                 "harga": 15000,
+//                 "kategori": "makanan",
+//                 "fotoProduk": "images/produk/foto-6-roti-coklat.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 7,
+//         "nama": "Toko 7 Olahraga",
+//         "kategori": "olahraga",
+//         "lokasi": "Matos Lt. 3, Kota Malang",
+//         "detail": "Peralatan dan sepatu olahraga original",
+//         "fotoToko": "images/toko/foto-7.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Sepatu Lari",
+//                 "harga": 1200000,
+//                 "kategori": "sepatu",
+//                 "fotoProduk": "images/produk/foto-7-sepatu-lari.jpg"
+//             },
+//             {
+//                 "nama": "Raket Badminton",
+//                 "harga": 450000,
+//                 "kategori": "peralatan",
+//                 "fotoProduk": "images/produk/foto-7-raket-badminton.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 8,
+//         "nama": "Toko 8 Kosmetik",
+//         "kategori": "kosmetik",
+//         "lokasi": "Mog Lt. 1, Kota Malang",
+//         "detail": "Produk kesehatan dan kecantikan",
+//         "fotoToko": "images/toko/foto-8.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Sunscreen Wajah",
+//                 "harga": 55000,
+//                 "kategori": "skincare",
+//                 "fotoProduk": "images/produk/foto-8-sunscreen-wajah.jpg"
+//             },
+//             {
+//                 "nama": "Lipstik Matte",
+//                 "harga": 120000,
+//                 "kategori": "makeup",
+//                 "fotoProduk": "images/produk/foto-8-lipstik-matte.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 9,
+//         "nama": "Toko 9 Sembako",
+//         "kategori": "sembako",
+//         "lokasi": "Pasar Besar Malang",
+//         "detail": "Kebutuhan pokok rumah tangga",
+//         "fotoToko": "images/toko/foto-9.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Beras 5kg",
+//                 "harga": 65000,
+//                 "kategori": "bahan pokok",
+//                 "fotoProduk": "images/produk/foto-9-beras-5kg.jpg"
+//             },
+//             {
+//                 "nama": "Minyak Goreng 2L",
+//                 "harga": 32000,
+//                 "kategori": "bahan pokok",
+//                 "fotoProduk": "images/produk/foto-9-minyak-goreng-2l.jpg"
+//             }
+//         ]
+//     },
+//     {
+//         "id": 10,
+//         "nama": "Toko 10 Petshop",
+//         "kategori": "hewan peliharaan",
+//         "lokasi": "Jl. Candi Panggung, Kota Malang",
+//         "detail": "Makanan dan aksesoris hewan",
+//         "fotoToko": "images/toko/foto-10.jpg",
+//         "produk": [
+//             {
+//                 "nama": "Whiskas 1kg",
+//                 "harga": 80000,
+//                 "kategori": "makanan kucing",
+//                 "fotoProduk": "images/produk/foto-10-whiskas-1kg.jpg"
+//             },
+//             {
+//                 "nama": "Pasir Gumpal 5L",
+//                 "harga": 45000,
+//                 "kategori": "aksesoris",
+//                 "fotoProduk": "images/produk/foto-10-pasir-gumpal-5l.jpg"
+//             }
+//         ]
+//     }
+// ]
