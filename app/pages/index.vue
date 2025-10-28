@@ -1,29 +1,4 @@
-<style>
-.primary-collor {
-  background-color: #FFF3E0;
-}
 
-.orange-primary {
-  color: #FF8A00;
-}
-
-.bg-primary {
-  background-color: #FF8A00;
-}
-
-.color-text {
-  color: #473C3E;
-}
-
-.font-bebas-neue {
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-.text-primary {
-  color: #473C3E;
-}
-
-</style>
 
 <template>
   <TheHeader @search="updateSearchQuery">
@@ -47,6 +22,8 @@
     </div>
     <Pagination :current-page="currentPage" :total-pages="totalPages" @page-change="changePage" />
   </main>
+
+  <TheFooter />
 </template>
 
 <script setup>
