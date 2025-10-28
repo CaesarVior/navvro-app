@@ -1,7 +1,28 @@
 <style>
-  .primary-collor {
-    background-color: #FFF3E0;
-  }
+.primary-collor {
+  background-color: #FFF3E0;
+}
+
+.orange-primary {
+  color: #FF8A00;
+}
+
+.bg-primary {
+  background-color: #FF8A00;
+}
+
+.color-text {
+  color: #473C3E;
+}
+
+.font-bebas-neue {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.text-primary {
+  color: #473C3E;
+}
+
 </style>
 
 <template>
@@ -16,7 +37,6 @@
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">Daftar UMKM</h1>
     <div class="flex flex-col md:flex-row gap-4 mb-8">
-      <SearchBar @search="updateSearchQuery" />
       <CategoryFilter :categories="categories" @filter="updateCategoryFilter" />
     </div>
     <div v-if="paginatedMsmes.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -38,7 +58,6 @@ import SearchBar from '~/components/SearchBar.vue'
 import TheAbout from '~/components/TheAbout.vue'
 import TheHeader from '~/components/TheHeader.vue'
 import msmes from '~/data/msme.json'
-console.log(msmes);
 
 const allMsmes = ref(msmes)
 const searchQuery = ref('')

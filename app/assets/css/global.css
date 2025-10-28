@@ -1,4 +1,3 @@
-/* Fallback global styles to improve appearance when Tailwind build isn't available */
 :root{
   --primary: #FF8747;
   --muted: #6B7280;
@@ -8,12 +7,3 @@ body{
   margin:0; padding:0; background:#F9FAFB; color:#111827;
 }
 .container{ max-width:1200px; margin:0 auto; padding:16px; }
-.header{ background:white; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
-.card{ background:white; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06); overflow:hidden }
-.card img{ width:100%; height:200px; object-fit:cover }
-.card .p{ padding:16px }
-
-/* basic responsive grid */
-.grid{ display:grid; grid-template-columns:1fr; gap:16px }
-@media(min-width:640px){ .grid{ grid-template-columns:repeat(2,1fr) } }
-@media(min-width:1024px){ .grid{ grid-template-columns:repeat(4,1fr) } }
