@@ -18,7 +18,6 @@
       Daftar UMKM
     </h1>
     <div class="flex flex-col md:flex-row gap-4 mb-8">
-      <SearchBar @search="updateSearchQuery" />
       <CategoryFilter :categories="categories" @filter="updateCategoryFilter" />
     </div>
     <div
@@ -36,6 +35,8 @@
       @page-change="changePage"
     />
   </main>
+
+  <TheFooter />
 </template>
 
 <script setup>

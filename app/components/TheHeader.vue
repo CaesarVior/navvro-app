@@ -25,7 +25,7 @@
             <input
               type="text"
               placeholder="Cari UMKM..."
-              class="w-full px-3 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              class="w-full px-4 py-2 border rounded-full bg-primary text-white placeholder-white"
               @input="$emit('search', $event.target.value)"
             />
           </slot>
@@ -38,6 +38,11 @@
         </button>
       </div>
     </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   </header>
 </template>
 
