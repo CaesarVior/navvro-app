@@ -6,7 +6,7 @@
         Etalase Produk
       </h2>
 
-      <NuxtLink to="/etalase"
+      <NuxtLink to=""
         class="flex items-center justify-between bg-lime-600 text-white text-sm font-semibold pl-4 pr-2 py-1.5 sm:py-2 rounded-full shadow-sm hover:bg-lime-700 transition-colors">
         <span>Lihat Semua</span>
         <span class="ml-2 flex items-center justify-center bg-white w-6 h-6 rounded-full">

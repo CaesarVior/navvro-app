@@ -12,7 +12,7 @@
   </TheHeader>
 
   <TheAbout />
-
+  <CategoryCard/> 
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
       Daftar UMKM
@@ -29,7 +29,7 @@
     <div v-else class="text-center text-gray-500">
       <p>Tidak ada UMKM yang ditemukan.</p>
     </div>
-  <CategoryCard/> 
+  
     <Pagination :current-page="currentPage" :total-pages="totalPages" @page-change="changePage" />
   </main>
 
@@ -45,7 +45,6 @@ import SearchBar from '~/components/SearchBar.vue'
 import TheAbout from '~/components/TheAbout.vue'
 import TheHeader from '~/components/TheHeader.vue'
 import msmes from '~/data/msme.json'
-console.log(msmes);
 
 const allMsmes = ref(msmes);
 const searchQuery = ref("");
@@ -67,6 +66,8 @@ const filteredMsmes = computed(() => {
     );
   }
 
+
+  
   if (categoryFilter.value && categoryFilter.value !== "Semua") {
     result = result.filter((msme) => msme.category === categoryFilter.value);
   }
