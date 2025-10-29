@@ -29,25 +29,22 @@
     <div v-else class="text-center text-gray-500">
       <p>Tidak ada UMKM yang ditemukan.</p>
     </div>
-    <Pagination
-      :current-page="currentPage"
-      :total-pages="totalPages"
-      @page-change="changePage"
-    />
+  <CategoryCard/> 
+    <Pagination :current-page="currentPage" :total-pages="totalPages" @page-change="changePage" />
   </main>
 
   <TheFooter />
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
-import CategoryFilter from "~/components/CategoryFilter.vue";
-import MsmeCard from "~/components/MsmeCard.vue";
-import Pagination from "~/components/Pagination.vue";
-import SearchBar from "~/components/SearchBar.vue";
-//import TheAbout from "~/components/TheAbout.vue";
-import TheHeader from "~/components/TheHeader.vue";
-import msmes from "~/data/msme.json";
+import { computed, ref } from 'vue'
+import CategoryFilter from '~/components/CategoryFilter.vue'
+import MsmeCard from '~/components/MsmeCard.vue'
+import Pagination from '~/components/Pagination.vue'
+import SearchBar from '~/components/SearchBar.vue'
+import TheAbout from '~/components/TheAbout.vue'
+import TheHeader from '~/components/TheHeader.vue'
+import msmes from '~/data/msme.json'
 console.log(msmes);
 
 const allMsmes = ref(msmes);
@@ -93,9 +90,9 @@ const updateSearchQuery = (query) => {
 };
 
 const updateCategoryFilter = (category) => {
-  categoryFilter.value = category;
-  currentPage.value = 1;
-};
+  categoryFilter.value = category
+  currentPage.value = 1
+}
 
 const changePage = (page) => {
   currentPage.value = page;
