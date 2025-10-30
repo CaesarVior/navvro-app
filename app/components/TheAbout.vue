@@ -7,7 +7,7 @@
                         Indonesia</h2>
                     <br>
                     <p class="text-primary">
-                        Setiap produk lokal punya cerita dan <br>semangat yang layak dikenal masyarakat. 
+                        Setiap produk lokal punya cerita dan <br>semangat yang layak dikenal masyarakat.
                     </p>
                     <br>
                     <div>

@@ -1,9 +1,3 @@
-<style>
-.primary-collor {
-  background-color: #fff3e0;
-}
-</style>
-
 <template>
   <TheHeader @search="updateSearchQuery">
     <template #search>
@@ -12,7 +6,7 @@
   </TheHeader>
 
   <TheAbout />
-
+  <TheSwap />
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
       Daftar UMKM
