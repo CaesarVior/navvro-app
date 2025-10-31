@@ -6,7 +6,7 @@
   </TheHeader>
 
   <TheAbout />
-  <TheSwap />
+  <CategoryCard/> 
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
       Daftar UMKM
@@ -23,25 +23,22 @@
     <div v-else class="text-center text-gray-500">
       <p>Tidak ada UMKM yang ditemukan.</p>
     </div>
-    <Pagination
-      :current-page="currentPage"
-      :total-pages="totalPages"
-      @page-change="changePage"
-    />
+  
+    <Pagination :current-page="currentPage" :total-pages="totalPages" @page-change="changePage" />
   </main>
 
   <TheFooter />
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
-import CategoryFilter from "~/components/CategoryFilter.vue";
-import MsmeCard from "~/components/MsmeCard.vue";
-import Pagination from "~/components/Pagination.vue";
-import SearchBar from "~/components/SearchBar.vue";
-//import TheAbout from "~/components/TheAbout.vue";
-import TheHeader from "~/components/TheHeader.vue";
-import msmes from "~/data/msme.json";
+import { computed, ref } from 'vue'
+import CategoryFilter from '~/components/CategoryFilter.vue'
+import MsmeCard from '~/components/MsmeCard.vue'
+import Pagination from '~/components/Pagination.vue'
+import SearchBar from '~/components/SearchBar.vue'
+import TheAbout from '~/components/TheAbout.vue'
+import TheHeader from '~/components/TheHeader.vue'
+import msmes from '~/data/msme.json'
 
 const allMsmes = ref(msmes);
 const searchQuery = ref("");
@@ -63,6 +60,8 @@ const filteredMsmes = computed(() => {
     );
   }
 
+
+  
   if (categoryFilter.value && categoryFilter.value !== "Semua") {
     result = result.filter((msme) => msme.category === categoryFilter.value);
   }
@@ -86,9 +85,9 @@ const updateSearchQuery = (query) => {
 };
 
 const updateCategoryFilter = (category) => {
-  categoryFilter.value = category;
-  currentPage.value = 1;
-};
+  categoryFilter.value = category
+  currentPage.value = 1
+}
 
 const changePage = (page) => {
   currentPage.value = page;
