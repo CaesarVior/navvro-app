@@ -42,7 +42,6 @@ import SearchBar from "~/components/SearchBar.vue";
 //import TheAbout from "~/components/TheAbout.vue";
 import TheHeader from "~/components/TheHeader.vue";
 import msmes from "~/data/msme.json";
-console.log(msmes);
 
 const allMsmes = ref(msmes);
 const searchQuery = ref("");
