@@ -19,7 +19,7 @@
             <input
               type="text"
               placeholder="Cari UMKM..."
-              class="w-full px-4 py-2 border rounded-full bg-primary text-white placeholder-white"
+              class="w-full px-4 py-2 border-none rounded-full bg-primary text-white placeholder-white"
               @input="$emit('search', $event.target.value)"
             />
           </slot>

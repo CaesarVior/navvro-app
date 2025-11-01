@@ -35,3 +35,9 @@ body{
 .green-primary {
   background-color: #8BAA4A;
 }
+
+.text-7xl{
+  font-size: 5rem;
+}
+
+@import "tailwindcss";
