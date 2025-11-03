@@ -10,9 +10,8 @@
       <SearchBar @search="updateSearchQuery" />
     </template>
   </TheHeader>
-
   <TheAbout />
-  <CategoryCard/> 
+  <CategoryCard />
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
       Daftar UMKM
@@ -20,16 +19,13 @@
     <div class="flex flex-col md:flex-row gap-4 mb-8">
       <CategoryFilter :categories="categories" @filter="updateCategoryFilter" />
     </div>
-    <div
-      v-if="paginatedMsmes.length > 0"
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-    >
+    <div v-if="paginatedMsmes.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <MsmeCard v-for="msme in paginatedMsmes" :key="msme.id" :msme="msme" />
     </div>
     <div v-else class="text-center text-gray-500">
       <p>Tidak ada UMKM yang ditemukan.</p>
     </div>
-  
+
     <Pagination :current-page="currentPage" :total-pages="totalPages" @page-change="changePage" />
   </main>
 
@@ -67,7 +63,7 @@ const filteredMsmes = computed(() => {
   }
 
 
-  
+
   if (categoryFilter.value && categoryFilter.value !== "Semua") {
     result = result.filter((msme) => msme.category === categoryFilter.value);
   }

@@ -12,11 +12,14 @@
                     <br>
                     <div>
                         <template>
-                            <button ref="myButton" type="button"
-                                class="green-primary text-white hover:bg-green-800 font-medium rounded-full text-sm px-2 py-1 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <img src="/icon/store.png" alt="" class="w-6">
-                                <span class="ps-2 text-center align-center">Lihat Etalase Kami</span>
-                            </button>
+                            <NuxtLink to="/etalase">
+                                <button ref="myButton" type="button"
+                                    class="green-primary text-white hover:bg-green-800 font-medium rounded-full text-sm px-2 py-1 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <img src="/icon/store.png" alt="" class="w-6">
+                                    <span class="ps-2 text-center align-center ">Lihat Etalase Kami</span>
+                                </button>
+                            </NuxtLink>
+
                         </template>
                     </div>
                 </div>
