@@ -1,9 +1,3 @@
-<style>
-.primary-collor {
-  background-color: #fff3e0;
-}
-</style>
-
 <template>
   <TheHeader @search="updateSearchQuery">
     <template #search>
