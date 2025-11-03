@@ -28,6 +28,10 @@ body{
   font-family: 'Bebas Neue', sans-serif;
 }
 
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 .text-primary {
   color: #473C3E;
 }
@@ -39,5 +43,3 @@ body{
 .text-7xl{
   font-size: 5rem;
 }
-
-@import "tailwindcss";

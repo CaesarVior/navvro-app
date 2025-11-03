@@ -30,5 +30,8 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    optimizeDeps: {
+      include: ['flowbite']
+    }
   },
 })
