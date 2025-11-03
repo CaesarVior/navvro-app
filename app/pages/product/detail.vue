@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="col-span-2">
-                    <div class="block p-6 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <div class="block p-6 border border-gray-300 rounded-lg">
                         <h2 class="mb-4 text-xl font-semibold">Deskripsi Produk</h2>
                         <p class="text-sm text-gray-600">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velarcu ut urna congue
@@ -124,7 +124,7 @@
             </div>
 
             <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-12 mt-5">
-                <div class="block p-6 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="block p-6 border border-gray-300 rounded-lg">
                     <span class="font-semibold">Nivor Caevan</span>
                     <div class="flex items-center justify-between">
                         <div class="flex text-yellow-500">
@@ -153,7 +153,7 @@
 
 
                 <div class="col-span-2">
-                    <div class="block p-6 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <div class="block p-6 border border-gray-300 rounded-lg">
                         <h2 class="mb-4 text-xl font-semibold">Pengiriman</h2>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="flex items-center gap-3 mt-4">
