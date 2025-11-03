@@ -29,16 +29,18 @@
     </div>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   </header>
 </template>
 
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
+import { Icon } from '@iconify/vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
-const scrolled = ref(false)
+const scrolled = ref(false);
 
 function onScroll() {
   scrolled.value = window.scrollY > 10

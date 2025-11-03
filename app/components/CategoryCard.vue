@@ -2,11 +2,11 @@
   <section class="w-full max-w-6xl mx-auto py-8 px-4 sm:px-6">
 
     <div class="flex justify-between items-center mb-6">
-      <h2 class="text-xl sm:text-2xl font-bold uppercase text-gray-800 tracking-wide">
-        Etalase Produk
-      </h2>
+      <a class=" font-bebas-neue text-gray-800 tracking-widetext-xl sm:text-2xl">
+        NAVRO
+      </a>
 
-      <NuxtLink to=""
+      <NuxtLink to="/etalase"
         class="flex items-center justify-between bg-lime-600 text-white text-sm font-semibold pl-4 pr-2 py-1.5 sm:py-2 rounded-full shadow-sm hover:bg-lime-700 transition-colors">
         <span>Lihat Semua</span>
         <span class="ml-2 flex items-center justify-center bg-white w-6 h-6 rounded-full">
@@ -20,7 +20,7 @@
 
     <div class="relative flex items-center">
 
-      <div ref="categoriesContainer" class="flex items-center space-x-8 pb-4 overflow-x-scroll scroll-smooth scrollbar-hide">
+      <div ref="categoriesContainer" class="flex items-center space-x-8 pb-4 overflow-x-hidden scroll-smooth">
 
         <div v-for="category in categories" :key="category.name" class="flex-shrink-0">
           <div :class="[
@@ -28,11 +28,11 @@
             'w-28 h-28 sm:w-32 sm:h-32',
             'rounded-xl flex flex-col items-center justify-center',
             'p-3 text-center cursor-pointer',
-            'hover:shadow-xl hover:scale-[1.01] hover:bg-orange-100',
+            'hover:shadow-md hover:scale-[1.03] hover:bg-orange-100',
             'transition-all duration-400'
           ]">
             <span class="text-4xl sm:text-5xl mb-2">{{ category.icon }}</span>
-            <p class="text-xs sm:text-sm font-semibold text-gray-700 leading-tight">
+            <p class="text-xs sm:text-sm font-poppins text-gray-700 leading-tight">
               {{ category.name }}
             </p>
           </div>

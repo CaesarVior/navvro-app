@@ -7,7 +7,7 @@
       <p class="text-lg text-gray-700 mb-2"><span class="font-semibold">Kategori:</span> {{ msme.category }}</p>
       <p class="text-gray-600">{{ msme.description }}</p>
     </div>
-    <div v-else class="text-center text-gray-500">
+    <div v-else class="text-center text-gray-500 font-bebas-neue">
       <p>UMKM tidak ditemukan.</p>
     </div>
   </div>
