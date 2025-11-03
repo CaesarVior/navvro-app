@@ -38,7 +38,6 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 import { Icon } from '@iconify/vue'
-import { onMounted, onUnmounted, ref } from 'vue'
 
 const scrolled = ref(false);
 
