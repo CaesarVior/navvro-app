@@ -1,13 +1,13 @@
 <template>
     <TheHeader />
-    <div class="">
+    <div class="px-4">
         <div class="container">
 
-            <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-12">
-                <Carousel />
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
+                <Carousel class="col-span-1" />
 
-                <div class="col-span-2">
-                    <div class="gap-4 h-56 md:h-96">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="gap-4">
                         <span class="text-sm flex gap-2 text-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -19,7 +19,7 @@
                             </svg>
                             Rafi Ahmad
                         </span>
-                        <h1 class="text-primary text-3xl font-bebas-neue mt-2">IKAN BAKAR MR RAFFI</h1>
+                        <h1 class="text-primary text-2xl sm:text-3xl font-bebas-neue mt-2">IKAN BAKAR MR RAFFI</h1>
                         <p class="mt-1 text-gray-700">Rp. 2.800.890</p>
 
                         <div>
@@ -38,7 +38,7 @@
                         </div>
 
                         <div>
-                            <div class="flex items-center gap-12 mt-5 pt-3">
+                            <div class="flex items-center gap-4 sm:gap-12 mt-5 pt-3">
                                 <p>Jumlah</p>
                                 <div class="flex items-center gap-4">
                                     <button @click="decrease"
@@ -77,16 +77,16 @@
 
             <hr class="my-8" />
 
-            <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-12">
-                <div class="">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
+                <div class="col-span-1">
                     <h2 class="mb-4 text-xl font-semibold">Rating & Review</h2>
-                    <div class="grid grid-cols-3 justify-center items-center">
-                        <div class="flex items-end">
-                            <span class="text-7xl font-bebas-neue text-primary">4,5</span>
-                            <span class="text-2xl font-bebas-neue text-primary">/5</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 justify-center items-center">
+                        <div class="flex items-end justify-center sm:justify-start">
+                            <span class="text-5xl sm:text-7xl font-bebas-neue text-primary">4,5</span>
+                            <span class="text-xl sm:text-2xl font-bebas-neue text-primary">/5</span>
                         </div>
 
-                        <div class="mt-4 flex flex-col gap-2 col-span-2">
+                        <div class="mt-4 flex flex-col gap-2 col-span-1 sm:col-span-2">
                             <div v-for="rating in [5, 4, 3, 2, 1]" :key="rating" class="flex items-center gap-2">
                                 <span class="flex items-center text-sm">
                                     <span class="text-yellow-500 me-2">
@@ -110,7 +110,7 @@
 
                 </div>
 
-                <div class="col-span-2">
+                <div class="col-span-1 lg:col-span-2">
                     <div class="block p-6 border border-gray-300 rounded-lg">
                         <h2 class="mb-4 text-xl font-semibold">Deskripsi Produk</h2>
                         <p class="text-sm text-gray-600">
@@ -123,8 +123,8 @@
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-12 mt-5">
-                <div class="block p-6 border border-gray-300 rounded-lg">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mt-5">
+                <div class="block p-6 border border-gray-300 rounded-lg col-span-1">
                     <span class="font-semibold">Nivor Caevan</span>
                     <div class="flex items-center justify-between">
                         <div class="flex text-yellow-500">
@@ -152,10 +152,10 @@
                 </div>
 
 
-                <div class="col-span-2">
+                <div class="col-span-1 lg:col-span-2">
                     <div class="block p-6 border border-gray-300 rounded-lg">
                         <h2 class="mb-4 text-xl font-semibold">Pengiriman</h2>
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="flex items-center gap-3 mt-4">
                                 <div class="flex h-10 w-10 items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
@@ -213,46 +213,7 @@
 
             <hr class="my-8" />
 
-            <!-- <div>
-                <h2 class="mb-4 text-xl font-bold">REKOMENDASI UNTUK ANDA</h2>
-                <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-                    <div v-for="i in 5" :key="i" class="overflow-hidden rounded-lg border border-gray-200 shadow-sm">
-                        <div class="flex aspect-square items-center justify-center bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" width="24"
-                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M15 8h.01" />
-                                <path
-                                    d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" />
-                                <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" />
-                                <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
-                            </svg>
-                        </div>
-                        <div class="flex flex-col gap-2 p-3">
-                            <span class="text-xs text-gray-500">Nama Toko</span>
-                            <span class="text-sm font-semibold">Nama Produk Rekomendasi</span>
-                            <span class="text-lg font-bold">Rp. 1.200.000</span>
-                            <div class="flex items-center gap-2">
-                                <span class="text-xs text-gray-500">1 pc</span>
-                                <div class="flex items-center rounded border">
-                                    <button class="px-1 text-xs">-</button>
-                                    <span class="px-2 text-xs">1</span>
-                                    <button class="px-1 text-xs">+</button>
-                                </div>
-                            </div>
-                            <button class="mt-2 w-full rounded-lg bg-green-600 py-2 text-sm font-semibold text-white">
-                                + Keranjang
-                            </button>
-                            <button
-                                class="w-full rounded-lg border border-gray-300 py-2 text-sm font-semibold text-gray-700">
-                                Lihat Produk
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
+            </div>
     </div>
 </template>
 
