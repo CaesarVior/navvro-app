@@ -1,31 +1,30 @@
 <template>
-  <header :class="['primary-collor sticky top-0 z-50', scrolled ? 'shadow' : '']">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center">
+  <header :class="[ 'primary-collor sticky top-0 z-50', scrolled ? 'shadow' : '']">
+    <div class="container mx-auto py-5 flex items-center">
       <div class="flex-1">
-        <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue text-gray-800">NAVVRO</NuxtLink>
+        <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue">NAVVRO</NuxtLink>
       </div>
 
       <div class="flex-1 flex justify-center">
         <nav class="flex space-x-6">
           <NuxtLink to="/" class="text-gray-600 hover:text-orange-500">BERANDA</NuxtLink>
-          <NuxtLink to="/" class="text-gray-600 hover:text-orange-500">PRODUK</NuxtLink>
-          <NuxtLink to="/" class="text-gray-600 hover:text-orange-500">KATEGORI</NuxtLink>
+          <NuxtLink to="" class="text-gray-600 hover:text-orange-500">PRODUK</NuxtLink>
+          <NuxtLink to="" class="text-gray-600 hover:text-orange-500">KATEGORI</NuxtLink>
         </nav>
       </div>
 
       <div class="flex-1 flex justify-end items-center">
-        <div class="w-45 md:w-50">
-          <slot name="search">
-            <div class="flex items-center w-full px-4 py-2 border rounded-full bg-primary text-white">
-              
-              <Icon icon="mdi:search" class="w-5 h-5 text-white flex-shrink-0" />
-
-              <input type="text" placeholder="Cari UMKM..."
-                class="w-full ml-2 bg-transparent border-none text-white placeholder:text-white focus:outline-none focus:ring-0"
-                @input="$emit('search', $event.target.value)" />
-            </div>
+        <div class="flex items-center w-45 md:w-50">
+          <slot name="search"> 
+            <input
+              type="text"
+              placeholder="Cari UMKM..."
+              class="w-full px-4 py-2 border-none rounded-full bg-primary text-white placeholder-white placeholder-white::placeholder"
+              @input="$emit('search', $event.target.value)"
+            />
           </slot>
         </div>
+
       </div>
     </div>
 
@@ -39,8 +38,9 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 import { Icon } from '@iconify/vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
-const scrolled = ref(false)
+const scrolled = ref(false);
 
 function onScroll() {
   scrolled.value = window.scrollY > 10

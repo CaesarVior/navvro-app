@@ -28,10 +28,18 @@ body{
   font-family: 'Bebas Neue', sans-serif;
 }
 
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 .text-primary {
   color: #473C3E;
 }
 
 .green-primary {
   background-color: #8BAA4A;
+}
+
+.text-7xl{
+  font-size: 5rem;
 }
