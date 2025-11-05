@@ -100,8 +100,8 @@
                                     </span>
                                 </span>
                                 <div class="h-1.5 flex-grow rounded-full bg-gray-200">
-                                    <!-- <div class="h-full rounded-full bg-green-800"
-                                        :style="{ width: `${ratingWidths[rating]}%` }"></div> -->
+                                    <div class="h-full rounded-full bg-green-800"
+                                        :style="{ width: `${ratingWidths[rating]}%` }"></div>
                                 </div>
                             </div>
                         </div>
