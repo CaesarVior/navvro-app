@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full overflow-hidden rounded-lg aspect-video">
+  <div class="relative w-full h-82 md:h-82 overflow-hidden rounded-lg aspect-video">
     <div
       v-for="(image, index) in images"
       :key="index"
