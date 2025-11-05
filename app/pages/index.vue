@@ -1,9 +1,10 @@
 <template>
-  <TheHeader @search="updateSearchQuery">
+  <TheHeader @search="updateSearchQuery" @toggle-mobile-menu="handleToggle">
     <template #search>
       <SearchBar @search="updateSearchQuery" />
     </template>
   </TheHeader>
+  <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />
   <TheAbout />
   <CategoryCard />
   <main class="max-w-7xl mx-auto p-6">
@@ -88,4 +89,10 @@ const updateCategoryFilter = (category) => {
 const changePage = (page) => {
   currentPage.value = page;
 };
+
+const isMobileMenuOpen = ref(false);
+
+function handleToggle() {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+}
 </script>
