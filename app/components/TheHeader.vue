@@ -8,7 +8,7 @@
       <div class="flex-1 flex justify-center">
         <nav class="flex space-x-6">
           <NuxtLink to="/" class="text-gray-600 hover:text-orange-500">BERANDA</NuxtLink>
-          <NuxtLink to="product/index" class="text-gray-600 hover:text-orange-500">PRODUK</NuxtLink>
+          <NuxtLink to="" class="text-gray-600 hover:text-orange-500">PRODUK</NuxtLink>
           <NuxtLink to="" class="text-gray-600 hover:text-orange-500">KATEGORI</NuxtLink>
         </nav>
       </div>
