@@ -7,6 +7,7 @@
   <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />
   <TheAbout />
   <CategoryCard />
+  <TheSwap />
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
       Daftar UMKM
