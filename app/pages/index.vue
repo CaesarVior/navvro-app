@@ -1,3 +1,9 @@
+<style scoped>
+.primary-collor {
+  background-color: #FFF3E0;
+}
+</style>
+
 <template>
   <TheHeader @search="updateSearchQuery" @toggle-mobile-menu="handleToggle">
     <template #search>
