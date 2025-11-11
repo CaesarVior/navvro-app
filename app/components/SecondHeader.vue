@@ -1,5 +1,5 @@
 <template>
-  <header :class="['primary-collor-etalase sticky top-0 z-50', scrolled ? 'shadow' : '']">
+  <header :class="['primary-collor sticky top-0 z-50', scrolled ? 'shadow' : '']">
     <div class="max-w-7xl mx-auto px-6 py-5 flex items-center">
       <div class="flex-1">
         <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue text-gray-800">NAVVRO</NuxtLink>

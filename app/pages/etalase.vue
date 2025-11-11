@@ -1,5 +1,5 @@
-<style>
-.primary-collor-etalase {
+<style scoped>
+.primary-collor {
   background-color: #ffffff;
 }
 </style>
