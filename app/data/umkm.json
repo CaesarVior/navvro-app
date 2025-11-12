@@ -8,12 +8,14 @@
         "fotoToko": "images/toko/foto-1.jpg",
         "produk": [
             {
+                "id_produk": 1,
                 "nama": "bakso",
                 "harga": 4000,
                 "kategori": "makanan",
                 "fotoProduk": "images/produk/foto-1-bakso.jpg"
             },
             {
+                "id_produk": 2,
                 "nama": "es teh",
                 "harga": 5000,
                 "kategori": "minuman",
@@ -23,44 +25,48 @@
     },
     {
         "id": 2,
-        "nama": "Toko 2",
+        "nama": "Toko 2 Doa Ibu",
         "kategori": "ATK",
         "lokasi": "Jl. Soekarno Hatta, Kota Malang",
         "detail": "Toko ini menyediakan berbagai macam alat tulis",
         "fotoToko": "images/toko/foto-2.jpg",
         "produk": [
             {
+                "id_produk": 3,
                 "nama": "pensil",
                 "harga": 4000,
-                "kategori": "alat tulis",
+                "kategori": "atk",
                 "fotoProduk": "images/produk/foto-2-pensil.jpg"
             },
             {
+                "id_produk": 4,
                 "nama": "penghapus",
                 "harga": 5000,
-                "kategori": "alat tulis",
+                "kategori": "atk",
                 "fotoProduk": "images/produk/foto-2-penghapus.jpg"
             }
         ]
     },
     {
         "id": 3,
-        "nama": "Toko 3 Elektronik",
-        "kategori": "elektronik",
+        "nama": "Toko 3 Joki Ml",
+        "kategori": "jasa",
         "lokasi": "Jl. Veteran no. 15, Kota Malang",
         "detail": "Menjual HP, laptop, dan aksesoris",
         "fotoToko": "images/toko/foto-3.jpg",
         "produk": [
             {
-                "nama": "Mouse Wireless",
+                "id_produk": 5,
+                "nama": "Epic to glory",
                 "harga": 150000,
-                "kategori": "aksesoris pc",
+                "kategori": "jasa",
                 "fotoProduk": "images/produk/foto-3-mouse-wireless.jpg"
             },
             {
-                "nama": "Headset Bluetooth",
+                "id_produk": 6,
+                "nama": "Epic to Immortal",
                 "harga": 300000,
-                "kategori": "audio",
+                "kategori": "jasa",
                 "fotoProduk": "images/produk/foto-3-headset-bluetooth.jpg"
             }
         ]
@@ -68,21 +74,23 @@
     {
         "id": 4,
         "nama": "Toko 4 Fashion",
-        "kategori": "pakaian",
+        "kategori": "fashion",
         "lokasi": "Mall Olympic Garden, Kota Malang",
         "detail": "Pakaian pria dan wanita terbaru",
         "fotoToko": "images/toko/foto-4.jpg",
         "produk": [
             {
+                "id_produk": 7,
                 "nama": "Kaos Polos",
                 "harga": 80000,
-                "kategori": "pria",
+                "kategori": "fashion",
                 "fotoProduk": "images/produk/foto-4-kaos-polos.jpg"
             },
             {
+                "id_produk": 8,
                 "nama": "Kemeja Flanel",
                 "harga": 220000,
-                "kategori": "pria",
+                "kategori": "fashion",
                 "fotoProduk": "images/produk/foto-4-kemeja-flanel.jpg"
             }
         ]
@@ -96,12 +104,14 @@
         "fotoToko": "images/toko/foto-5.jpg",
         "produk": [
             {
+                "id_produk": 9,
                 "nama": "Novel Bumi",
                 "harga": 99000,
                 "kategori": "fiksi",
                 "fotoProduk": "images/produk/foto-5-novel-bumi.jpg"
             },
             {
+                "id_produk": 10,
                 "nama": "Buku Tulis Sinar Dunia",
                 "harga": 50000,
                 "kategori": "alat tulis",
@@ -118,12 +128,14 @@
         "fotoToko": "images/toko/foto-6.jpg",
         "produk": [
             {
+                "id_produk": 11,
                 "nama": "Kopi Susu Aren",
                 "harga": 22000,
                 "kategori": "minuman",
                 "fotoProduk": "images/produk/foto-6-kopi-susu-aren.jpg"
             },
             {
+                "id_produk": 12,
                 "nama": "Roti Coklat",
                 "harga": 15000,
                 "kategori": "makanan",
@@ -140,12 +152,14 @@
         "fotoToko": "images/toko/foto-7.jpg",
         "produk": [
             {
+                "id_produk": 13,
                 "nama": "Sepatu Lari",
                 "harga": 1200000,
                 "kategori": "sepatu",
                 "fotoProduk": "images/produk/foto-7-sepatu-lari.jpg"
             },
             {
+                "id_produk": 14,
                 "nama": "Raket Badminton",
                 "harga": 450000,
                 "kategori": "peralatan",
@@ -162,12 +176,14 @@
         "fotoToko": "images/toko/foto-8.jpg",
         "produk": [
             {
+                "id_produk": 15,
                 "nama": "Sunscreen Wajah",
                 "harga": 55000,
                 "kategori": "skincare",
                 "fotoProduk": "images/produk/foto-8-sunscreen-wajah.jpg"
             },
             {
+                "id_produk": 16,
                 "nama": "Lipstik Matte",
                 "harga": 120000,
                 "kategori": "makeup",
@@ -184,12 +200,14 @@
         "fotoToko": "images/toko/foto-9.jpg",
         "produk": [
             {
+                "id_produk": 17,
                 "nama": "Beras 5kg",
                 "harga": 65000,
                 "kategori": "bahan pokok",
                 "fotoProduk": "images/produk/foto-9-beras-5kg.jpg"
             },
             {
+                "id_produk": 18,
                 "nama": "Minyak Goreng 2L",
                 "harga": 32000,
                 "kategori": "bahan pokok",
@@ -206,12 +224,14 @@
         "fotoToko": "images/toko/foto-10.jpg",
         "produk": [
             {
+                "id_produk": 19,
                 "nama": "Whiskas 1kg",
                 "harga": 80000,
                 "kategori": "makanan kucing",
                 "fotoProduk": "images/produk/foto-10-whiskas-1kg.jpg"
             },
             {
+                "id_produk": 20,
                 "nama": "Pasir Gumpal 5L",
                 "harga": 45000,
                 "kategori": "aksesoris",

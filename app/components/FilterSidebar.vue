@@ -47,7 +47,7 @@
       </div>
     </div>
     
-    <button class="w-full bg-red-700 text-white py-2 rounded-lg font-medium hover:bg-red-800 transition-colors">
+    <button class="w-full bg-red-900 text-white py-2 rounded-lg font-medium hover:bg-red-800 transition-colors">
       Hapus Semua
     </button>
   </aside>

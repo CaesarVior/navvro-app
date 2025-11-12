@@ -1,7 +1,7 @@
 <template>
   <TheHeader @search="updateSearchQuery">
     <template #search>
-      <SearchBar @search="updateSearchQuery" />
+      <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM"/>
     </template>
   </TheHeader>
   <TheAbout />
