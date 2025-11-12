@@ -41,17 +41,6 @@ import HeroBanner from '~/components/HeroBanner.vue';
 import TheFooter from '~/components/TheFooter.vue';
 import ProductCard from '~/components/ProductCard.vue';
 import umkm from '~/data/umkm.json'
-// const products = ref([
-//   { id: 1, name: 'Ikan Bakar Mr Raffi', seller: 'Raffi Ahmad', category: 'Makanan', price: '2.000.000', image: '', isTopSeller: false },
-//   { id: 2, name: 'Sambal Bu\'de', seller: 'Bu\'de', category: 'Makanan', price: '1.500.000', image: '', isTopSeller: false },
-//   { id: 3, name: 'Rendang Kering', seller: 'Uni Padang', category: 'Makanan', price: '3.000.000', image: '', isTopSeller: false },
-//   { id: 4, name: 'Tas Anyam', seller: 'Pengrajin Lokal', category: 'Fashion', price: '500.000', image: '', isTopSeller: false },
-//   { id: 5, name: 'Tas Anyam', seller: 'Pengrajin Lokal', category: 'Fashion', price: '500.000', image: '', isTopSeller: false },
-//   { id: 6, name: 'Tas Anyam', seller: 'Pengrajin Lokal', category: 'Fashion', price: '500.000', image: '', isTopSeller: false },
-//   { id: 7, name: 'Tas Anyam', seller: 'Pengrajin Lokal', category: 'Fashion', price: '500.000', image: '', isTopSeller: false },
-//   { id: 8, name: 'Tas Anyam', seller: 'Pengrajin Lokal', category: 'Fashion', price: '500.000', image: '', isTopSeller: false },
-//   // ... data produk lainnya
-// ]);
 
 const stores = ref(umkm)
 const searchValue = ref("...")
@@ -65,9 +54,6 @@ const getSearchValue = (value) => {
 }
 const products = computed(() => {
 
-  // .flatMap() adalah fungsi JS untuk "meratakan" array.
-  // Ia akan mengambil array 'store.produk' dari SETIAP 'store'
-  // lalu menggabungkan semuanya menjadi SATU array besar.
   const all = stores.value.flatMap(store => {
     return store.produk.map(product => {
       return {
@@ -83,10 +69,8 @@ const products = computed(() => {
   
   if (searchValue.value && searchValue.value !== "...") {
 
-    // 3. Simpan query pencarian dalam huruf kecil
     const query = searchValue.value.toLowerCase();
 
-  //   // 4. Jalankan filter
     return all.filter(product => {
       const productName = product.nama.toLowerCase()
       const productCategory = product.kategori.toLowerCase()
@@ -94,10 +78,9 @@ const products = computed(() => {
     })
   }
 
-  // Jika tidak ada pencarian, tampilkan semua
   return all;
 })
-// console.log(products.value);
+
 
 
 </script>

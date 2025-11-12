@@ -1,11 +1,19 @@
+<style scoped>
+.primary-collor {
+  background-color: #FFF3E0;
+}
+</style>
+
 <template>
-  <TheHeader @search="updateSearchQuery">
+  <TheHeader @search="updateSearchQuery" @toggle-mobile-menu="handleToggle">
     <template #search>
       <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM"/>
     </template>
   </TheHeader>
+  <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />
   <TheAbout />
   <CategoryCard />
+  <TheSwap />
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
       Daftar UMKM
@@ -88,4 +96,10 @@ const updateCategoryFilter = (category) => {
 const changePage = (page) => {
   currentPage.value = page;
 };
+
+const isMobileMenuOpen = ref(false);
+
+function handleToggle() {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+}
 </script>

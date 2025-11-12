@@ -1,6 +1,5 @@
 <template>
-  <div class="relative w-full overflow-hidden rounded-lg">
-    <!-- Gambar -->
+  <div class="relative w-full h-82 md:h-82 overflow-hidden rounded-lg aspect-video">
     <div
       v-for="(image, index) in images"
       :key="index"
@@ -13,11 +12,10 @@
       <img
         :src="image"
         alt="Slide image"
-        class="w-full h-56 md:h-96 object-cover select-none pointer-events-none"
+        class="w-full h-full object-cover select-none pointer-events-none"
       />
     </div>
 
-    <!-- Tombol Prev -->
     <button
       @click="prevSlide"
       class="absolute top-1/2 left-3 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full backdrop-blur-sm"
@@ -27,7 +25,6 @@
       </svg>
     </button>
 
-    <!-- Tombol Next -->
     <button
       @click="nextSlide"
       class="absolute top-1/2 right-3 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full backdrop-blur-sm"
@@ -37,7 +34,6 @@
       </svg>
     </button>
 
-    <!-- Indikator -->
     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
       <button
         v-for="(image, index) in images"
@@ -84,8 +80,3 @@ onBeforeUnmount(() => {
 })
 </script>
 
-<style scoped>
-img {
-  transition: opacity 0.7s ease-in-out;
-}
-</style>
