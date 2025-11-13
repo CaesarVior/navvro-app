@@ -1,6 +1,6 @@
 <template>
   <aside class="bg-gray-50 p-6 rounded-lg shadow-sm">
-    
+
     <div class="mb-6">
       <h3 class="font-semibold text-gray-800 mb-3">LOKASI</h3>
       <div class="space-y-2">
@@ -26,9 +26,29 @@
           <input type="checkbox" id="cat2" class="rounded text-orange-500">
           <label for="cat2" class="ml-2 text-sm text-gray-600">Minuman</label>
         </div>
+        <div>
+          <input type="checkbox" id="cat3" class="rounded text-orange-500">
+          <label for="cat3" class="ml-2 text-sm text-gray-600">Jasa</label>
         </div>
+        <div>
+          <input type="checkbox" id="cat4" class="rounded text-orange-500">
+          <label for="cat4" class="ml-2 text-sm text-gray-600">Pertanian & Perkebunan</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cat5" class="rounded text-orange-500">
+          <label for="cat5" class="ml-2 text-sm text-gray-600">Alat Tulis</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cat6" class="rounded text-orange-500">
+          <label for="cat6" class="ml-2 text-sm text-gray-600">Fashion & Aksesoris</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cat7" class="rounded text-orange-500">
+          <label for="cat7" class="ml-2 text-sm text-gray-600">Kosmetik</label>
+        </div>
+      </div>
     </div>
-    
+
     <div class="mb-6">
       <h3 class="font-semibold text-gray-800 mb-3">METODE PEMBAYARAN</h3>
       <div class="space-y-2">
@@ -46,8 +66,8 @@
         </div>
       </div>
     </div>
-    
-    <button class="w-full bg-red-700 text-white py-2 rounded-lg font-medium hover:bg-red-800 transition-colors">
+
+    <button class="w-full bg-red-900 text-white py-2 rounded-lg font-medium hover:bg-red-800 transition-colors">
       Hapus Semua
     </button>
   </aside>

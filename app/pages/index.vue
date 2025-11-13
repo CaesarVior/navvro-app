@@ -7,7 +7,7 @@
 <template>
   <TheHeader @search="updateSearchQuery" @toggle-mobile-menu="handleToggle">
     <template #search>
-      <SearchBar @search="updateSearchQuery" />
+      <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM"/>
     </template>
   </TheHeader>
   <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />

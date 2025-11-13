@@ -4,8 +4,8 @@
     <div class="p-4 flex items-center space-x-3">
       <img src="https://via.placeholder.com/40" alt="Seller" class="w-10 h-10 rounded-full bg-gray-300">
       <div>
-        <p class="font-semibold text-sm text-gray-800">{{ product.seller }}</p>
-        <p class="text-xs text-gray-500">{{ product.category }} - {{ product.name }}</p>
+        <p class="font-semibold text-sm text-gray-800">{{ product.nama_toko }}</p>
+        <p class="text-xs text-gray-500">{{ product.kategori }} - {{ product.nama }}</p>
       </div>
     </div>
     
@@ -19,18 +19,22 @@
     </div>
     
     <div class="p-4">
-      <div class="flex justify-between items-center mb-3">
+      <div class="flex justify-center items-center mb-3">
         <div class="flex items-center space-x-2">
           <button class="w-6 h-6 rounded-full border text-gray-500">-</button>
           <span class="text-sm font-medium">1 pc</span>
           <button class="w-6 h-6 rounded-full border text-gray-500">+</button>
         </div>
-        <p class="font-semibold text-gray-800">Rp. {{ product.price }}</p>
+        
+      </div>
+      <div class="flex justify-center items-center mb-3">
+       
+        <p class="font-semibold text-gray-800">Rp. {{ product.harga }}</p>
       </div>
       
       <div class="space-y-2">
         <button class="w-full py-2 rounded-lg text-sm font-medium transition-colors
-                       text-green-700 border border-green-700 hover:bg-green-50">
+                       text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
           Masukkan ke Keranjang
         </button>
         <NuxtLink to="product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
