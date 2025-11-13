@@ -16,8 +16,8 @@
         <nav class="flex space-x-6">
           <NuxtLink to="/" class="text-gray-600 hover:text-orange-500">BERANDA</NuxtLink>
           <NuxtLink to="/product" class="text-gray-600 hover:text-orange-500">PRODUK</NuxtLink>
-          <NuxtLink to="" class="text-gray-600 hover:text-orange-500">UMKM</NuxtLink>
-          <NuxtLink to="product/category" class="text-gray-600 hover:text-orange-500">KATEGORI</NuxtLink>
+          <NuxtLink to="/umkm" class="text-gray-600 hover:text-orange-500">UMKM</NuxtLink>
+          <NuxtLink to="/category" class="text-gray-600 hover:text-orange-500">KATEGORI</NuxtLink>
         </nav>
       </div>
 
