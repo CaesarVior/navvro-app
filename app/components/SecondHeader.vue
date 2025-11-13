@@ -10,7 +10,7 @@
           <NuxtLink to="/" class="font-poppins hover:text-orange-500">BERANDA</NuxtLink>
           <NuxtLink to="/product" class="font-poppins hover:text-orange-500">PRODUK</NuxtLink>
           <NuxtLink to="/umkm" class="font-poppins hover:text-orange-500">UMKM</NuxtLink>
-          <NuxtLink to="/category" class="font-poppins hover:text-orange-500">KATEGORI</NuxtLink>
+          <NuxtLink to="/product/category" class="font-poppins hover:text-orange-500">KATEGORI</NuxtLink>
         </nav>
       </di8v>
 
