@@ -1,5 +1,10 @@
+<style scoped>
+.primary-collor {
+    background-color: #ffffff;
+}
+</style>
 <template>
-    <TheHeader />
+    <SecondHeader />
     <div class="px-4">
         <div class="container">
 

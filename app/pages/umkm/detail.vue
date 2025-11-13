@@ -1,3 +1,8 @@
+<style scoped>
+.primary-collor {
+    background-color: #ffffff;
+}
+</style>
 <template>
     <div class="bg-white text-gray-900">
 
