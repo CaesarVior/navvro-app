@@ -37,7 +37,7 @@
                        text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
           Masukkan ke Keranjang
         </button>
-        <NuxtLink to="product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
+        <NuxtLink to="/product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
                 bg-green-700 text-white hover:bg-green-800">Lihat Produk</NuxtLink>
       </div>
     </div>
