@@ -17,7 +17,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="max-w-7xl flex flex-col items-center">
                 <div class="w-3xl">
-                    <SearchBar />
+                    <div class="flex-grow">
+                        <input type="text" placeholder="Cari UMKM..."
+                            class="w-full px-4 py-2 p-5 border-none rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-white text-xs text-white bg-primary"
+                            @input="$emit('search', $event.target.value)">
+                    </div>
                     <h2 class="text-lg font-medium text-gray-700 mb-4 text-center my-3">
                         Hasil Pencarian untuk "...."
                     </h2>
@@ -32,6 +36,7 @@
 
                 <div class="md:col-span-3">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
                         <ProductCard v-for="product in products" :key="product.id" :product="product" />
                     </div>
 
@@ -46,7 +51,7 @@ import { ref } from 'vue';
 import ListProductHeader from '~/components/SecondHeader.vue';
 import HeroBanner from '~/components/HeroBanner.vue';
 import TheFooter from '~/components/TheFooter.vue';
-import ProductCard from '~/components/ProductCard.vue';
+import ProductCard from '~/components/UmkmCard.vue';
 const products = ref([
     { id: 1, name: 'Ikan Bakar Mr Raffi', seller: 'Raffi Ahmad', category: 'Makanan', price: '2.000.000', image: '', isTopSeller: true },
     { id: 2, name: 'Sambal Bu\'de', seller: 'Bu\'de', category: 'Makanan', price: '1.500.000', image: '', isTopSeller: false },

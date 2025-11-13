@@ -38,7 +38,7 @@
           Masukkan ke Keranjang
         </button>
         <button class="w-full py-2 rounded-lg text-sm font-medium transition-colors
-                       text-green-900 border border-green-900 hover:bg-green-900 hover:text-white">
+                       bg-green-700 text-white hover:bg-green-800">
           Lihat Produk
         </button>
       </div>
