@@ -3,12 +3,11 @@
 
         <div class="absolute top-0 left-0 right-0 h-[600px] z-0 bg-[url('/icon/about_banner.png')] bg-cover bg-center">
         </div>
-        <div class="absolute inset-0 z-1"></div>
-
 
         <div class="relative z-10">
 
-            <main class="container mx-auto lg:pt-24 justify-center" >
+            <main class="container mx-auto py-12 lg:pt-24 justify-center"
+                style="padding-top: 100px; padding-bottom: 90px;">
                 <div class="flex flex-col lg:flex-row items-center">
 
                     <div class="w-full lg:w-1/2 text-center lg:text-left">
@@ -26,9 +25,9 @@
                         </button>
                     </div>
 
-                    <div class="w-full lg:w-1/2 mt-12 lg:mt-0 flex justify-center lg:justify-end ">
+                    <div class="hidden lg:flex w-full lg:w-1/2 mt-12 lg:mt-0 justify-center lg:justify-end ">
                         <img src="/images/img-about.png" alt="Mangkok Makanan UMKM"
-                            class="w-120 max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
+                            class="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
                     </div>
 
                 </div>
