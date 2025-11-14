@@ -1,12 +1,3 @@
-<!-- <template>
-  <footer class="bg-white colot-text mt-12">
-    <div class="container mx-auto px-4 py-6 text-center">
-      <p>&copy; Ⓒ2025 by <span class="orange-primary">Navvro</span> Team. All Right Reserved .</p>
-    </div>
-  </footer>
-</template> -->
-
-
 <template>
   <footer class="border-t border-gray-200">
 

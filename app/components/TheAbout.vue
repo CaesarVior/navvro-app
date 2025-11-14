@@ -1,33 +1,45 @@
 <template>
-    <div class="primary-collor">
-        <main class="container mx-auto px-6 mt-16">
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="prose max-w-none">
-                    <h2 class="font-bebas-neue text-primary" style="font-size: 35px;">Mendorong Pertumbuhan <br>UMKM
-                        Indonesia</h2>
-                    <br>
-                    <p class="text-primary">
-                        Setiap produk lokal punya cerita dan <br>semangat yang layak dikenal masyarakat.
-                    </p>
-                    <br>
-                    <div>
-                        <template>
-                            <NuxtLink to="/etalase">
-                                <button ref="myButton" type="button"
-                                    class="green-primary text-white hover:bg-green-800 font-medium rounded-full text-sm px-2 py-1 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    <img src="/icon/store.png" alt="" class="w-6">
-                                    <span class="ps-2 text-center align-center ">Lihat Etalase Kami</span>
-                                </button>
-                            </NuxtLink>
+    <div class="relative min-h-screen w-full overflow-hidden text-white">
 
-                        </template>
+        <div class="absolute top-0 left-0 right-0 h-[600px] z-0 bg-[url('/icon/about_banner.png')] bg-cover bg-center">
+        </div>
+        <div class="absolute inset-0 z-1"></div>
+
+
+        <div class="relative z-10">
+
+            <main class="container mx-auto lg:pt-24 justify-center" >
+                <div class="flex flex-col lg:flex-row items-center">
+
+                    <div class="w-full lg:w-1/2 text-center lg:text-left">
+                        <h2 class="font-bebas-neue text-primary text-5xl">Mendorong Pertumbuhan <br>UMKM
+                            Indonesia</h2>
+                        <br>
+                        <p class="text-primary font-poppins">
+                            Setiap produk lokal punya cerita dan semangat yang <br> layak dikenal masyarakat.
+                        </p>
+
+                        <button
+                            class="mt-8 bg-[#3a6b5a] hover:bg-[#2f5a4a] text-white font-medium py-3 px-6 rounded-full flex items-center gap-2 mx-auto lg:mx-0 shadow-lg transition-colors">
+                            <Icon name="heroicons:shopping-bag" class="w-5 h-5" />
+                            <span>Lihat Etalase Kami</span>
+                        </button>
                     </div>
-                </div>
 
-                <div class="flex justify-end">
-                    <img src="/images/img-about.png" alt="About image" class="w-120" />
+                    <div class="w-full lg:w-1/2 mt-12 lg:mt-0 flex justify-center lg:justify-end ">
+                        <img src="/images/img-about.png" alt="Mangkok Makanan UMKM"
+                            class="w-120 max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
+                    </div>
+
                 </div>
-            </section>
-        </main>
+            </main>
+
+        </div>
     </div>
 </template>
+
+<script setup>
+useHead({
+    title: 'NAVVR0 - Mendorong Pertumbuhan UMKM Indonesia'
+})
+</script>
