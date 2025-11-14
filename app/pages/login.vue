@@ -19,22 +19,6 @@
                             class="w-full font-poppins text-sm bg-gray-100 rounded-lg border-transparent focus:outline-none focus:ring-2 focus:ring-[#3a6b5a] focus:bg-white">
                     </div>
 
-                    <div class="mb-4">
-                        <label class="font-poppins block text-sm font-medium text-gray-600 mb-1" for="telepon">
-                            Nomor Telepon
-                        </label>
-                        <input type="tel" id="telepon" placeholder="Masukkan nomor telepon anda"
-                            class="w-full font-poppins text-sm bg-gray-100 rounded-lg border-transparent focus:outline-none focus:ring-2 focus:ring-[#3a6b5a] focus:bg-white">
-                    </div>
-
-                    <div class="mb-4">
-                        <label class="font-poppins block text-sm font-medium text-gray-600 mb-1" for="email">
-                            Email
-                        </label>
-                        <input type="email" id="email" placeholder="Masukkan email anda"
-                            class="w-full font-poppins text-sm bg-gray-100 rounded-lg border-transparent focus:outline-none focus:ring-2 focus:ring-[#3a6b5a] focus:bg-white">
-                    </div>
-
                     <div class="mb-6">
                         <label class="font-poppins block text-sm font-medium text-gray-600 mb-1" for="password">
                             Password
@@ -51,8 +35,8 @@
 
                 <p class="font-poppins text-center text-xs text-gray-500 mt-8">
                     Apakah anda tidak mempunyai akun?
-                    <a href="/login" class="font-semibold text-[#3a6b5a] hover:underline">
-                        Masuk Sekarang
+                    <a href="/register" class="font-semibold text-[#3a6b5a] hover:underline">
+                        Daftar Sekarang
                     </a>
                 </p>
             </div>

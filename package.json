@@ -17,19 +17,19 @@
     "@nuxt/scripts": "0.13.0",
     "@nuxt/test-utils": "3.19.2",
     "@nuxt/ui": "^4.1.0",
-    "@tailwindcss/vite": "^4.1.16",
+    "@tailwindcss/vite": "^4.1.17",
     "@unhead/vue": "^2.0.19",
     "better-sqlite3": "^12.4.1",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.1",
     "flowbite": "^3.1.2",
     "gsap": "^3.13.0",
-    "nuxt": "^4.2.0",
-    "vue": "^3.5.22",
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.24",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "@nuxt/icon": "^2.1.0",
-    "@tailwindcss/postcss": "^4.1.16",
-    "tailwindcss": "^4.1.16"
+    "@tailwindcss/postcss": "^4.1.17",
+    "tailwindcss": "^4.1.17"
   }
 }
