@@ -5,34 +5,28 @@
         <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue text-gray-800">NAVVRO</NuxtLink>
       </div>
 
-    <div class="flex-1 flex justify-center">
-  <nav class="flex space-x-6">
-    
-    <NuxtLink 
-      to="/" 
-      class="font-poppins text-gray-600 hover:text-orange-500"
-      exact-active-class="text-orange-500">
-      BERANDA
-    </NuxtLink>
-    
-    <NuxtLink 
-      to="/product" 
-      class="font-poppins text-gray-600 hover:text-orange-500"
-      exact-active-class="text-orange-500">
-      PRODUK
-    </NuxtLink>
-    
-    <NuxtLink 
-      to="/umkm" 
-      class="font-poppins text-gray-600 hover:text-orange-500"
-      exact-active-class="text-orange-500">
-      UMKM
-    </NuxtLink>
-    
-  </nav>
-</div>
+      <div class="flex-1 flex justify-center">
+        <nav class="flex space-x-6">
 
-            <div class=" flex-1 justify-end items-center hidden md:flex">
+          <NuxtLink to="/" class="font-poppins text-gray-600 hover:text-orange-500"
+            exact-active-class="text-orange-500">
+            BERANDA
+          </NuxtLink>
+
+          <NuxtLink to="/product" class="font-poppins text-gray-600 hover:text-orange-500"
+            exact-active-class="text-orange-500">
+            PRODUK
+          </NuxtLink>
+
+          <NuxtLink to="/umkm" class="font-poppins text-gray-600 hover:text-orange-500"
+            exact-active-class="text-orange-500">
+            UMKM
+          </NuxtLink>
+
+        </nav>
+      </div>
+
+      <div class=" flex-1 justify-end items-center hidden md:flex">
         <button
           class="bg-primary hover:bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -55,7 +49,7 @@
         </button>
       </div>
     </div>
- 
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
