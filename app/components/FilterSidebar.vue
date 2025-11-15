@@ -1,19 +1,69 @@
 <template>
   <aside class="bg-gray-50 p-6 rounded-lg shadow-sm">
 
-    <div class="mb-6">
-      <h3 class="font-semibold text-gray-800 mb-3">LOKASI</h3>
-      <div class="space-y-2">
-        <div>
-          <input type="checkbox" id="loc1" class="rounded text-orange-500">
-          <label for="loc1" class="ml-2 text-sm text-gray-600">Terdekat Dari Lokasi Anda</label>
+
+    <div class="mb-8">
+      <h3 class="font-semibold text-gray-800 mb-3">HARGA</h3>
+
+      <div class="relative mt-4">
+        <div class="flex items-center w-full bg-white border border-gray-300 rounded-lg overflow-hidden">
+          <span class="px-2 py-1  border-r border-gray-300 font-poppins text-sm">Rp</span>
+          <input type="text" placeholder="Harga Minimum" class="w-full border-none focus:ring-0 text-sm">
         </div>
-        <div>
-          <input type="checkbox" id="loc2" class="rounded text-orange-500">
-          <label for="loc2" class="ml-2 text-sm text-gray-600">Lorem Ipsum Dolor Amet</label>
+      </div>
+
+      <div class="relative mt-3">
+        <div class="flex items-center w-full bg-white border border-gray-300 rounded-lg overflow-hidden">
+          <span class="px-2 py-1  border-r border-gray-300 font-poppins text-sm">Rp</span>
+          <input type="text" placeholder="Harga Maksimum" class="w-full border-none focus:ring-0 text-sm">
         </div>
       </div>
     </div>
+
+   <div class="mb-6">
+      <h3 class="filter-title">LOKASI</h3>
+      
+      <div class="relative mt-4">
+        
+        <button 
+          @click="isOpen = !isOpen"
+          class="inline-flex items-center w-full justify-between text-gray-500 font-poppins bg-white border border-gray-400 focus:ring-4 focus:ring-orange-200 shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none"
+          type="button"
+        >
+          <span class="truncate">
+            <span v-if="selectedLocations.length === 0">Cari lokasi</span>
+            <span v-else>{{ selectedLocations.map(loc => loc.name).join(', ') }}</span>
+          </span>
+          
+          <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+        </button>
+
+        <div 
+          v-if="isOpen" 
+          class="absolute top-full mt-2 z-10 bg-white border border-gray-200 rounded-lg shadow-lg w-full"
+        >
+          <ul class="p-2 text-sm text-gray-700 font-medium">
+            
+            <li v-for="location in locations" :key="location.id">
+              <label 
+                :for="'loc-' + location.id" 
+                class="flex items-center w-full p-2 hover:bg-gray-100 rounded cursor-pointer"
+              >
+                <input 
+                  :id="'loc-' + location.id"
+                  type="checkbox" 
+                  :value="location"
+                  v-model="selectedLocations"
+                  class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded focus:ring-orange-500"
+                >
+                <span class="ml-2">{{ location.name }}</span>
+              </label>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div> </div>
 
     <div class="mb-6">
       <h3 class="font-semibold text-gray-800 mb-3">KATEGORI</h3>
@@ -74,6 +124,22 @@
 </template>
 
 <script setup>
-// Nanti di sini Anda bisa menambahkan 'emit' 
-// untuk mengirim data filter yang dicentang ke halaman induk
+import { ref } from 'vue'
+
+// --- Data untuk Filter Lokasi ---
+
+// 1. Variabel untuk menyimpan lokasi yang dipilih (harus array)
+const selectedLocations = ref([])
+
+// 2. Variabel untuk membuka/menutup dropdown
+const isOpen = ref(false)
+
+// 3. Data lokasi (contoh)
+const locations = ref([
+  { id: 1, name: 'Klojen' },
+  { id: 2, name: 'Lowokwaru' },
+  { id: 3, name: 'Sukun' },
+  { id: 4, name: 'Kedungkandang' },
+  { id: 5, name: 'Blimbing' },
+])
 </script>

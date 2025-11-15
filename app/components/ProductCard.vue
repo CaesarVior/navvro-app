@@ -29,7 +29,7 @@
       </div>
       <div class="flex justify-center items-center mb-3">
        
-        <p class="font-semibold text-gray-800">Rp. {{ product.harga }}</p>
+        <p class="text-gray-500 font-poppins">Rp. {{ product.harga }}</p>
       </div>
       
       <div class="space-y-2">
