@@ -33,8 +33,19 @@
 </div>
 
       <div class="flex-1 flex justify-end">
-        <button type="button"
-          class="text-white bg-primary rounded-lg px-12 box-border border border-transparent hover:bg-warning-strong focus:ring-4 focus:ring-warning-medium font-poppins leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Login</button>
+        <a v-if="!isLoggedIn" 
+             href="/login"
+             class="text-white bg-[#FF8A00] rounded-lg text-center block px-12 py-2 font-poppins text-sm hover:bg-orange-400">
+             Login
+          </a>
+          <div v-else class="flex items-center space-x-3 px-3">
+             <button @click="handleProfileClick"
+               class="bg-[#FF8A00] hover:bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center transition-colors">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="#ffffff" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
+               </svg>
+             </button>
+          </div>
       </div>
     </div>
 
@@ -65,4 +76,8 @@ onUnmounted(() => {
 })
 
 defineEmits(['search', 'toggle-mobile-menu'])
+
+const isLoggedIn = useState('isLoggedIn', () => false)
+const router = useRouter()
+
 </script>

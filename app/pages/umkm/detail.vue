@@ -122,14 +122,14 @@
 
 
             <section class="mt-16">
-                <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-1 items-center">
                     <div class="items-center justify-center">
                         <h2 class="text-4xl font-bebas-neue text-gray-900 mb-6 tracking-wide">
                             PRODUK LAIN DARI TOKO INI
                         </h2>
                     </div>
                     <div class="col-span-2 gap-6">
-                        <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div v-for="product in allProducts" :key="product.id">
                                 <div>
 
@@ -187,8 +187,6 @@
 
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                </div>
             </section>
 
 
@@ -204,7 +202,7 @@
                 <br> produk dan layanan toko ini.
             </p>
 
-            <div class="justify-end text-end">
+            <div class="justify-end text-end mb-3">
                 <div class="flex items-center text-end justify-end">
                     <p class="font-poppins text-gray-800 me-3">Urutkan</p>
                     <div class="relative max-w-xs">
@@ -240,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-5 lg:grid-cols-5 sm:grid-cols-1 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 sm:grid-cols-1 gap-6">
                 <div v-for="review in reviews" :key="review.id" class="bg-white rounded-lg shadow-md p-4 ">
                     <div class="flex justify-between items-start">
                         <div>
