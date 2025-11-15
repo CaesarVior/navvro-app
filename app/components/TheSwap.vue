@@ -69,11 +69,11 @@
       </div>
 
       <div class="justify-end">
-        <a href="#" class="fixed bottom-8 right-8 z-50 
-                    bg-gray-800 rounded-full 
-                    w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center 
-                    shadow-xl transition-all duration-300 
-                    hover:scale-105 hover:shadow-2xl focus:outline-none" aria-label="Pusat Bantuan">
+        <a href="/chatbot" class="fixed bottom-8 right-8 z-50 
+           bg-gray-800 rounded-full w-20 h-20 
+           flex items-center justify-center 
+           shadow-xl transition-all duration-300 
+           hover:scale-105 hover:shadow-2xl focus:outline-none" aria-label="Pusat Bantuan" >
           <img src="/ai.png" alt="Pusat Bantuan" class="w-full h-full object-contain">
         </a>
       </div>
