@@ -30,6 +30,7 @@
               {{ category.name }}
             </p>
           </div>
+  
         </div>
       </div>
       <button @click="scrollCategories()" aria-label="Lihat lebih banyak"
@@ -55,13 +56,13 @@ interface Category {
 
 // Data Kategori
 const baseCategories: Category[] = [
-  { name: 'Fashion & Aksesoris', icon: '👕', bgColor: 'bg-gray-100' },
-  { name: 'Makanan', icon: '🍜', bgColor: 'bg-gray-100' },
-  { name: 'Minuman', icon: '🍹', bgColor: 'bg-gray-100' },
-  { name: 'Jasa', icon: '🤝', bgColor: 'bg-gray-100' },
-  { name: 'Pertanian & Perkebunan', icon: '🌾', bgColor: 'bg-gray-100' },
-  { name: 'ATK', icon: '📚', bgColor: 'bg-gray-100' },
-  { name: 'Kosmetik', icon: '💄', bgColor: 'bg-gray-100' },
+  { name: 'Fashion & Aksesoris', icon: '👕', bgColor: 'bg-gray-50' },
+  { name: 'Makanan', icon: '🍜', bgColor: 'bg-gray-50' },
+  { name: 'Minuman', icon: '🍹', bgColor: 'bg-gray-50' },
+  { name: 'Jasa', icon: '🤝', bgColor: 'bg-gray-50' },
+  { name: 'Pertanian & Perkebunan', icon: '🌾', bgColor: 'bg-gray-50' },
+  { name: 'ATK', icon: '📚', bgColor: 'bg-gray-50' },
+  { name: 'Kosmetik', icon: '💄', bgColor: 'bg-gray-50' },
 ];
 const categories = ref<Category[]>([...baseCategories, ...baseCategories, ...baseCategories]);
 

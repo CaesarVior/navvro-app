@@ -9,13 +9,12 @@
                 <p class="text-gray-500 font-poppins mb-8 text-center">
                     Silahkan daftarkan diri anda
                 </p>
-
                 <form @submit.prevent="handleSubmit">
                     <div class="mb-4">
-                        <label class="font-poppins block text-sm font-medium text-gray-600 mb-1" for="nama">
-                            Nama
+                        <label class="font-poppins block text-sm font-medium text-gray-600 mb-1" for="email">
+                            Email
                         </label>
-                        <input type="text" id="nama" placeholder="Masukkan nama anda"
+                        <input type="text" id="email" placeholder="Masukkan email anda" v-model="email"
                             class="w-full font-poppins text-sm bg-gray-100 rounded-lg border-transparent focus:outline-none focus:ring-2 focus:ring-[#3a6b5a] focus:bg-white">
                     </div>
 
@@ -23,8 +22,12 @@
                         <label class="font-poppins block text-sm font-medium text-gray-600 mb-1" for="password">
                             Password
                         </label>
-                        <input type="password" id="password" placeholder="Masukkan password anda"
+                        <input type="password" id="password" placeholder="Masukkan password anda" v-model="password"
                             class="w-full font-poppins text-sm px-4 py-3 bg-gray-100 rounded-lg border-transparent focus:outline-none focus:ring-2 focus:ring-[#3a6b5a] focus:bg-white">
+                    </div>
+
+                    <div v-if="errorMsg" class="mb-4">
+                        <p class="text-red-500 text-sm text-center">{{ errorMsg }}</p>
                     </div>
 
                     <button type="submit"
@@ -32,7 +35,6 @@
                         Masuk
                     </button>
                 </form>
-
                 <p class="font-poppins text-center text-xs text-gray-500 mt-8">
                     Apakah anda tidak mempunyai akun?
                     <a href="/register" class="font-semibold text-[#3a6b5a] hover:underline">
@@ -43,7 +45,7 @@
         </div>
 
         <div
-            class="w-full lg:w-6/11 bg-[url('/icon/login_banner.png')] bg-cover bg-no-repeat text-white flex flex-col justify-end sm:p-12 lg:px-10 order-first lg:order-last">
+            class="w-full lg:w-6/11 bg-[url('/icon/login_banner.png')] lg:flex sm:hidden bg-cover bg-no-repeat text-white flex flex-col justify-end sm:p-12 lg:px-10 order-first lg:order-last">
             <div class="w-full mx-auto lg:px-3">
                 <span
                     class="text-white font-poppins bg-[#474747] bg-transparent-50 rounded-md box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2 mb-3 focus:outline-none">
@@ -73,18 +75,41 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 const router = useRouter();
 
-function handleSubmit() {
-    // Logika pendaftaran Anda (validasi, API call, dll.)
-    console.log("Formulir dikirim!");
+const isLoggedIn = useState('isLoggedIn', () => false)
 
-    // Contoh redirect setelah berhasil
-    // router.push('/'); 
+const email = ref(''); 
+const password = ref('');
+const errorMsg = ref('');
+
+const users = [
+  { id: 1, email: 'admin@navvro.com', password: 'password123' },
+  { id: 2, email: 'user@gmail.com', password: '123' }
+];
+
+function handleSubmit() {
+  errorMsg.value = '';
+
+  const user = users.find(u => 
+    u.email === email.value && u.password === password.value
+  );
+
+  if (user) {
+    console.log("Login berhasil!", user);
+    
+    isLoggedIn.value = true; 
+
+    alert('Login Berhasil! Mengalihkan ke halaman utama...');
+    router.push('/');  
+  } else {
+    console.log("Email atau password salah!");
+    errorMsg.value = 'Email atau password salah. Silakan coba lagi.'; // <-- DIUBAH
+  }
 }
 
-// Menetapkan judul halaman (Opsional, baik untuk SEO)
 useHead({
-    title: 'Selamat Datang - Daftar NAVVRO'
+  title: 'Selamat Datang - Login NAVVRO'
 })
 </script>
