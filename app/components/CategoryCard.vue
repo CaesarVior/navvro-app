@@ -1,55 +1,57 @@
 <template>
-  <section class="w-full max-w-6xl mx-auto py-8 px-4 sm:px-6">
-
-    <div class="flex justify-between items-center mb-6">
-      <a class=" font-bebas-neue text-gray-800 tracking-widetext-xl sm:text-2xl">
-        NAVRO
-      </a>
-
-      <NuxtLink to="/etalase"
-        class="flex items-center justify-between bg-lime-600 text-white text-sm font-semibold pl-4 pr-2 py-1.5 sm:py-2 rounded-full shadow-sm hover:bg-lime-700 transition-colors">
-        <span>Lihat Semua</span>
-        <span class="ml-2 flex items-center justify-center bg-white w-6 h-6 rounded-full">
-          <svg class="w-4 h-4 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-          </svg>
-        </span>
-      </NuxtLink>
-    </div>
-
-    <div class="relative flex items-center">
-
-      <div ref="categoriesContainer" class="flex items-center space-x-8 pb-4 overflow-x-hidden scroll-smooth">
-
-        <div v-for="category in categories" :key="category.name" class="flex-shrink-0">
-          <div :class="[
-            category.bgColor,
-            'w-28 h-28 sm:w-32 sm:h-32',
-            'rounded-xl flex flex-col items-center justify-center',
-            'p-3 text-center cursor-pointer',
-            'hover:shadow-md hover:scale-[1.03] hover:bg-orange-100',
-            'transition-all duration-400'
-          ]">
-            <span class="text-4xl sm:text-5xl mb-2">{{ category.icon }}</span>
-            <p class="text-xs sm:text-sm font-poppins text-gray-700 leading-tight">
-              {{ category.name }}
-            </p>
-          </div>
-        </div>
-
+  <div class="m-4 bg-gray-100 rounded-lg my-9">
+    <section class="container">
+  
+      <div class="flex justify-between items-center mb-6">
+        <a class=" font-bebas-neue text-gray-800 tracking-widetext-xl sm:text-2xl">
+          NAVRO
+        </a>
+  
+        <NuxtLink to="/etalase"
+          class="flex items-center justify-between bg-lime-600 text-white text-sm font-semibold pl-4 pr-2 py-1.5 sm:py-2 rounded-full shadow-sm hover:bg-lime-700 transition-colors">
+          <span>Lihat Semua</span>
+          <span class="ml-2 flex items-center justify-center bg-white w-6 h-6 rounded-full">
+            <svg class="w-4 h-4 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </span>
+        </NuxtLink>
       </div>
-
-      <button @click="scrollCategories()" aria-label="Lihat lebih banyak"
-        class="absolute right-0 z-10 bg-lime-600 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white shadow-md hover:bg-lime-700 transition-colors -mr-5">
-        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-        </svg>
-      </button>
-
-    </div>
-  </section>
+  
+      <div class="relative flex items-center">
+  
+        <div ref="categoriesContainer" class="flex items-center space-x-8 pb-4 overflow-x-hidden scroll-smooth">
+  
+          <div v-for="category in categories" :key="category.name" class="flex-shrink-0">
+            <div :class="[
+              category.bgColor,
+              'w-28 h-28 sm:w-32 sm:h-32',
+              'rounded-xl flex flex-col items-center justify-center',
+              'p-3 text-center cursor-pointer',
+              'hover:shadow-md hover:scale-[1.03] hover:bg-orange-100',
+              'transition-all duration-400'
+            ]">
+              <span class="text-4xl sm:text-5xl mb-2">{{ category.icon }}</span>
+              <p class="text-xs sm:text-sm font-poppins text-gray-700 leading-tight">
+                {{ category.name }}
+              </p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <button @click="scrollCategories()" aria-label="Lihat lebih banyak"
+          class="absolute right-0 z-10 bg-lime-600 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white shadow-md hover:bg-lime-700 transition-colors -mr-5">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </button>
+  
+      </div>
+    </section>
+  </div>
 </template>
 <script setup lang="ts">
 import { ref, nextTick, onMounted, onUnmounted } from 'vue'; // 1. Impor onMounted & onUnmounted
@@ -63,13 +65,13 @@ interface Category {
 
 // Data Kategori
 const baseCategories: Category[] = [
-  { name: 'Fashion & Aksesoris', icon: '👕', bgColor: 'bg-gray-100' },
-  { name: 'Makanan', icon: '🍜', bgColor: 'bg-gray-100' },
-  { name: 'Minuman', icon: '🍹', bgColor: 'bg-gray-100' },
-  { name: 'Jasa', icon: '🤝', bgColor: 'bg-gray-100' },
-  { name: 'Pertanian & Perkebunan', icon: '🌾', bgColor: 'bg-gray-100' },
-  { name: 'ATK', icon: '📚', bgColor: 'bg-gray-100' },
-  { name: 'Kosmetik', icon: '💄', bgColor: 'bg-gray-100' },
+  { name: 'Fashion & Aksesoris', icon: '👕', bgColor: 'bg-gray-50' },
+  { name: 'Makanan', icon: '🍜', bgColor: 'bg-gray-50' },
+  { name: 'Minuman', icon: '🍹', bgColor: 'bg-gray-50' },
+  { name: 'Jasa', icon: '🤝', bgColor: 'bg-gray-50' },
+  { name: 'Pertanian & Perkebunan', icon: '🌾', bgColor: 'bg-gray-50' },
+  { name: 'ATK', icon: '📚', bgColor: 'bg-gray-50' },
+  { name: 'Kosmetik', icon: '💄', bgColor: 'bg-gray-50' },
 ];
 const categories = ref<Category[]>([...baseCategories, ...baseCategories, ...baseCategories]);
 
