@@ -18,7 +18,7 @@
     <div class="p-4">
       
       <div class="space-y-2">
-        <NuxtLink to="/product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
+        <NuxtLink to="/umkm/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
                 bg-green-700 text-white hover:bg-green-800">Lihat Toko</NuxtLink>
       </div>
     </div>
