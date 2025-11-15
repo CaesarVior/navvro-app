@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full  max-w-6xl mx-auto px-5 xl:px-0 mt-20">
+    <section class="w-full container max-w-6xl mx-auto px- xl:px-0 mt-20">
         <h1 class="font-bebas-neue text-center text-5xl">
             TEMUKAN PRODUK <span class="text-orange-500">UMKM</span> DISINI
         </h1>
@@ -56,7 +56,7 @@
                     <p class="font-poppins text-sm">Lorem Ipsum Dolor Sit Amet <br /> Consectur Sit Amet</p>
                     <div class="mt-7 flex justify-center gap-1">
                         <button
-                            class="bg-[#3a6b5a] hover:bg-[#2f5a4a] flex justify-center gap-1 text-white text-xs xl:text-sm font-poppins px-3 py-3 rounded-2xl mx-auto lg:mx-0 shadow-lg transition-colors"">
+                            class="bg-[#3a6b5a] hover:bg-[#2f5a4a] flex justify-center gap-1 text-white text-xs xl:text-sm font-poppins px-3 py-3 rounded-2xl mx-auto lg:mx-0 shadow-lg transition-colors">
                         <Icon class=" text-white w-3 h-3" name="solar:cart-bold" />
                         <span class=" font-poppins text-xs">Belanja sekarang</span></button>
                     </div>
@@ -72,7 +72,7 @@
                     <p class="font-poppins text-sm text-white">Lorem Ipsum Dolor Sit Amet <br /> Consectur Sit Amet</p>
                     <div class="mt-7 flex justify-center gap-1">
                         <button
-                            class="bg-[#C2C2C2] flex justify-center gap-1 text-xs xl:text-sm font-poppins px-3 py-2 rounded-full mx-auto lg:mx-0 shadow-lg transition-colors"">
+                            class="bg-[#C2C2C2] flex justify-center gap-1 text-xs xl:text-sm font-poppins px-3 py-2 rounded-full mx-auto lg:mx-0 shadow-lg transition-colors">
                         <Icon class="w-3 h-3" name="mdi:clock-outline" />
                         <span class="font-poppins text-xs">23:59:58</span></button>
                     </div>
