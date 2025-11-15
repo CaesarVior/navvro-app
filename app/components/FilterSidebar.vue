@@ -7,15 +7,15 @@
 
       <div class="relative mt-4">
         <div class="flex items-center w-full bg-white border border-gray-300 rounded-lg overflow-hidden">
-          <span class="px-2 py-1  border-r border-gray-300 font-poppins text-sm">Rp</span>
-          <input type="text" placeholder="Harga Minimum" class="w-full border-none focus:ring-0 text-sm">
+          <span class="px-2 py-1 border-r border-gray-300 font-poppins text-sm">Rp</span>
+          <input type="text" placeholder="Harga Minimum" class="w-full py-2 border-none focus:ring-0 text-sm">
         </div>
       </div>
 
       <div class="relative mt-3">
         <div class="flex items-center w-full bg-white border border-gray-300 rounded-lg overflow-hidden">
           <span class="px-2 py-1  border-r border-gray-300 font-poppins text-sm">Rp</span>
-          <input type="text" placeholder="Harga Maksimum" class="w-full border-none focus:ring-0 text-sm">
+          <input type="text" placeholder="Harga Maksimum" class="w-full py-2 border-none focus:ring-0 text-sm">
         </div>
       </div>
     </div>
