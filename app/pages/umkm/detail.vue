@@ -103,12 +103,12 @@
             </section>
 
 
-            <section class="mt-16">
-                <h2 class="text-2xl font-bebas-neue font-bold text-gray-900 text-center mb-2 tracking-wide">
+            <section class="py-20">
+                <h2 class="text-4xl font-bebas-neue text-primary text-center mb-2 tracking-wide">
                     LOKASI
                 </h2>
-                <p class="text-center text-gray-600 text-sm mb-6">
-                    Temukan kami di sini untuk kunjungan langsung dan pengalaman produk.
+                <p class="text-center text-gray-600 text-sm mb-10">
+                    Temukan toko ini dengan cepat di area terdekat Anda.
                 </p>
 
                 <div class="rounded-lg shadow-lg overflow-hidden h-[450px] w-full">
