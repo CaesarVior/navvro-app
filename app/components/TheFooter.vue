@@ -59,30 +59,30 @@
     <div>
         <h4 class="uppercase text-white font-bebas-neue text-2xl">Umum</h4>
         <ul class="mt-4 space-y-3">
-            <li><a href="/" class="text-gray-400 hover:text-white">Beranda</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
             <li><a href="/product" class="text-gray-400 hover:text-white">Produk</a></li>
             <li><a href="/umkm" class="text-gray-400 hover:text-white">UMKM</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Blog & Inspirasi</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Blog & Inspirasi</a></li>
         </ul>
     </div>
 
     <div>
         <h4 class="uppercase text-white font-bebas-neue text-2xl">Bantuan</h4>
         <ul class="mt-4 space-y-3">
-            <li><a href="" class="text-gray-400 hover:text-white">Pusat Bantuan (FAQ)</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Hubungi Kami</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Pusat Bantuan (FAQ)</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Hubungi Kami</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
         </ul>
     </div>
 
     <div>
         <h4 class="uppercase text-white font-bebas-neue text-2xl">Tentang NAVVRO</h4>
         <ul class="mt-4 space-y-3">
-            <li><a href="" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Komunitas</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Kisah Sukses</a></li>
-            <li><a href="" class="text-gray-400 hover:text-white">Gabung Menjadi Mitra</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Komunitas</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Kisah Sukses</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Gabung Menjadi Mitra</a></li>
         </ul>
     </div>
 
