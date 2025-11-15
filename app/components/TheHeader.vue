@@ -1,5 +1,5 @@
 <template>
-  <header :class="[ 'bg-transparent sticky top-0 z-50', scrolled ? 'shadow bg-white' : '']">
+  <header :class="['bg-transparent sticky top-0 z-50', scrolled ? 'shadow bg-white' : '']">
     <div class="mx-auto container flex items-center">
       <div class="flex-1">
         <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue text-gray-800">NAVVRO</NuxtLink>
@@ -14,26 +14,9 @@
         </nav>
       </di8v>
 
-      <div class=" flex-1 justify-end items-center hidden md:flex">
-          <button class="bg-primary hover:bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></svg>
-          </button>
-          
-          <button class="lg:hidden p-2">
-            <Icon name="heroicons:bars-3" class="w-6 h-6 text-white" />
-          </button>
-        </div>
-
-      <div class="md:hidden">
-        <button 
-          @click="$emit('toggle-mobile-menu')" 
-          class="text-gray-600 p-2 rounded-md hover:bg-gray-100 focus:outline-none"
-          aria-label="Buka menu"
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+      <div class="flex-1 flex justify-end">
+        <button type="button"
+          class="text-white bg-primary rounded-lg px-12 box-border border border-transparent hover:bg-warning-strong focus:ring-4 focus:ring-warning-medium font-poppins leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Login</button>
       </div>
     </div>
 
