@@ -7,12 +7,13 @@
 <template>
   <TheHeader @search="updateSearchQuery" @toggle-mobile-menu="handleToggle">
     <template #search>
-      <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM"/>
+      <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM" />
     </template>
   </TheHeader>
   <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />
   <TheAbout />
   <CategoryCard />
+  <BestMSME />
   <TheSwap />
   <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center text-gray-800 my-8">
@@ -43,6 +44,7 @@ import SearchBar from '~/components/SearchBar.vue'
 import TheAbout from '~/components/TheAbout.vue'
 import TheHeader from '~/components/TheHeader.vue'
 import msmes from '~/data/msme.json'
+import BestMSME from '~/components/BestMSME.vue'
 
 const allMsmes = ref(msmes);
 const searchQuery = ref("");
