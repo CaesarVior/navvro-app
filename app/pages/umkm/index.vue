@@ -37,7 +37,7 @@
                 <div class="md:col-span-3">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                        <ProductCard v-for="product in products" :key="product.id" :product="product" />
+                        <UmkmCard v-for="product in products" :key="product.id" :product="product" />
                     </div>
 
                 </div>
@@ -51,7 +51,7 @@ import { ref } from 'vue';
 import ListProductHeader from '~/components/SecondHeader.vue';
 import HeroBanner from '~/components/HeroBanner.vue';
 import TheFooter from '~/components/TheFooter.vue';
-import ProductCard from '~/components/UmkmCard.vue';
+import UmkmCard from '~/components/UmkmCard.vue';
 const products = ref([
     { id: 1, name: 'Ikan Bakar Mr Raffi', seller: 'Raffi Ahmad', category: 'Makanan', price: '2.000.000', image: '', isTopSeller: true },
     { id: 2, name: 'Sambal Bu\'de', seller: 'Bu\'de', category: 'Makanan', price: '1.500.000', image: '', isTopSeller: false },
