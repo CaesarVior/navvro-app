@@ -9,8 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/ui',
     '@nuxt/image',
-    '@nuxt/scripts',
-    '@headlessui/vue',
+    '@nuxt/scripts'
   ],
 
   postcss: {
