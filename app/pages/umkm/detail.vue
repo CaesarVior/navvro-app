@@ -4,113 +4,329 @@
 }
 </style>
 <template>
-    <div class="bg-white text-gray-900">
+    <SecondHeader></SecondHeader>
+    <MarketPlaceBanner />
+    <div class="bg-stone-50">
+        <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
 
-        <SecondHeader />
-        <market-place-banner />
+            <section>
+                <h2 class="text-4xl font-bebas-neue font-bold text-primary pt-18 text-center mb-2 tracking-wide">
+                    PRODUK TERBAIK DARI TOKO INI
+                </h2>
+                <p class="text-center font-poppins text-gray-600 text-sm mb-6 mt-4">
+                    Jelajahi koleksi unggulan yang paling disukai pelanggan kami. Temukan <br> kualitas, keunikan, dan
+                    nilai terbaik di setiap produk.
+                </p>
 
-        <div class="bg-gray-50 py-12">
-            <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="flex space-x-6 overflow-x-auto pb-6 pt-12 items-center justify-center gap-8">
+                    <div v-for="product in featuredProducts" :key="product.id"
+                        class="bg-white rounded-lg shadow-md w-80 flex-shrink-0 transition-all duration-300 hover:shadow-xl">
 
-                <div class="lg:col-1 space-y-8">
+                        <div class="relative h-65 w-full overflow-hidden rounded-t-lg">
+                            <img :src="product.image" :alt="product.name" class="h-full w-full object-cover">
 
-                    <div class="lg:pe-30 rounded-lg">
-                        <img src="/icon/no-img.png" alt="Produk Utama"
-                            class="w-full h-[400px] object-cover bg-gray-200 rounded-lg">
-                        <h1 class="text-2xl text-center font-bold mt-6 mb-2">Ikan Bakar Mr Raffi</h1>
-                        <p class="text-gray-700 text-center">Rp. 2.000.000</p>
-                    </div>
+                            <div
+                                class="absolute bottom-0 rounded-lg left-0 right-0 bg-[#3a6b5a] bg-opacity-90 text-white text-center py-2 text-sm font-semibold">
+                                Diskon 50 %
+                            </div>
 
-                    <div class="">
-                        <h3 class="text-lg font-bold mb-4">BERI KOMENTAR</h3>
-                        <div class="flex items-center gap-3 mb-3">
-                            <img src="/icon/no-img.png" alt="Avatar" class="w-10 h-10 rounded-full bg-gray-200">
-                            <span class="font-semibold">Indy</span>
-                        </div>
-                        <div class="flex text-yellow-400 mb-4">
-                            <svg v-for="i in 5" :key="i" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.83 5.632a1 1 0 00.95.69h5.923c.969 0 1.371 1.24.588 1.81l-4.79 3.476a1 1 0 00-.364 1.118l1.83 5.632c.3.921-.755 1.688-1.54 1.118l-4.79-3.476a1 1 0 00-1.176 0l-4.79 3.476c-.784.57-1.838-.197-1.54-1.118l1.83-5.632a1 1 0 00-.364-1.118L.588 11.058c-.783-.57-.38-1.81.588-1.81h5.923a1 1 0 00.95-.69L9.049 2.927z" />
-                            </svg>
-                        </div>
-                        <textarea class="w-full h-32 border border-gray-300 rounded-lg p-3 bg-gray-100"
-                            placeholder="Tulis komentar Anda..."></textarea>
-                        <div class="flex justify-end mt-3">
-                            <button
-                                class="bg-orange-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-orange-600">Kirim</button>
-                        </div>
-                    </div>
-                </div>
-
-                <aside class="space-y-8">
-
-                    <div class="">
-                        <h3 class="text-lg font-bold mb-4">YANG MUNGKIN ANDA SUKA</h3>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div v-for="i in 6" :key="`suka-${i}`" class="rounded-lg p-2">
-                                <div class="relative">
-                                    <img src="/icon/no-img.png" alt="Produk Suka"
-                                        class="w-full h-35 object-cover rounded-md">
-                                    <span class="absolute top-1 right-1 bg-white rounded-full p-1 shadow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                                            viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
-                                            <path fill="currentColor"
-                                                d="m12 19.654l-.758-.685q-2.448-2.236-4.05-3.828q-1.601-1.593-2.528-2.81t-1.296-2.2T3 8.15q0-1.908 1.296-3.204T7.5 3.65q1.32 0 2.475.675T12 6.289Q12.87 5 14.025 4.325T16.5 3.65q1.908 0 3.204 1.296T21 8.15q0 .996-.368 1.98q-.369.986-1.296 2.202t-2.519 2.809q-1.592 1.592-4.06 3.828zm0-1.354q2.4-2.17 3.95-3.716t2.45-2.685t1.25-2.015Q20 9.006 20 8.15q0-1.5-1-2.5t-2.5-1q-1.194 0-2.204.682T12.49 7.385h-.978q-.817-1.39-1.817-2.063q-1-.672-2.194-.672q-1.48 0-2.49 1T4 8.15q0 .856.35 1.734t1.25 2.015t2.45 2.675T12 18.3m0-6.825" />
-                                        </svg> </span>
-                                </div>
-                                <h4 class="text-xs font-semibold mt-2 truncate">Ikan Bakar Mr</h4>
-                                <p class="text-gray-700 text-xs">Rp. 2.000.000</p>
+                            <div class="absolute top-3 right-3 space-y-2">
                                 <button
-                                    class="mt-1 bg-green-600 text-white text-xs px-3 py-1 rounded-full w-full hover:bg-green-700">Lihat
-                                    Detail</button>
+                                    class="bg-primary rounded-full p-2 shadow-md hover:bg-orange-600 transition-colors"
+                                    aria-label="Tambah ke keranjang">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill="white"
+                                            d="M8.75 13a.75.75 0 0 0-1.5 0v4a.75.75 0 0 0 1.5 0zm7.25-.75a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0v-4a.75.75 0 0 1 .75-.75m-3.25.75a.75.75 0 0 0-1.5 0v4a.75.75 0 0 0 1.5 0z" />
+                                        <path fill="white" fill-rule="white"
+                                            d="M17.274 3.473c-.476-.186-1.009-.217-1.692-.222A1.75 1.75 0 0 0 14 2.25h-4a1.75 1.75 0 0 0-1.582 1c-.684.006-1.216.037-1.692.223A3.25 3.25 0 0 0 5.3 4.563c-.367.493-.54 1.127-.776 1.998l-.628 2.303a3 3 0 0 0-1.01.828c-.622.797-.732 1.746-.621 2.834c.107 1.056.44 2.386.856 4.05l.026.107c.264 1.052.477 1.907.731 2.574c.265.696.602 1.266 1.156 1.699c.555.433 1.19.62 1.929.71c.708.084 1.59.084 2.675.084h4.724c1.085 0 1.966 0 2.675-.085c.74-.088 1.374-.276 1.928-.71c.555-.432.891-1.002 1.156-1.698c.255-.667.468-1.522.731-2.575l.027-.105c.416-1.665.748-2.995.856-4.05c.11-1.09 0-2.038-.622-2.835a3 3 0 0 0-1.009-.828l-.628-2.303c-.237-.871-.41-1.505-.776-1.999a3.25 3.25 0 0 0-1.426-1.089M7.272 4.87c.22-.086.486-.111 1.147-.118c.282.59.884.998 1.58.998h4c.698 0 1.3-.408 1.582-.998c.661.007.927.032 1.147.118c.306.12.572.323.768.587c.176.237.279.568.57 1.635l.354 1.297c-1.038-.139-2.378-.139-4.043-.139H9.622c-1.664 0-3.004 0-4.042.139l.354-1.297c.29-1.067.394-1.398.57-1.635a1.75 1.75 0 0 1 .768-.587M10 3.75a.25.25 0 0 0 0 .5h4a.25.25 0 1 0 0-.5zm-5.931 6.865c.279-.357.72-.597 1.63-.729c.931-.134 2.193-.136 3.986-.136h4.63c1.793 0 3.054.002 3.985.136c.911.132 1.352.372 1.631.73c.279.357.405.842.311 1.758c-.095.936-.399 2.16-.834 3.9c-.277 1.108-.47 1.876-.688 2.45c-.212.554-.419.847-.678 1.05c-.259.202-.594.331-1.183.402c-.61.073-1.4.074-2.544.074h-4.63c-1.144 0-1.935-.001-2.544-.074c-.59-.07-.924-.2-1.183-.402c-.26-.203-.467-.496-.678-1.05c-.218-.574-.411-1.342-.689-2.45c-.434-1.74-.739-2.964-.834-3.9c-.093-.916.033-1.402.312-1.759"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                            <div class="absolute top-13 right-3 space-y-2">
+                                <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition-colors"
+                                    aria-label="Tambah ke keranjang">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill="black"
+                                            d="M12 9a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5c-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0a9.821 9.821 0 0 0-17.64 0" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="p-4 pt-2">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-gray-500 text-sm font-poppins">Makanan</span>
+                                    <h3 class="font-semibold text-gray-800 text-lg leading-tight mt-0.5">{{ product.name
+                                        }}</h3>
+                                    <span class="text-green-600 text-sm font-poppins">Rp. 10.000</span>
+                                </div>
+                                <div class="flex items-center gap-1 mt-1 flex-shrink-0">
+                                    <Icon name="heroicons:star-solid" class="w-5 h-5 text-yellow-400" />
+                                    <span class="text-md font-semibold text-gray-700">{{ product.rating }}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="">
-                        <h3 class="text-lg font-bold mb-4">LOKASI</h3>
-                        <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-                            
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </div>
 
-        <section class="container mx-auto px-4 py-16">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-2xl font-bold">TEMUKAN PRODUK LAINNYA</h2>
-                <a href="#" class="text-orange-500 font-semibold hover:underline">lihat berurutan &gt;</a>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <div v-for="i in 4" :key="`produk-${i}`"
-                    class="rounded-lg shadow-md overflow-hidden text-center bg-white">
-                    <div class="relative">
-                        <img src="/icon/no-img.png" alt="Produk Lainnya"
-                            class="w-full h-64 object-contain p-4 bg-white">
+            <section class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-orange-100 rounded-lg p-6 flex items-center justify-between shadow-sm">
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-xl">HARI UMKM NASIONAL 2025</h3>
+                        <p class="text-gray-700 text-sm mt-1 mb-4">Dapatkan diskon spesial untuk merayakan hari UMKM.
+                        </p>
                         <button
-                            class="absolute top-4 right-4 bg-orange-500 w-10 h-10 rounded-full text-white flex items-center justify-center shadow-lg hover:bg-orange-600">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zM7 18a2 2 0 100 4 2 2 0 000-4z">
-                                </path>
-                            </svg>
+                            class="bg-[#3a6b5a] text-white text-xs font-semibold py-2 px-4 rounded-full hover:bg-[#2f5a4a]">
+                            Ambil Kupon
                         </button>
                     </div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">Sabun Cuci Muka</h3>
-                        <p class="text-gray-500 text-sm">Rp 100.000</p>
+                    <Icon name="heroicons:building-storefront" class="w-20 h-20 text-orange-400 opacity-60" />
+                </div>
+
+                <div class="bg-orange-800 rounded-lg p-6 flex items-center justify-between shadow-sm text-white">
+                    <div>
+                        <h3 class="font-bold text-xl">FESTIVAL UMKM 2025</h3>
+                        <p class="text-orange-100 text-sm mt-1 mb-4">Ikuti acara dan menangkan hadiah menarik. Mulai
+                            20-25 Des.</p>
+                        <button
+                            class="bg-white text-orange-800 text-xs font-semibold py-2 px-4 rounded-full hover:bg-gray-200">
+                            Detail Acara
+                        </button>
+                    </div>
+                    <Icon name="heroicons:ticket" class="w-20 h-20 text-orange-300 opacity-60" />
+                </div>
+            </section>
+
+
+            <section class="mt-16">
+                <h2 class="text-2xl font-bebas-neue font-bold text-gray-900 text-center mb-2 tracking-wide">
+                    LOKASI
+                </h2>
+                <p class="text-center text-gray-600 text-sm mb-6">
+                    Temukan kami di sini untuk kunjungan langsung dan pengalaman produk.
+                </p>
+
+                <div class="rounded-lg shadow-lg overflow-hidden h-[450px] w-full">
+
+                    <iframe src="https://maps.app.goo.gl/wY7DYigQ1GMAnSGLA" width="100%" height="450" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+            </section>
+
+
+            <section class="mt-16">
+                <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 items-center">
+                    <div class="items-center justify-center">
+                        <h2 class="text-4xl font-bebas-neue text-gray-900 mb-6 tracking-wide">
+                            PRODUK LAIN DARI TOKO INI
+                        </h2>
+                    </div>
+                    <div class="col-span-2 gap-6">
+                        <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1">
+                            <div v-for="product in allProducts" :key="product.id">
+                                <div>
+
+                                    <div class="p-4 flex items-center space-x-3">
+                                        <img src="https://via.placeholder.com/40" alt="Seller"
+                                            class="w-10 h-10 rounded-full bg-gray-300">
+                                        <div>
+                                            <p class="font-semibold text-sm text-gray-800">{{ product.nama_toko }}</p>
+                                            <p class="text-xs text-gray-500">{{ product.kategori }} - {{ product.nama }}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="relative">
+                                        <span v-if="product.isTopSeller"
+                                            class="absolute top-2 left-2 bg-yellow-300 text-yellow-800 text-xs font-bold px-2 py-1 rounded">
+                                            Penjualan Teratas
+                                        </span>
+                                        <div
+                                            class="w-full rounded-2xl h-48 flex items-center justify-center images-cover p-4">
+                                            <img src="/images/banner.png"
+                                                class="w-full h-full rounded-lg text-gray-400 hover:scale-[1.03]"
+                                                fill="none"></img>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-4">
+                                        <div class="flex justify-center items-center mb-3">
+                                            <div class="flex items-center space-x-2">
+                                                <button class="w-6 h-6 rounded-full border text-gray-500">-</button>
+                                                <span class="text-sm font-medium">1 pc</span>
+                                                <button class="w-6 h-6 rounded-full border text-gray-500">+</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="flex justify-center items-center mb-3">
+
+                                            <p class="text-gray-500 font-poppins">Rp. {{ product.harga }}</p>
+                                        </div>
+
+                                        <div class="space-y-2">
+                                            <button class="w-full py-2 rounded-lg text-sm font-medium transition-colors
+                       text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
+                                                Masukkan ke Keranjang
+                                            </button>
+                                            <NuxtLink to="/product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
+                bg-green-700 text-white hover:bg-green-800">Lihat Produk</NuxtLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                </div>
+            </section>
+
+
+
+        </main>
+    </div>
+    <section class="mt-16 bg-[#F6F1E9] py-20">
+        <div class="container">
+            <h2 class="text-4xl font-bebas-neue text-primary text-center tracking-wide">
+                KATA MEREKA
+            </h2>
+            <p class="font-poppins text-gray-600 text-center mb-20">Dengar langsung bagaimana pelanggan menilai kualitas
+                <br> produk dan layanan toko ini.
+            </p>
+
+            <div class="justify-end text-end">
+                <div class="flex items-center text-end justify-end">
+                    <p class="font-poppins text-gray-800 me-3">Urutkan</p>
+                    <div class="relative max-w-xs">
+
+                        <button @click="isOpen = !isOpen"
+                            class="relative w-full cursor-pointer rounded-lg bg-gray-100 py-2.5 pl-4 pr-10 text-left shadow-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 sm:text-sm">
+                            <span class="flex items-center">
+                                <Icon name="heroicons:bars-3-bottom-left-20-solid" class="w-5 h-5 text-gray-500" />
+
+                                <span class="ml-2 block truncate">
+                                    <span class="font-medium text-gray-900">{{ selectedSortOption.name }}</span>
+                                </span>
+                            </span>
+                            <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                                <Icon name="heroicons:chevron-down-20-solid" class="h-5 h-5 text-gray-400"
+                                    aria-hidden="true" />
+                            </span>
+                        </button>
+
+                        <div v-if="isOpen"
+                            class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm z-10">
+                            <ul>
+                                <li v-for="option in sortOptions" :key="option.id">
+                                    <button @click="selectOption(option)" :class="[
+                                        option.id === selectedSortOption.id ? 'font-medium bg-orange-50 text-orange-800' : 'font-normal text-gray-900',
+                                        'w-full text-left relative cursor-pointer select-none py-2 px-4 hover:bg-orange-100 hover:text-orange-900'
+                                    ]">
+                                        {{ option.name }}
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="grid grid-cols-5 lg:grid-cols-5 sm:grid-cols-1 gap-6">
+                <div v-for="review in reviews" :key="review.id" class="bg-white rounded-lg shadow-md p-4 ">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-gray-500 text-xs font-poppins">Ahmad Raffi</span>
+                        </div>
+                        <div class="flex items-center gap-1 mt-1 flex-shrink-0">
+                            <Icon name="heroicons:star-solid" class="w-5 h-5 text-yellow-400" />
+                            <span class="text-md font-bebas-neue text-gray-700">4.5</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-semibold">Bilh 7 Muaro</p>
+                    <p class="text-xs text-green-700">Rp. 10.000</p>
+                    <div class="h-20 justify-center items-center mt-3">
+                        <p class="text-xs text-gray-500 font-poppins">"{{ review.comment }}"</p>
 
-        <the-footer/>
-    </div>
+                    </div>
+                    <a href="" class="text-sm text-green-800 flex hover:text-black">Belanja Sekarang
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-800 ms-2 hover:text-black" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M17.073 12.5H5.5q-.213 0-.357-.143T5 12t.143-.357t.357-.143h11.573l-3.735-3.734q-.146-.147-.152-.345t.152-.363q.166-.166.357-.168t.357.162l4.383 4.383q.13.13.183.267t.053.298t-.053.298t-.183.268l-4.383 4.382q-.146.146-.347.153t-.367-.159q-.16-.165-.162-.354t.162-.354z" />
+                        </svg>
+                    </a>
+                    <!-- <p class="text-xs text-gray-400 pt-2">Produk: {{ review.productName }}</p> -->
+                </div>
+            </div>
+            <section class="mt-12 text-center">
+                <button
+                    class="bg-green-700 hover:bg-green-800 text-white font-medium py-3 px-8 rounded-lg shadow-lg transition-colors text-lg">
+                    Tambahkan Komentar
+                </button>
+            </section>
+
+        </div>
+    </section>
+
+
+    <TheFooter />
 </template>
 
 <script setup>
-import SecondHeader from '~/components/SecondHeader.vue';
+import { ref } from 'vue';
 
+useHead({
+    title: 'Toko Ragnarok - NAVVR0'
+})
+
+// Data dummy untuk "Produk Terbaik"
+const featuredProducts = ref([
+    { id: 1, name: 'Gado-Gado Urap Pilihan', rating: 4.8, image: '/images/product/makanan.jpg' },
+    { id: 2, name: 'Kangkung Pedas Spesial', rating: 4.9, image: '/images/product/makanan.jpg' },
+    { id: 3, name: 'Gado-Gado Urap Nikmat', rating: 4.8, image: '/images/product/makanan.jpg' },
+]);
+
+// Data dummy untuk "Produk Lain"
+const allProducts = ref([
+    { id: 1, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
+    { id: 2, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
+    { id: 3, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
+    { id: 4, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
+    { id: 5, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
+    { id: 6, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
+]);
+
+// Data dummy untuk "Ulasan"
+const reviews = ref([
+    { id: 1, name: 'Nita W.', rating: 5.0, productName: 'Gado-Gado Urap', comment: 'Bumbunya mantap, sayurnya segar. Pengiriman juga cepat. Pasti pesan lagi!' },
+    { id: 2, name: 'Budi S.', rating: 4.5, productName: 'Kangkung Pedas', comment: 'Enak, tapi buat saya agak terlalu pedas. Overall oke.' },
+    { id: 3, name: 'Citra L.', rating: 5.0, productName: 'Gado-Gado Urap', comment: 'Porsinya banyak, harganya pas. Langganan!' },
+]);
+
+
+const sortOptions = [
+    { id: 1, name: 'Harga terendah' },
+    { id: 2, name: 'Harga tertinggi' },
+    { id: 3, name: 'Pembelian terbanyak' },
+    { id: 4, name: 'Dilihat terbanyak' },
+    { id: 5, name: 'Pembaruan terbaru' },
+]
+
+const isOpen = ref(false)
+
+const selectedSortOption = ref(sortOptions[0])
+
+function selectOption(option) {
+    selectedSortOption.value = option
+    isOpen.value = false
+}
 </script>
