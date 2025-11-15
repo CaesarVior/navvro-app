@@ -128,7 +128,222 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mt-5">
+
+            <div class="bg-stone-50 py-5">
+                <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+                    <div class="grid grid-cols-3 gap-8">
+
+                        <div class="block p-6 border border-gray-300 rounded-lg">
+                            <div class="">
+                                <span class="font-semibold">Nivor Caevan</span>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-yellow-500">
+                                        <svg v-for="i in 5" :key="i" class="h-4 w-4" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.182c.969 0 1.371 1.24.588 1.81l-3.38 2.454a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.539 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.34 9.401c-.783-.57-.381-1.81.588-1.81h4.182a1 1 0 00.95-.69L9.049 2.927z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm text-gray-600">27 Oktober 2025</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                    placerat, sapien venenatis justo sit nunc. Idque Caesaris facere
+                                    destitisti? Non est igitur voluptas bonum."
+                                </p>
+
+                                <div
+                                    class="flex h-8 w-8 items-center mb-3 justify-center rounded-full bg-gray-200 text-gray-500 mt-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                                <hr class="text-gray-300 py-3">
+                            </div>
+                            <div class="">
+                                <span class="font-semibold">Nivor Caevan</span>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-yellow-500">
+                                        <svg v-for="i in 5" :key="i" class="h-4 w-4" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.182c.969 0 1.371 1.24.588 1.81l-3.38 2.454a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.539 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.34 9.401c-.783-.57-.381-1.81.588-1.81h4.182a1 1 0 00.95-.69L9.049 2.927z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm text-gray-600">27 Oktober 2025</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                    placerat, sapien venenatis justo sit nunc. Idque Caesaris facere
+                                    destitisti? Non est igitur voluptas bonum."
+                                </p>
+
+                                <div
+                                    class="flex h-8 w-8 items-center mb-3 justify-center rounded-full bg-gray-200 text-gray-500 mt-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                                <hr class="text-gray-300 py-3">
+
+                                <button
+                                    class="w-full bg-[#3a6b5a] hover:bg-[#2f5a4a] text-white font-medium py-3 rounded-lg text-sm shadow-md transition-colors mt-4">
+                                    Lihat lebih banyak
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-span-2">
+
+                            <div>
+                                <div class="block p-6 border border-gray-300 rounded-lg">
+                                    <h2 class="mb-4 text-xl font-semibold">Pengiriman</h2>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div class="flex items-center gap-3 mt-4">
+                                            <div class="flex h-10 w-10 items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M12 22q-.6 0-1.15-.225t-.975-.65q-.725-.725-1.25-.95T7.05 19.95q-1.25 0-2.125-.875T4.05 16.95q0-1.05-.225-1.575t-.95-1.25q-.425-.425-.65-.975T2 12t.225-1.15t.65-.975q.725-.725.95-1.25T4.05 7.05q0-1.25.875-2.125T7.05 4.05q1.05 0 1.575-.225t1.25-.95q.425-.425.975-.65T12 2t1.15.225t.975.65q.725.725 1.25.95t1.575.225q1.25 0 2.125.875t.875 2.125q0 1.05.225 1.575t.95 1.25q.425.425.65.975T22 12t-.225 1.15t-.65.975q-.725.725-.95 1.25t-.225 1.575q0 1.25-.875 2.125t-2.125.875q-1.05 0-1.575.225t-1.25.95q-.425.425-.975.65T12 22m2.5-6q.625 0 1.063-.437T16 14.5t-.437-1.062T14.5 13t-1.062.438T13 14.5t.438 1.063T14.5 16m-5.05-.05l6.5-6.5l-1.4-1.4l-6.5 6.5zM9.5 11q.625 0 1.063-.437T11 9.5t-.437-1.062T9.5 8t-1.062.438T8 9.5t.438 1.063T9.5 11" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <span class="block text-sm text-gray-600">Diskon</span>
+                                                <span class="block text-xs">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3 mt-4">
+                                            <div class="flex h-10 w-10 items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M5.5 14a2.5 2.5 0 0 1 2.45 2H15V6H4a2 2 0 0 0-2 2v8h1.05a2.5 2.5 0 0 1 2.45-2m0 5a2.5 2.5 0 0 1-2.45-2H1V8a3 3 0 0 1 3-3h11a1 1 0 0 1 1 1v2h3l3 4v5h-2.05a2.5 2.5 0 0 1-4.9 0h-7.1a2.5 2.5 0 0 1-2.45 2m0-4A1.5 1.5 0 0 0 4 16.5A1.5 1.5 0 0 0 5.5 18A1.5 1.5 0 0 0 7 16.5A1.5 1.5 0 0 0 5.5 15m12-1a2.5 2.5 0 0 1 2.45 2H21v-3.68l-.24-.32H16v2.5c.42-.31.94-.5 1.5-.5m0 1a1.5 1.5 0 0 0-1.5 1.5a1.5 1.5 0 0 0 1.5 1.5a1.5 1.5 0 0 0 1.5-1.5a1.5 1.5 0 0 0-1.5-1.5M16 9v2h4l-1.5-2z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <span class="block text-sm text-gray-600">Waktu Pengiriman</span>
+                                                <span class="block text-xs">3 - 4 Hari</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3 py-5">
+                                            <div class="flex h-10 w-10 items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M22 14v-2c0-.839 0-1.585-.013-2.25H2.013C2 10.415 2 11.161 2 12v2c0 3.771 0 5.657 1.172 6.828S6.229 22 10 22h4c3.771 0 5.657 0 6.828-1.172S22 17.771 22 14M7.75 2.5a.75.75 0 0 0-1.5 0v1.58c-1.44.115-2.384.397-3.078 1.092c-.695.694-.977 1.639-1.093 3.078h19.842c-.116-1.44-.398-2.384-1.093-3.078c-.694-.695-1.639-.977-3.078-1.093V2.5a.75.75 0 0 0-1.5 0v1.513C15.585 4 14.839 4 14 4h-4c-.839 0-1.585 0-2.25.013z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <span class="block text-sm text-gray-600">Estimasi Sampai</span>
+                                                <span class="block text-xs">27 - 30 Oktober 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3 py-5">
+                                            <div class="flex h-10 w-10 items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 256 256">
+                                                    <path fill="currentColor"
+                                                        d="m222.72 67.91l-88-48.18a13.9 13.9 0 0 0-13.44 0l-88 48.18A14 14 0 0 0 26 80.18v95.64a14 14 0 0 0 7.28 12.27l88 48.18a13.92 13.92 0 0 0 13.44 0l88-48.18a14 14 0 0 0 7.28-12.27V80.18a14 14 0 0 0-7.28-12.27M127 30.25a2 2 0 0 1 1.92 0L212.51 76l-33.94 18.57l-84.52-46.26ZM122 223l-83-45.43a2 2 0 0 1-1-1.75V86.66l84 46ZM43.49 76l38.07-20.85l84.51 46.26L128 122.24ZM218 175.82a2 2 0 0 1-1 1.75L134 223v-90.36l36-19.71V152a6 6 0 0 0 12 0v-45.63l36-19.71Z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <span class="block text-sm text-gray-600">Tipe Paket</span>
+                                                <span class="block text-xs">Reguler</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block p-6 border border-gray-300 rounded-lg my-8">
+                                    <div class="">
+                                        <h3 class="font-bold text-gray-900 mb-4 text-lg">Tambahkan Komentar anda</h3>
+                                        <form>
+                                            <textarea
+                                                class="w-full h-28 bg-stone-100 rounded-md border-gray-300 p-3 text-sm focus:ring-2 focus:ring-[#3a6b5a] focus:border-[#3a6b5a]"
+                                                placeholder="Ketikkan komentar anda disini..."></textarea>
+                                            <button
+                                                class="w-full bg-[#3a6b5a] hover:bg-[#2f5a4a] text-white font-medium py-3 rounded-lg text-sm shadow-md transition-colors mt-4">
+                                                Kirim
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <section class="mt-16 sm:mt-24">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 uppercase">
+                            Rekomendasi Untuk Anda
+                        </h2>
+
+                        <div class="grid grid-cols-5">
+                            <div>
+
+                                <div class="p-4 flex items-center space-x-3">
+                                    <img src="https://via.placeholder.com/40" alt="Seller"
+                                        class="w-10 h-10 rounded-full bg-gray-300">
+                                    <div>
+                                        <p class="font-semibold text-sm text-gray-800">Ragna Store</p>
+                                        <p class="text-xs text-gray-500">Makanan - ikan bakar</p>
+                                    </div>
+                                </div>
+
+                                <div class="relative">
+                                    
+                                    <div
+                                        class="w-full rounded-2xl h-48 flex items-center justify-center images-cover p-4">
+                                        <img src="/images/banner.png"
+                                            class="w-full h-full rounded-lg text-gray-400 hover:scale-[1.03]"
+                                            fill="none"></img>
+                                    </div>
+                                </div>
+
+                                <div class="p-4">
+                                    <div class="flex justify-center items-center mb-3">
+                                        <div class="flex items-center space-x-2">
+                                            <button class="w-6 h-6 rounded-full border text-gray-500">-</button>
+                                            <span class="text-sm font-medium">1 pc</span>
+                                            <button class="w-6 h-6 rounded-full border text-gray-500">+</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="flex justify-center items-center mb-3">
+
+                                        <p class="text-gray-500 font-poppins">Rp. 10.000</p>
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <button class="w-full py-2 rounded-lg text-sm font-medium transition-colors
+                       text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
+                                            Masukkan ke Keranjang
+                                        </button>
+                                        <NuxtLink to="/product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
+                bg-green-700 text-white hover:bg-green-800">Lihat Produk</NuxtLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+
+            <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mt-5">
                 <div class="block p-6 border border-gray-300 rounded-lg col-span-1">
                     <span class="font-semibold">Nivor Caevan</span>
                     <div class="flex items-center justify-between">
@@ -214,11 +429,11 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <hr class="my-8" />
 
-            </div>
+        </div>
     </div>
     <TheFooter />
 </template>
