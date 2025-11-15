@@ -5,14 +5,32 @@
         <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue text-gray-800">NAVVRO</NuxtLink>
       </div>
 
-      <di8v class="flex-1 flex justify-center">
-        <nav class="flex space-x-6">
-          <NuxtLink to="/" class="font-poppins hover:text-orange-500">BERANDA</NuxtLink>
-          <NuxtLink to="/product" class="font-poppins hover:text-orange-500">PRODUK</NuxtLink>
-          <NuxtLink to="/umkm" class="font-poppins hover:text-orange-500">UMKM</NuxtLink>
-          <NuxtLink to="/product/category" class="font-poppins hover:text-orange-500">KATEGORI</NuxtLink>
-        </nav>
-      </di8v>
+    <div class="flex-1 flex justify-center">
+  <nav class="flex space-x-6">
+    
+    <NuxtLink 
+      to="/" 
+      class="font-poppins text-gray-600 hover:text-orange-500"
+      exact-active-class="text-orange-500">
+      BERANDA
+    </NuxtLink>
+    
+    <NuxtLink 
+      to="/product" 
+      class="font-poppins text-gray-600 hover:text-orange-500"
+      exact-active-class="text-orange-500">
+      PRODUK
+    </NuxtLink>
+    
+    <NuxtLink 
+      to="/umkm" 
+      class="font-poppins text-gray-600 hover:text-orange-500"
+      exact-active-class="text-orange-500">
+      UMKM
+    </NuxtLink>
+    
+  </nav>
+</div>
 
             <div class=" flex-1 justify-end items-center hidden md:flex">
         <button
