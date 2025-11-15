@@ -1,5 +1,5 @@
 <template>
-    <div class="relative min-h-screen w-full overflow-hidden text-white">
+    <div class="relative w-full overflow-hidden text-white">
 
         <div class="absolute top-0 left-0 right-0 h-[600px] z-0 bg-[url('/icon/about_banner.png')] bg-cover bg-center">
         </div>
@@ -7,7 +7,7 @@
         <div class="relative z-10">
 
             <main class="container mx-auto py-12 lg:pt-24 justify-center"
-                style="padding-top: 100px; padding-bottom: 90px;">
+                style="padding-top: 100px; padding-bottom: 10px;">
                 <div class="flex flex-col lg:flex-row items-center">
 
                     <div class="w-full lg:w-1/2 text-center lg:text-left">

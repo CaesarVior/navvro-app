@@ -5,36 +5,30 @@
         <NuxtLink to="/" class="orange-primary text-3xl font-bebas-neue text-gray-800">NAVVRO</NuxtLink>
       </div>
 
-<div class="flex-1 flex justify-center">
-  <nav class="flex space-x-6">
-    
-    <NuxtLink 
-      to="/" 
-      class="font-poppins text-gray-600 hover:text-orange-500"
-      exact-active-class="text-orange-500">
-      BERANDA
-    </NuxtLink>
-    
-    <NuxtLink 
-      to="/product" 
-      class="font-poppins text-gray-600 hover:text-orange-500"
-      exact-active-class="text-orange-500">
-      PRODUK
-    </NuxtLink>
-    
-    <NuxtLink 
-      to="/umkm" 
-      class="font-poppins text-gray-600 hover:text-orange-500"
-      exact-active-class="text-orange-500">
-      UMKM
-    </NuxtLink>
-    
-  </nav>
-</div>
+      <div class="flex-1 flex justify-center">
+        <nav class="flex space-x-6">
+
+          <NuxtLink to="/" class="font-poppins text-gray-600 hover:text-orange-500"
+            exact-active-class="text-orange-500">
+            BERANDA
+          </NuxtLink>
+
+          <NuxtLink to="/product" class="font-poppins text-gray-600 hover:text-orange-500"
+            exact-active-class="text-orange-500">
+            PRODUK
+          </NuxtLink>
+
+          <NuxtLink to="/umkm" class="font-poppins text-gray-600 hover:text-orange-500"
+            exact-active-class="text-orange-500">
+            UMKM
+          </NuxtLink>
+
+        </nav>
+      </div>
 
       <div class="flex-1 flex justify-end">
-        <button type="button"
-          class="text-white bg-primary rounded-lg px-12 box-border border border-transparent hover:bg-warning-strong focus:ring-4 focus:ring-warning-medium font-poppins leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Login</button>
+        <a href="/login"
+          class="text-white bg-[#FF8A00] rounded-lg px-12 box-border border border-transparent hover:bg-orange-400 focus:ring-4 focus:ring-warning-medium font-poppins leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Login</a>
       </div>
     </div>
 
