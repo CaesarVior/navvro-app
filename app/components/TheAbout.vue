@@ -19,7 +19,7 @@
                         </p>
 
                         <button
-                            class="mt-8 bg-[#3a6b5a] hover:bg-[#2f5a4a] text-white font-medium py-3 px-6 rounded-full flex items-center gap-2 mx-auto lg:mx-0 shadow-lg transition-colors">
+                            class=" font-poppins mt-8 bg-[#3a6b5a] hover:bg-[#2f5a4a] text-white font-medium py-3 px-6 rounded-full flex items-center gap-2 mx-auto lg:mx-0 shadow-lg transition-colors">
                             <Icon name="heroicons:shopping-bag" class="w-5 h-5" />
                             <span>Lihat Etalase Kami</span>
                         </button>
@@ -29,10 +29,8 @@
                         <img src="/images/img-about.png" alt="Mangkok Makanan UMKM"
                             class="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
                     </div>
-
                 </div>
             </main>
-
         </div>
     </div>
 </template>

@@ -1,14 +1,16 @@
 <template>
   <TheHeader @search="updateSearchQuery" @toggle-mobile-menu="handleToggle">
     <template #search>
-      <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM"/>
+      <SearchBar @search="updateSearchQuery" placeholder="Cari UMKM" />
     </template>
   </TheHeader>
   <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />
   <TheAbout />
   <CategoryCard />
+  <BestMSME/>
   <ProductCollection />
   <TheSwap/>
+  <TestimonialCarrousel/>
   <TheFooter/>
 </template>
 
@@ -18,7 +20,8 @@ import CategoryFilter from '~/components/CategoryFilter.vue'
 import SearchBar from '~/components/SearchBar.vue'
 import TheAbout from '~/components/TheAbout.vue'
 import TheHeader from '~/components/TheHeader.vue'
-
+import BestMSME from '~/components/BestMSME.vue'
+import TestimonialCarrousel from '~/components/TestimonialCarrousel.vue'
 const searchQuery = ref("");
 const categoryFilter = ref("");
 const currentPage = ref(1);
