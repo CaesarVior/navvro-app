@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          <a href="/produk" class="inline-flex items-center gap-2 bg-primary mb-8 text-white font-semibold px-5 py-2 rounded-full hover:bg-orange-600 transition-colors text-xs font-poppins">
+          <a href="/product" class="inline-flex items-center gap-2 bg-primary mb-8 text-white font-semibold px-5 py-2 rounded-full hover:bg-orange-600 transition-colors text-xs font-poppins">
             <Icon name="heroicons:arrow-left" class="w-5 h-5" />
             <span>Lanjut Belanja</span>
           </a>
