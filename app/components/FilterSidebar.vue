@@ -56,33 +56,32 @@
       <h3 class="font-semibold text-gray-800 mb-3">KATEGORI</h3>
       <div class="space-y-2">
         <div>
-          <input type="checkbox" id="cat1" class="rounded text-orange-500" v-model="selectedCategories" value="Makanan">
+          <input type="checkbox" id="cat1" class="rounded text-[#FF8B49]" v-model="selectedCategories" value="Makanan">
           <label for="cat1" class="ml-2 text-sm text-gray-600">Makanan</label>
         </div>
         <div>
-          <input type="checkbox" id="cat2" class="rounded text-orange-500" v-model="selectedCategories" value="Minuman">
+          <input type="checkbox" id="cat2" class="rounded text-[#FF8B49]" v-model="selectedCategories" value="Minuman">
           <label for="cat2" class="ml-2 text-sm text-gray-600">Minuman</label>
         </div>
         <div>
-          <input type="checkbox" id="cat3" class="rounded text-orange-500" v-model="selectedCategories" value="Jasa">
+          <input type="checkbox" id="cat3" class="rounded text-[#FF8B49]" v-model="selectedCategories" value="Jasa">
           <label for="cat3" class="ml-2 text-sm text-gray-600">Jasa</label>
         </div>
         <div>
-          <input type="checkbox" id="cat4" class="rounded text-orange-500" v-model="selectedCategories"
+          <input type="checkbox" id="cat4" class="rounded text-[#FF8B49]" v-model="selectedCategories"
             value="Pertanian & Perkebunan">
           <label for="cat4" class="ml-2 text-sm text-gray-600">Pertanian & Perkebunan</label>
         </div>
         <div>
-          <input type="checkbox" id="cat5" class="rounded text-orange-500" v-model="selectedCategories"
-            value="Alat Tulis">
+          <input type="checkbox" id="cat5" class="rounded text-[#FF8B49]" v-model="selectedCategories" value="ATK">
           <label for="cat5" class="ml-2 text-sm text-gray-600">Alat Tulis</label>
         </div>
         <div>
-          <input type="checkbox" id="cat6" class="rounded text-orange-500" v-model="selectedCategories" value="Fashion">
+          <input type="checkbox" id="cat6" class="rounded text-[#FF8B49]" v-model="selectedCategories" value="Fashion">
           <label for="cat6" class="ml-2 text-sm text-gray-600">Fashion & Aksesoris</label>
         </div>
         <div>
-          <input type="checkbox" id="cat7" class="rounded text-orange-500" v-model="selectedCategories" value="craft">
+          <input type="checkbox" id="cat7" class="rounded text-[#FF8B49]" v-model="selectedCategories" value="craft">
           <label for="cat7" class="ml-2 text-sm text-gray-600">Kerajinan</label>
         </div>
       </div>
