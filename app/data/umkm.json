@@ -11,14 +11,14 @@
                 "id_produk": 1,
                 "nama": "bakso",
                 "harga": 4000,
-                "kategori": "makanan",
+                "kategori": "Makanan",
                 "fotoProduk": "images/produk/foto-1-bakso.jpg"
             },
             {
                 "id_produk": 2,
                 "nama": "es teh",
                 "harga": 5000,
-                "kategori": "minuman",
+                "kategori": "Minuman",
                 "fotoProduk": "images/produk/foto-1-es-teh.jpg"
             }
         ]
@@ -35,14 +35,14 @@
                 "id_produk": 3,
                 "nama": "pensil",
                 "harga": 4000,
-                "kategori": "atk",
+                "kategori": "Alat Tulis",
                 "fotoProduk": "images/produk/foto-2-pensil.jpg"
             },
             {
                 "id_produk": 4,
                 "nama": "penghapus",
                 "harga": 5000,
-                "kategori": "atk",
+                "kategori": "Alat Tulis",
                 "fotoProduk": "images/produk/foto-2-penghapus.jpg"
             }
         ]
@@ -50,7 +50,7 @@
     {
         "id": 3,
         "nama": "Toko 3 Joki Ml",
-        "kategori": "jasa",
+        "kategori": "Jasa",
         "lokasi": "Jl. Veteran no. 15, Kota Malang",
         "detail": "Menjual HP, laptop, dan aksesoris",
         "fotoToko": "images/toko/foto-3.jpg",
@@ -59,14 +59,14 @@
                 "id_produk": 5,
                 "nama": "Epic to glory",
                 "harga": 150000,
-                "kategori": "jasa",
+                "kategori": "Jasa",
                 "fotoProduk": "images/produk/foto-3-mouse-wireless.jpg"
             },
             {
                 "id_produk": 6,
                 "nama": "Epic to Immortal",
                 "harga": 300000,
-                "kategori": "jasa",
+                "kategori": "Jasa",
                 "fotoProduk": "images/produk/foto-3-headset-bluetooth.jpg"
             }
         ]
@@ -74,7 +74,7 @@
     {
         "id": 4,
         "nama": "Toko 4 Fashion",
-        "kategori": "fashion",
+        "kategori": "Fashion & Aksesoris",
         "lokasi": "Mall Olympic Garden, Kota Malang",
         "detail": "Pakaian pria dan wanita terbaru",
         "fotoToko": "images/toko/foto-4.jpg",
@@ -83,14 +83,14 @@
                 "id_produk": 7,
                 "nama": "Kaos Polos",
                 "harga": 80000,
-                "kategori": "fashion",
+                "kategori": "Fashion & Aksesoris",
                 "fotoProduk": "images/produk/foto-4-kaos-polos.jpg"
             },
             {
                 "id_produk": 8,
                 "nama": "Kemeja Flanel",
                 "harga": 220000,
-                "kategori": "fashion",
+                "kategori": "Fashion & Aksesoris",
                 "fotoProduk": "images/produk/foto-4-kemeja-flanel.jpg"
             }
         ]
@@ -131,14 +131,14 @@
                 "id_produk": 11,
                 "nama": "Kopi Susu Aren",
                 "harga": 22000,
-                "kategori": "minuman",
+                "kategori": "Minuman",
                 "fotoProduk": "images/produk/foto-6-kopi-susu-aren.jpg"
             },
             {
                 "id_produk": 12,
                 "nama": "Roti Coklat",
                 "harga": 15000,
-                "kategori": "makanan",
+                "kategori": "Makanan",
                 "fotoProduk": "images/produk/foto-6-roti-coklat.jpg"
             }
         ]
@@ -217,24 +217,24 @@
     },
     {
         "id": 10,
-        "nama": "Toko 10 Petshop",
-        "kategori": "hewan peliharaan",
+        "nama": "Toko 10 Pertanian",
+        "kategori": "Pertanian ",
         "lokasi": "Jl. Candi Panggung, Kota Malang",
-        "detail": "Makanan dan aksesoris hewan",
+        "detail": "Menjual alat dan bibit pertanian",
         "fotoToko": "images/toko/foto-10.jpg",
         "produk": [
             {
                 "id_produk": 19,
-                "nama": "Whiskas 1kg",
+                "nama": "Cangkul",
                 "harga": 80000,
-                "kategori": "makanan kucing",
+                "kategori": "Pertanian & Perkebunan",
                 "fotoProduk": "images/produk/foto-10-whiskas-1kg.jpg"
             },
             {
                 "id_produk": 20,
-                "nama": "Pasir Gumpal 5L",
+                "nama": "Pupuk Urea",
                 "harga": 45000,
-                "kategori": "aksesoris",
+                "kategori": "Pertanian & Perkebunan",
                 "fotoProduk": "images/produk/foto-10-pasir-gumpal-5l.jpg"
             }
         ]

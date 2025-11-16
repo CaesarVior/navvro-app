@@ -69,7 +69,7 @@
       </div>
 
       <div class="justify-end">
-        <a href="#" class="fixed bottom-8 right-8 z-50 
+        <a href="/chatbot" class="fixed bottom-8 right-8 z-50 
                     bg-gray-800 rounded-full 
                     w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center 
                     shadow-xl transition-all duration-300 
