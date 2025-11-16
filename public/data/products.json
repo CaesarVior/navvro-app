@@ -5,7 +5,7 @@
     "category": "fnb",
     "lokasi": "Jl. Kembang Kertas no.28, Kota Malang",
     "detail": "Toko ini menyediakan berbagai macam makanan dan minuman, spesialis ikan bakar segar.",
-    "fotoToko": "/images/toko/toko-1.jpg",
+    "fotoToko": "/images/RagnaTent_Logo.png",
     "product": [
       {
         "id": 1,
@@ -27,7 +27,7 @@
         "description": "Ikan gurame segar ukuran L (700-800g) dibakar sempurna di atas bara arang dengan bumbu kecap pedas manis rahasia. Disajikan dengan lalapan segar.",
         "seller": {
           "name": "Raffi Ahmad",
-          "logo": "https://via.placeholder.com/40",
+          "logo": "images/RagnaTent_Logo.png",
           "location": "Kota Malang"
         },
         "rating": {
@@ -104,7 +104,7 @@
     "category": "fashion",
     "lokasi": "Jl. Malioboro no. 10, Yogyakarta",
     "detail": "Menjual tas anyaman dan kerajinan tangan lokal. 100% handmade.",
-    "fotoToko": "/images/toko/toko-2.jpg",
+    "fotoToko": "/images/product/makanan.jpg",
     "product": [
       {
         "id": 1,
@@ -124,7 +124,7 @@
         "description": "Tas selempang bulat dari anyaman rotan asli, dengan lining batik di dalam. Dikerjakan oleh pengrajin lokal.",
         "seller": {
           "name": "Pengrajin Lokal",
-          "logo": "https://via.placeholder.com/40",
+          "logo": "images/RagnaTent_Logo.png",
           "location": "Yogyakarta"
         },
         "rating": {
@@ -201,7 +201,7 @@
     "category": "fnb",
     "lokasi": "Jl. Diponegoro no. 15, Surabaya",
     "detail": "Produsen sambal kemasan rumahan, pedasnya nampol! Tanpa pengawet.",
-    "fotoToko": "/images/toko/toko-3.jpg",
+    "fotoToko": "/images/product/makanan.jpg",
     "product": [
       {
         "id": 1,
@@ -221,7 +221,7 @@
         "description": "Sambal bawang pedas gila dengan minyak kelapa murni. Dibuat dari cabai segar pilihan. Awas ketagihan!",
         "seller": {
           "name": "Bu'de",
-          "logo": "https://via.placeholder.com/40",
+          "logo": "images/RagnaTent_Logo.png",
           "location": "Surabaya"
         },
         "rating": {
@@ -291,7 +291,7 @@
     "category": "craft",
     "lokasi": "Kuta, Bali",
     "detail": "Perhiasan perak dan batu alam handmade dari Bali.",
-    "fotoToko": "/images/toko/toko-4.jpg",
+    "fotoToko": "/images/product/makanan.jpg",
     "product": [
       {
         "id": 1,
@@ -310,7 +310,7 @@
         "description": "Kalung dengan liontin batu amethyst asli dan rantai perak 925. Desain simpel dan elegan.",
         "seller": {
           "name": "Aksara Silver",
-          "logo": "https://via.placeholder.com/40",
+          "logo": "images/RagnaTent_Logo.png",
           "location": "Bali"
         },
         "rating": {
@@ -377,5 +377,3 @@
     ]
   }
 ]
-
-

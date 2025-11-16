@@ -8,7 +8,8 @@
             Indonesia.
         </p>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 xl:gap-9 mt-10">
-            <div v-for="product in bestProduct" class="col-span-1 items-center">
+            
+            <div v-for="product in bestProduct" :key="product.nama" class="col-span-1 items-center">
                 <div class="relative w-full aspect-square rounded-4xl">
                     <span
                         class="absolute top-2 left-2 rounded-full bg-[#3a6b5a] p-1 text-[1vw] lg:text-xs font-semibold text-white">
@@ -22,18 +23,20 @@
                         class="w-6 h-6 absolute top-25 right-4 bg-white rounded-full flex items-center justify-center p-1">
                         <Icon name="mdi:eye-outline" class="text-3xl" />
                     </span>
-                    <img src="/images/bestProduct.png" :alt="product.nama"
+                    
+                    <img :src="product.gambar" :alt="product.nama"
                         class="w-[100%] h-[100%] object-cover aspect-square rounded-xl">
                 </div>
                 <div class="flex justify-between mt-2">
                     <p class="font-poppin text-xs text-gray-500 sm:text-sm">{{ product.kategori }}</p>
                     <div class="flex items-center gap-1">
-                        <Icon name="heroicons:star-solid" class="w-4 h-4  text-yellow-400" />
+                        <Icon name="heroicons:star-solid" class="w-4 h-4 text-yellow-400" />
                         <span class="text-sm font-bold font-bebas-neue text-center">{{ product.rating }}</span>
                     </div>
                 </div>
                 <p class="font-poppins font-semibold text-sm sm:text-lg">{{ product.nama }}</p>
-                <p class="font-poppins text-[#3a6b5a] text-xs sm:text-sm">Rp. {{ product.harga }}</p>
+                
+                <p class="font-poppins text-[#3a6b5a] text-xs sm:text-sm">Rp {{ formatPrice(product.harga) }}</p>
             </div>
         </div>
         <div class="flex mt-15 justify-center">
@@ -57,8 +60,8 @@
                     <div class="mt-7 flex justify-center gap-1">
                         <button
                             class="bg-[#3a6b5a] hover:bg-[#2f5a4a] flex justify-center gap-1 text-white text-xs xl:text-sm font-poppins px-3 py-3 rounded-2xl mx-auto lg:mx-0 shadow-lg transition-colors">
-                        <Icon class=" text-white w-3 h-3" name="solar:cart-bold" />
-                        <span class=" font-poppins text-xs">Belanja sekarang</span></button>
+                            <Icon class=" text-white w-3 h-3" name="solar:cart-bold" />
+                            <span class=" font-poppins text-xs">Belanja sekarang</span></button>
                     </div>
                 </div>
                 <div class="col-span-1 bg-[#BB5E27] px-5 py-6 rounded-lg">
@@ -66,15 +69,15 @@
                         Diskon 50%
                     </span>
                     <div class="mt-6 flex justify-between items-center text-white">
-                        <span class="font-bebas-neue text-4xl">FESTIVAL <br/> UMKM 2025</span>
+                        <span class="font-bebas-neue text-4xl">FESTIVAL <br /> UMKM 2025</span>
                         <img src="/images/toko2.png" alt="gambar toko">
                     </div>
                     <p class="font-poppins text-sm text-white">Lorem Ipsum Dolor Sit Amet <br /> Consectur Sit Amet</p>
                     <div class="mt-7 flex justify-center gap-1">
                         <button
                             class="bg-[#C2C2C2] flex justify-center gap-1 text-xs xl:text-sm font-poppins px-3 py-2 rounded-full mx-auto lg:mx-0 shadow-lg transition-colors">
-                        <Icon class="w-3 h-3" name="mdi:clock-outline" />
-                        <span class="font-poppins text-xs">23:59:58</span></button>
+                            <Icon class="w-3 h-3" name="mdi:clock-outline" />
+                            <span class="font-poppins text-xs">23:59:58</span></button>
                     </div>
                 </div>
 
@@ -82,13 +85,35 @@
         </div>
     </section>
 </template>
+
 <script setup>
-const bestProduct = [
-    { "nama": "Lalapan Suhat", "kategori": "Makanan", "rating": 4.9, "harga": 25000 },
-    { "nama": "Lalapan Suhat", "kategori": "Makanan", "rating": 4.9, "harga": 25000 },
-    { "nama": "Lalapan Suhat", "kategori": "Makanan", "rating": 4.9, "harga": 25000 },
-    { "nama": "Lalapan Suhat", "kategori": "Makanan", "rating": 4.9, "harga": 25000 }
-]
+import { computed } from 'vue'
+import storeData from '~/data/products.json'
 
+const bestProduct = computed(() => {
+    if (!storeData || !Array.isArray(storeData)) {
+        return []
+    }
 
+    const allProducts = storeData.flatMap(store => store.product)
+
+    const topSellers = allProducts.filter(product => product.isTopSeller === true)
+
+    const formattedProducts = topSellers.map(product => ({
+        nama: product.name,
+        kategori: product.category,
+        rating: product.rating.average,
+        harga: product.price,
+        gambar: product.images[0] || '/images/bestProduct.png' 
+    }))
+
+    return formattedProducts.slice(0, 4)
+})
+
+const formatPrice = (value) => {
+    if (typeof value !== 'number') {
+        return '0'
+    }
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+}
 </script>
