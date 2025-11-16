@@ -48,7 +48,6 @@
                                 <div class="flex items-center gap-4">
                                     <button @click="decrease"
                                         class="w-5 h-6 p-2 flex items-center justify-center border border-black rounded-full font-bold hover:bg-gray-100">
-                                        −
                                     </button>
 
                                     <span>{{ quantity }} pc</span>
@@ -440,6 +439,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+
+defineProps()
 
 const varianTerpilih = ref('Manis')
 

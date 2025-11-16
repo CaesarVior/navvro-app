@@ -13,8 +13,8 @@
                 <div v-for="category in categories" :key="category.name" class="flex-shrink-0">
                     <div :class="[
                         'bg-[#F6F8ED]',
-                        'w-28 h-28 sm:w-61 sm:h-65',
-                        'rounded-xl flex flex-col justify-center',
+                        'w-35 h-35 sm:w-61 sm:h-65',
+                        'rounded-xl flex flex-col justify-center overflow-y-hidden',
                         'p-4 cursor-pointer',
                         'hover:shadow-md hover:translate-y-5 hover:bg-white hover:text-[#473C3E]',
                         'transition-all duration-400']">
