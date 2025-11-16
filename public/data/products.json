@@ -375,5 +375,473 @@
         ]
       }
     ]
+  },
+  {
+    "id": 5,
+    "name": "DOYAN KOPI",
+    "category": "Minuman",
+    "lokasi": "Perum Bulan Terang Utama Blok UJ 23 No.46. Kelurahan Madyopuro, Kec. Kedungkandang",
+    "detail": "Doyan Kopi adalah sajian kopi serius untuk penikmat kopi sejati, dikemas dalam cup 16oz. Dibuat dari biji kopi pilihan dengan karakter rasa *bold* (kuat) dan *aftertaste* yang pas.\n\nVarian Khusus Penikmat Kopi:\n* **Es Kopi Susu Doyan:** (Rasa kopi lebih *strong* dibanding kopi susu biasa)\n* **Kopi Hitam:** (Americano / Long Black, *double shot available*)\n* **Manual Brew V60:** (Tanyakan ketersediaan *beans* hari ini via notes)\n\nProduk kami memiliki karakter kopi yang kuat. Jika Anda tidak terbiasa atau ingin rasa lebih ringan (light), mohon tulis di catatan. Tanpa catatan, akan dibuat sesuai resep standar Doyan Kopi.",
+    "fotoToko": "/images/toko/88879448-f91d-407e-81f7-6bd84d44d897.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Java Robusta",
+        "price": 56000,
+        "images": [
+          "/images/product/9277766a-6b69-4e22-a5df-a34f1a54ff1f.jpeg"
+        ],
+        "rating": {
+          "average": 0.0,
+          "count": 0
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Kopi Studio 24, Blimbing",
+    "category": "Minuman",
+    "lokasi": "Jl. Laksa Adi Sucipto No. 195, Blimbing, Malang",
+    "detail": "Kopi Studio 24 adalah minuman kopi *freshly brewed* yang dibuat dadakan (by order) dari *house blend* robusta-arabica pilihan. Cocok untuk teman melek atau nugas.\n\nTersedia Varian Utama:\n* **Kopi Susu Studio:** (Best Seller, *creamy* dan *balance*)\n* **Americano/Kopi Hitam:** (Rasa *bold* dan nendang)\n* **Kopi Susu Gula Aren**\n\nTersedia dalam 2 pilihan ukuran: **Regular (16oz)** atau **Large (22oz)**. Mohon request level gula (Normal, Less, No Sugar) wajib ditulis di notes. Tanpa notes, pesanan akan diproses **Normal Sugar**.",
+    "fotoToko": "/images/toko/f1330ecf-7a3a-43e1-bd4e-c4a45fc77545.jpeg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Es Cookies N Cream With Crumb",
+        "price": 14000,
+        "images": [
+          "/images/product/6e9d419a-6e88-462f-849b-5782dbddfc4c.jpeg"
+        ],
+        "rating": {
+          "average": 4.6,
+          "count": 7000
+        },
+        "reviews": [
+          {
+            "user": "Titis Lestio",
+            "stars": 5,
+            "comment": "yg red velvet rasa nya aneh but all good si"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Pesenkopi x Pesenmie, Sawojajar 2",
+    "category": "Minuman",
+    "lokasi": "Jl. Danau Sentani Raya No. 33, Kedungkandang, Malang",
+    "detail": "Pesenkopi x Pesenmie adalah solusi paket lengkap (Bundling) untuk yang lapar dan butuh kafein. Menggabungkan minuman kopi *fresh brew* dan mie instan *comfort food*.\n\nPilihan Paket:\n1.  **Pesenmie:** Mie instan (Goreng/Rebus) disajikan lengkap dengan topping standar (telur, sosis, sayur).\n2.  **Pesenkopi:** Es Kopi Susu (Kopi, Susu, Gula Aren).\n3.  **Paket Bundling:** 1 Mie + 1 Kopi (Lebih Hemat).\n\nMohon tulis request Anda di catatan:\n* **Untuk Mie:** Varian (Goreng/Rebus) dan Level Pedas (0-5).\n* **Untuk Kopi:** Level Gula (Normal/Less).\n\nJika tidak ada catatan, akan diproses standar: **Mie Goreng Level 3** dan **Kopi Normal Sugar**. Membeli berarti setuju.",
+    "fotoToko": "/images/toko/202fa16b-08a5-48f3-a841-5f12d72f991d.jpeg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Ice Double Creamy",
+        "price": 20000,
+        "images": [
+          "/images/product/555ddc82-95ef-49fe-8209-7ea63a695bd0.jpeg"
+        ],
+        "rating": {
+          "average": 4.9,
+          "count": 3000
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Suka Duka Kopi",
+    "category": "Minuman",
+    "lokasi": "Jl. Hamid Rusdi Bunulrejo, Kec. Blimbing, Kota Malang, Jawa Timur 65126",
+    "detail": "Suka Duka Kopi adalah sajian kopi susu kekinian dalam kemasan cup 16oz (sealed) dengan perpaduan *creamy* susu, espresso *bold* dari *house blend* pilihan, dan gula aren.\n\nTersedia Varian Kopi dan Non-Kopi:\n* **Es Kopi Susu Suka Duka:** (Rasa *balance* antara kopi dan susu)",
+    "fotoToko": "/images/toko/78fa428d-716c-4e23-876b-2eea9f41f626.jpeg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Kopi Susu Creamy",
+        "price": 17500,
+        "images": [
+          "/images/product/518521a9-bd76-4919-b5f0-2e230f3f2dd8.jpeg"
+        ],
+        "rating": {
+          "average": 0.0,
+          "count": 0
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Stmj Doors, Kapi Woro",
+    "category": "Minuman",
+    "lokasi": "Jl. Kapi Woro I No. 43, Pakis, Malang",
+    "detail": "STMJ Doors Kapi Woro adalah minuman stamina tradisional yang diracik dari bahan-bahan segar berkualitas untuk menjaga daya tahan tubuh.\n\nKomposisi Utama:\n* Susu Sapi Murni (Bukan saset kental manis)\n* Telur Ayam Kampung Asli\n* Madu Murni\n* Jahe Merah (Digeprek, bukan bubuk)\n\nMinuman disajikan panas/hangat (dikemas *paper cup*) untuk khasiat maksimal. Tersedia juga varian Kopi STMJ (Kopi Susu Jahe Telur Madu). Untuk request telur bebek (jika stok ada), mohon tulis di keterangan. Tanpa keterangan, akan dibuat sesuai resep standar.\n",
+    "fotoToko": "/images/toko/d76820e2-82e9-4928-86e3-4dc954a9f231.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "S M J",
+        "price": 17000,
+        "images": [
+          "/images/product/22ed00ce-3272-433e-9e0b-e88cfe030f33.jpeg"
+        ],
+        "rating": {
+          "average": 4.1,
+          "count": 100
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Sate Indosiar (Aconk Ali), Blimbing",
+    "category": "Makanan",
+    "lokasi": "Jl. Pandanwangi, Blimbing, Kota Malang",
+    "detail": "\nSate Indosiar Aconk Ali adalah sate khas Madura (1 porsi isi 10 tusuk) yang dibakar dadakan menggunakan arang, menjamin aroma *smoky* yang khas. Daging dijamin empuk dan disiram bumbu kacang medok yang diulek halus.\n\nTersedia 2 Pilihan Daging:\n* Sate Ayam (Bisa request daging saja atau campur kulit)\n* Sate Kambing (Murni daging, empuk tidak prengus)\n\nPaket sudah termasuk lontong atau nasi. Mohon pilih varian **Nasi** atau **Lontong** saat memesan. Untuk request tambahan seperti \"bumbu dipisah\", \"bawang merah diperbanyak\", atau \"potongan cabai rawit\", silakan tulis di notes.\n",
+    "fotoToko": "/images/toko/4c588588-b45e-4bb7-9b50-a6db1167f6ba.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Sate Ayam 50 Tusuk",
+        "price": 85000,
+        "images": [
+          "/images/product/2ff93403-e831-4657-b8d1-1139970ae661.jpeg"
+        ],
+        "rating": {
+          "average": 4.4,
+          "count": 300
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Martabak Terang Bulan Raos Jaya Terusan Sulfat",
+    "category": "Makanan",
+    "lokasi": "Jl.Terusan Sulfat No.46, Sawojajar, Kec.Kedungkandang",
+    "detail": "Martabak & Terang Bulan Raos Jaya adalah sajian camilan premium dengan adonan berkualitas, topping melimpah, dan dibuat *fresh* begitu Anda pesan.\n\nTersedia 2 Kategori Produk Utama:\n1.  **Martabak Asin:** Isian tebal (Telur Ayam/Bebek), daging, dan daun bawang. Free kuah cuko & acar.\n2.  **Terang Bulan Manis:** Adonan lembut berserat. Varian rasa Cokelat, Keju, Kacang, Wijen, Kismis, atau Mix Spesial.\n\nUkuran loyang adalah ukuran Regular (bisa dipotong 8-10 slices). Mohon tulis request Anda di catatan (Contoh: \"Terang Bulan Mix Keju Cokelat, potong 10\"). Jika tidak ada catatan, pesanan akan dibuat standar (Mix Cokelat Kacang, potong 8).\n",
+    "fotoToko": "/images/toko/82fd07e3-889c-440f-b26d-dd0b457ad19b.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Keju + Coklat Susu Original",
+        "price": 36250,
+        "images": [
+          "/images/product/5c6ef4fc-d656-4ce5-b7ae-0d024b8c3c45.jpeg"
+        ],
+        "rating": {
+          "average": 4.8,
+          "count": 400
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Singkong Keju Sulfat, Blimbing",
+    "category": "Makanan",
+    "lokasi": "Jl. Sulfat No. 95, Blimbing, Malang",
+    "detail": "Singkong Keju Sulfat adalah camilan singkong goreng premium yang diolah khusus agar merekah, menghasilkan tekstur garing dan renyah di luar namun empuk (melempur) di bagian dalam.\n\nProduk digoreng dadakan agar terkirim hangat, dikemas dalam 1 box berisi +/- 8-10 potong singkong. Tersedia dalam berbagai varian topping:\n* Original (Singkong + Keju Parut Premium + Susu)\n* Cokelat Keju (Singkong + Keja + Susu + Cokelat Meses)\n* Original Tanpa Susu (Request)\n\nUntuk tambahan keamanan pengiriman, silakan order bubble wrap tambahan. Jika ingin request topping dipisah (keju/susu), wajib ditulis pada keterangan.",
+    "fotoToko": "/images/toko/d7ac7206-7b42-49ed-9cbf-52485e02a315.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Singkong Keju Original",
+        "price": 15000,
+        "images": [
+          "/images/product/0e0c7dcd-832d-4e9d-bc60-0619023e403e.jpeg"
+        ],
+        "rating": {
+          "average": 4.2,
+          "count": 200
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Nasi Goreng Jawa, Jl Raya Sulfat Blimbing Kota Malang",
+    "category": "Makanan",
+    "lokasi": "Jl Raya Sulfat No 15 Blimbing Malang",
+    "detail": "Nasi Goreng Jawa (Jl. Raya Sulfat) adalah sajian nasi goreng otentik yang dimasak *fresh* dadakan (by order) menggunakan bumbu ulek tradisional yang medok. Disajikan dalam 1 porsi kenyang, sudah termasuk suwiran ayam, telur, acar segar, dan kerupuk.\n\nTersedia pilihan level pedas yang bisa disesuaikan selera:\n* Original (Tidak Pedas)\n* Sedang\n* Pedas\n* Pedas Banget\n\nMohon tulis request level pedas yang diinginkan pada **catatan/notes** sebelum checkout. Jika tidak ada keterangan, pesanan akan diproses dengan level pedas **Sedang (Standar)**. Membeli berarti setuju.",
+    "fotoToko": "/images/toko/3c0cc052-1256-4226-b27e-dc554970765a.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Nasi Goreng Djawa Telur",
+        "price": 26000,
+        "images": [
+          "/images/product/9bf56af3-4a88-412c-9c75-8869555ad27b.jpeg"
+        ],
+        "rating": {
+          "average": 4.9,
+          "count": 400
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Cemilan Ria",
+    "category": "Makanan",
+    "lokasi": "\nKAB. MALANG",
+    "detail": "Keripik Tempe Srikandi adalah tempe berkualitas yang dibalur tepung gurih dan renyah, dikemas free kardus dalam 1 paket berisi 12 bungkus mix (minimal 6 rasa), dengan pilihan paket mix instant khusus wilayah Malang, mix bubble minimal 6 varian, atau pilih rasa sesuai request yang ditulis di catatan sebelum pembayaran; tersedia berbagai varian seperti Original, BBQ, Balado, Jagung Manis, Jagung Bakar, Sapi Panggang, Sapi Lada Hitam, Jeruk Purut, Pedas Manis, dan Keju, dengan berat per bungkus sekitar 15 iris. Untuk tambahan keamanan mohon tambah bubble wrap, dan jika ingin memilih tali dapat ditulis pada keterangan checkout—jika tidak, pengiriman akan dilakukan secara random minimal 6 rasa. Membeli berarti setuju dengan ketentuan toko.",
+    "fotoToko": null,
+    "product": [
+      {
+        "id": 1,
+        "name": "[Oleh-Oleh khas Malang] KRIPIK TEMPE isi 12",
+        "price": 31850,
+        "images": [
+          null
+        ],
+        "rating": {
+          "average": 4.8,
+          "count": 13600
+        },
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sam Clothing Malang",
+    "category": "Fashion & Aksesoris",
+    "lokasi": "\nKAB. MALANG",
+    "detail": "Hai Kak, mohon dipahami terlebih dahulu pemilihan size baju sebelum order, karena setiap produsen memiliki patokan ukuran yang berbeda-beda. Selamat datang di Toko SAMCLOTH MALANG, semua barang yang ada di etalase berarti READY STOCK dengan toleransi ukuran 2–3 cm. Untuk ukuran dewasa (lebar dada x panjang): M 49 x 72 cm (40–60 kg), L 51 x 74 cm (60–70 kg), XL 53 x 77 cm (70–90 kg), XXL 55 x 79 cm (90–100 kg). Untuk ukuran anak (lebar dada x panjang): S usia 3–5 tahun (36 x 48 cm), M usia 5–7 tahun (39 x 51 cm), L usia 7–9 tahun (41 x 53 cm), XL usia 10–11 tahun (43 x 55 cm). Ukuran di atas adalah gambaran dan data rata-rata dari beberapa konsumen agar Anda memiliki patokan sebelum membeli. Spesifikasi bahan: Cotton Combed 24s reaktif gramasi 170–190 (size M, L, XL) dengan karakter kain super soft, sejuk, dan sangat menyerap keringat. Sablon menggunakan Direct Transfer Film Premium yang lembut dan tidak kaku, jahitan Overdeck 3 jarum & double stitch rantai dengan kualitas premium. Kami juga memberikan garansi uang kembali apabila bahan yang kami gunakan bukan katun combed 24s. #kaosarema #aremaniauta",
+    "fotoToko": "/images/toko/d5199f19-f741-47ea-8118-eb6084e0135c.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "Kaos Arema Aremania",
+        "price": 59700,
+        "images": [
+          "/images/product/3e918692-0641-4120-9765-3f04d4ee0f4a.webp"
+        ],
+        "rating": {
+          "average": 4.7,
+          "count": 1300
+        },
+        "reviews": [
+          {
+            "user": "\nazrielzilvan",
+            "stars": 5,
+            "comment": "-"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Buff Studios",
+    "category": "Fashion & Aksesoris",
+    "lokasi": "\nKOTA MALANG",
+    "detail": "Jenis produk yang kami jual adalah kaos regular dengan kerah bulat, lengan pendek, dan model unisex sehingga cocok untuk pria maupun wanita. Bahan menggunakan Cotton Combed 24s, 100% cotton dengan tingkat ketebalan sedang, terasa lembut, nyaman, menyerap keringat, serta memiliki jahitan yang kuat dan rapi. Ukuran yang tersedia: XS 62×43 cm, S 64×45 cm, M 65×47 cm, L 72×52 cm, XL 74×54 cm, dan XXL 79×56 cm dengan toleransi ukuran 1–2 cm. Informasi tambahan: produk ini tidak menggunakan label branding Buff Apparel & Studios pada rib belakang leher.",
+    "fotoToko": "/images/toko/a5af873e-1a58-4ca0-9f72-118d3a17090b.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "Buff Studios (Banyak Warna) Kaos Regular Lengan Pendek Polos Cotton Combed 24s (100% Cotton)",
+        "price": 55000,
+        "images": [
+          "/images/product/ef3985aa-df9c-4472-87df-6be951f1dc23.webp"
+        ],
+        "rating": {
+          "average": 5.0,
+          "count": 2100
+        },
+        "reviews": [
+          {
+            "user": "\ngiriwiwaha",
+            "stars": 5,
+            "comment": " Bahannya bagus nyaman"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "DistroMlg22",
+    "category": "Fashion & Aksesoris",
+    "lokasi": "KOTA MALANG",
+    "detail": "Kami menawarkan kaos berkualitas tinggi yang terbuat dari bahan cotton combed 30s premium, memberikan kenyamanan maksimal karena lembut di kulit, tidak panas, dan mudah dirawat. Kaos ini cocok untuk pria maupun wanita (unisex), dibuat dengan teknik produksi yang cermat sehingga memiliki jahitan yang rapi, kuat, dan tahan lama. Dengan ketebalan kain yang tepat, kaos ini nyaman digunakan untuk berbagai aktivitas harian. Menggunakan sablon Direct Transfer Film, hasil cetak menyerap ke kain sehingga tidak panas, tidak kaku, aman disetrika, awet, dan tidak mudah luntur. Kaos ini menjadi pilihan ideal bagi kamu yang mencari kenyamanan sekaligus kualitas terbaik.",
+    "fotoToko": "/images/toko/5634e24a-8812-4ad1-9e24-fd6105b33e47.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "KAOS CASUAL MALANG KAOS DISTRO PREMIUM PRIA WANITA 100% COTTON COMBED",
+        "price": 62050,
+        "images": [
+          "/images/product/d60241ce-3591-40c1-96de-229e248d968b.webp"
+        ],
+        "rating": {
+          "average": 4.8,
+          "count": 2100
+        },
+        "reviews": [
+          {
+            "user": "\nsanyo2688",
+            "stars": 5,
+            "comment": "sangat nyaman , adem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Fatto A Mano Official Shop",
+    "category": "Fashion & Aksesoris",
+    "lokasi": "\nKOTA MALANG",
+    "detail": "Celana Panjang Chinos lagi bundling sama Kaos Combed nih! Cukup bayar 190k aja kamu sudah dapat 1 outfit atasan dan bawahan yang keren banget. Buruan checkout sebelum kehabisan stok! Celana chinos ini nyaman dan stylish, cocok dipakai hangout santai sampai meeting penting. Terbuat dari bahan 100% katun yang breathable sehingga tetap adem digunakan seharian. Cutting slim fit menjaga tampilan tetap sleek tanpa terasa sempit, membuatnya cocok untuk gaya kasual hingga semi-formal. Pilihan warnanya juga kece dan mudah dipadupadankan dengan outfit lainnya. Dilengkapi saku fungsional dan jahitan rapi untuk kesan yang lebih classy. Warna pada foto katalog mungkin tidak 100% sama dengan produk asli karena faktor pencahayaan. Model memakai size 30 dengan tinggi 173 cm dan berat 60 kg. Tersedia berbagai ukuran, mudah dirawat, cepat kering, dan warna serta bentuk tetap awet.\n\nUntuk pengajuan refund/retur, berlaku ketentuan: barang yang direfund hanya untuk cacat produk, barang harus dalam kondisi baru dan lengkap seperti saat diterima, refund diproses setelah barang sampai dan dicek oleh tim kami, tidak melayani penukaran size jika kekecilan/kebesaran setelah barang dikirim, serta wajib melampirkan video unboxing sebagai bukti valid. Aturan komplain: jika ada kerusakan atau cacat saat pengiriman, wajib menyertakan video unboxing; tanpa video, komplain tidak dapat diproses karena barang dikirim oleh pihak ketiga dan kami pastikan kondisi baik saat pengiriman.\n\nInformasi pengiriman: pengiriman dilakukan setiap hari Senin–Minggu. Pesanan Senin–Sabtu sebelum pukul 15.00 WIB dikirim di hari yang sama; setelah 15.00 WIB dikirim keesokan hari. Pesanan Minggu sebelum pukul 14.00 WIB dikirim pada hari yang sama, setelah itu dikirim besoknya. Pesanan instant diproses setiap hari pukul 10.00–17.00 WIB, dan setelah jam tersebut akan diproses keesokan harinya.\n\nHappy Shopping!^^",
+    "fotoToko": "/images/toko/99c9a1b3-fce7-49f0-a9a2-9d65b67fbe9d.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "Fatto A Mano Celana Panjang Chinos Pria Reggio Slim Fit Premium Chino Cotton Twill Long Pants Cowok",
+        "price": 250000,
+        "images": [
+          "/images/product/3484bf1a-44eb-4051-b951-4ae7cb919481.webp"
+        ],
+        "rating": {
+          "average": 4.8,
+          "count": 76100
+        },
+        "reviews": [
+          {
+            "user": "g*****i",
+            "stars": 5,
+            "comment": "Ada harga ada rupa\nBarang aman tidak ada yg cacat, packing juga aman\nAda selisih harga antara toko online dan offline, murah di offline store"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "GLoyong Farm",
+    "category": "Pertanian & Perkebunan",
+    "lokasi": "\nKAB. MALANG",
+    "detail": "“BERI REVIEW BINTANG 5 dan kata-kata yang menarik ( * * * ) untuk dapat BONUS TAMBAHAN LANGSUNG DI ORDERAN BERIKUTNYA. Cukup kirim screenshot review kamu dan konfirmasikan ke admin chat kami.”\n\nBenih Sayur Sayuran Terlaris Harga Seribuan — TERMURAH dan TERBANYAK di Shopee. Dalam 1 kg pesanan bisa masuk hingga 125 varian (berat produk kami masukkan sesuai produk terberat yaitu 5 gram). Jika ingin membeli lebih banyak dengan berat produk sesuai barang yang dikirim, silakan checkout di produk satuan di etalase kami. Tersedia lebih dari 60 varian benih satuan untuk meramaikan kebun dan pekarangan kakak. Bisa ditanam secara hidroponik untuk sayuran daun, atau ditanam di polybag serta wadah bekas lainnya, tinggal disesuaikan dengan kebutuhan dan luas lahan. Harganya MURAH, cuma seribuan sudah dapat ribuan benih sayur — cukup untuk puluhan kali tanam, dan tersedia harga grosir dengan banyak pilihan varian.\n\nBenih repack produksi GLoyongFarm jumlahnya lebih banyak secara kuantitas dan berat dibanding produk sejenis di pasaran — bisa dibuktikan dari perbandingan harga dan isinya. Kami transparan dalam DESKRIPSI PRODUK, PRAKIRAAN JUMLAH BENIH PER PACK, dan BERAT, yaitu: 1) Bayam Hijau: 2000 seed / 4000 mg, 2) Bayam Merah: 1000 seed / 2000 mg, 3) Brokoli: 5 seed, 4) Bunga Kembang Kol: 10 seed, 5) Daun Bawang: 40 seed / 100 mg, 6) Kangkung: 200 seed / 9000 mg, 7) Kemangi: 400 seed / 500 mg, 8) Kol Hijau: 10 seed, 9) Kol Ungu: 6 seed, 10) Sawi Caisim: 250 seed / 1000 mg, 11) Sawi Kailan: 60 seed / 200 mg, 12) Sawi Pagoda: 50 seed / 100 mg, 13) Sawi Pakcoy: 50 seed / 200 mg, 14) Sawi Baby Pakcoy: 50 seed / 100 mg, 15) Sawi Pahit: 200 seed / 300 mg, 16) Sawi Putih: 25 seed / 100 mg, 17) Selada: 200 seed / 200 mg, 18) Selada Merah: 100 seed / 100 mg, 19) Selada Siomak: 90 seed / 100 mg, 20) Seledri: 400 seed / 300 mg. Kami menggunakan plastik klip Ziplock sesuai ukuran. Detail deskripsi tiap benih tersedia di halaman produk masing-masing. Ketahanan penyakit, umur panen, bobot, dan potensi hasil tergantung lingkungan dan perlakuan budidaya.\n\nMohon simpan VIDEO UNBOXING untuk klaim garansi. Semua produk di etalase READY. Pengiriman: order 00.00–13.00 dikirim HARI INI; order 13.01–23.59 dikirim keesokan harinya. Pickup pesanan jam 14.00. Resi di-update tengah malam. Komplain pesanan maksimal H+1 dan wajib menyertakan video unboxing.",
+    "fotoToko": "/images/toko/b43387ec-8575-4555-9f31-6835650d5264.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "Benih Bibit Sayur Selada Brokoli Kangkung Bayam Seledri Kubis BungaKol Pakcoy Caisim - Gloyong Farm",
+        "price": 1000,
+        "images": [
+          "/images/product/86b231fd-e2e7-4b23-ac77-b204dbbad2c3.webp"
+        ],
+        "rating": {
+          "average": 4.8,
+          "count": 225700
+        },
+        "reviews": [
+          {
+            "user": "f*****1",
+            "stars": 5,
+            "comment": "Senangnya semua bisa tumbuh secara maksimal. Memang perlu waktu agak lama sih. Benih disini termurah dari yg lain, tp terbukti kualitasnya juga gk main-main. Jadi tambah semangat berkebun. Bintang 10 buat Gloyong ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Malang Hydrofarm",
+    "category": "Pertanian & Perkebunan",
+    "lokasi": "\nKOTA MALANG",
+    "detail": "Benih Kangkung Daun Lebar Unggulan Berkualitas\n\n\n\nIsi Benih : 10 gram / 250 biji\n\n1 kg muat 100 pcs\n\n\n\nTanam, Tumbuh, dan Ciptakan Hasil Melimpah!!\n\n\n\n*Budayakan Membaca Sebelum Membeli!*\n\n-MEMBELI=SETUJU\n\n-Kerusakan dalam pengiriman bukan tanggung jawab kami\n\n-Wajib mendokumentasikan berupa video ketika membuka paket apabila ada barang yang tidak sesuai/rusak/cacat sebagai syarat untuk mengajukan retur\n\n-Silahkan chat untuk memastikan stock produk\n\n\n\n== Ketahanan penyakit, umur panen, bobot dan potensi hasil tergantung pada lingkungan dan perlakuan budidayanya.",
+    "fotoToko": "/images/toko/9cd40c58-e0e8-47fe-b3ea-20cd67ca1ef9.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "Benih Kangkung Daun Lebar Unggulan berkualitas biji bibit repack hydroponik hidroponik sayuran tanaman sayur",
+        "price": 1750,
+        "images": [
+          "/images/product/a30fe6f9-1301-43e2-a4cc-c24a634a0e7e.webp"
+        ],
+        "rating": {
+          "average": 4.8,
+          "count": 125800
+        },
+        "reviews": [
+          {
+            "user": "\nrebornofnoey",
+            "stars": 5,
+            "comment": "Barang sesuai pesanan, pengiriman seller jg cepat\nSemoga bs tersemai dan tumbuh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Kleine Winkel",
+    "category": "ATK",
+    "lokasi": "\nKOTA MALANG",
+    "detail": "1. \"Sesuai pesanan, buku Sidu 58 lembar. Kertasnya putih bersih. Nggak ada yang cacat.\"1. \"ORI 100%. Suka banget bolpoin Zebra ini, praktis nggak perlu bawa banyak. 4 warnanya (Hitam, Biru, Merah, Hijau) semua nyala dan lancar.\"\n\n\n2. \"Harga paling murah dibanding toko lain. Packingnya aman, nggak ada yang pecah. Pengiriman cepat. Mantap.\"\n\n\n3. \"Bolpoin favorit dari zaman sekolah. Tulisannya licin, tintanya awet. Senang banget nemu yang ori dan murah.\"",
+    "fotoToko": "/images/toko/0ee7759d-557d-4273-820b-be3a54c4e9fe.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "Bolpoin 4 colors in 1 Zebra 1pcs/1 Biji",
+        "price": 14990,
+        "images": [
+          "/images/product/39d5c125-513c-42b4-88e3-5a17239c6b7e.webp"
+        ],
+        "rating": {
+          "average": 4.9,
+          "count": 63900
+        },
+        "reviews": [
+          {
+            "user": "junar85",
+            "stars": 5,
+            "comment": "-"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Aruna Label",
+    "category": "ATK",
+    "lokasi": "KAB. BOGOR",
+    "detail": "2. \"Packing aman pakai kardus. Cuma adminnya agak slow response pas ditanya. Tapi barang oke dan dikirim lengkap.\"",
+    "fotoToko": "/images/toko/8bafa7f5-50b6-4fc1-bc77-dc9c55743dfc.webp",
+    "product": [
+      {
+        "id": 1,
+        "name": "BINDER POLOS 20 RING A5 TERMURAH",
+        "price": 37500,
+        "images": [
+          "/images/product/5e593f3c-f2d7-485d-80c4-4df66437dae0.webp"
+        ],
+        "rating": {
+          "average": 4.7,
+          "count": 132600
+        },
+        "reviews": [
+          {
+            "user": "\nvarellycia",
+            "stars": 5,
+            "comment": "warna pinknya cantiiik banget 😍😍😍\nyg abu buat suami saya,\ntanpa ada cacat sedikitpun, harga paling murah dibanding toko lain, pengiriman cepat, respon penjual juga sangat baik, \nkalau ada bintang 10 pasti saya kasih 10 deh...suka...suka...suka.."
+          }
+        ]
+      }
+    ]
   }
 ]

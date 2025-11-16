@@ -5,7 +5,7 @@
     "category": "fnb",
     "lokasi": "Jl. Kembang Kertas no.28, Kota Malang",
     "detail": "Toko ini menyediakan berbagai macam makanan dan minuman, spesialis ikan bakar segar.",
-    "fotoToko": "/images/product/makanan.jpg",
+    "fotoToko": "/images/toko/toko-1.jpg",
     "product": [
       {
         "id": 1,
@@ -107,7 +107,7 @@
     "fotoToko": "/images/product/makanan.jpg",
     "product": [
       {
-        "id": 1,
+        "id": 3,
         "name": "Tas Anyam Rotan Bulat",
         "isTopSeller": true,
         "price": 150000,
@@ -154,7 +154,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 4,
         "name": "Kain Batik Tulis Motif Parang",
         "isTopSeller": false,
         "price": 750000,
@@ -204,7 +204,7 @@
     "fotoToko": "/images/product/makanan.jpg",
     "product": [
       {
-        "id": 1,
+        "id": 5,
         "name": "Sambal Bawang Bu'de (Level 3)",
         "isTopSeller": true,
         "price": 35000,
@@ -245,7 +245,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 6,
         "name": "Sambal Teri Medan",
         "isTopSeller": false,
         "price": 40000,
@@ -294,7 +294,7 @@
     "fotoToko": "/images/product/makanan.jpg",
     "product": [
       {
-        "id": 1,
+        "id": 7,
         "name": "Kalung Batu Amethyst",
         "isTopSeller": true,
         "price": 250000,
@@ -334,7 +334,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 8,
         "name": "Cincin Perak Polos",
         "isTopSeller": false,
         "price": 180000,
