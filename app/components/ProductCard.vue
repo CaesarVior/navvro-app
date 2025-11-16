@@ -5,7 +5,7 @@
    <img src="https://via.placeholder.com/40" alt="Seller" class="w-10 h-10 rounded-full bg-gray-300">
    <div>
     <p class="font-semibold text-sm text-gray-800 overflow-x-hidden">{{ product.nama_toko }}</p>
-        <p class="text-xs text-gray-500 overflow-x-hidden">{{ product.category }} - {{ product.name }}</p>
+        <p class="text-xs text-gray-500 overflow-x-hidden max-h-5">{{ product.category }} - {{ product.name }}</p>
    </div>
   </div>
   
@@ -46,7 +46,7 @@
            text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
      Masukkan ke Keranjang
     </button>
-    <NuxtLink :to="`/product/detail`" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
+    <NuxtLink :to="`/product/${product.id_toko}/${product.id}`" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
         bg-green-700 text-white hover:bg-green-800">Lihat Produk</NuxtLink>
    </div>
   </div>
