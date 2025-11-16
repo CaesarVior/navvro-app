@@ -9,7 +9,7 @@
       <div class="flex items-center justify-center pt-12 md:pt-20">
         <img 
           :src="sellerLogo" 
-          class="rounded-full border-4 border-white shadow-lg w-20 md:w-[120px]" 
+          class="rounded-full border-4 border-white shadow-lg w-20 md:w-[100px]" 
           alt="Logo Toko"
         >
       </div>

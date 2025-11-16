@@ -44,8 +44,18 @@
             </div>
         </div>
 
-        <div
-            class="w-full lg:w-6/11 bg-[url('/icon/login_banner.png')] lg:flex sm:hidden bg-cover bg-no-repeat text-white flex flex-col justify-end sm:p-12 lg:px-10 order-first lg:order-last">
+        <div class="
+        w-full lg:w-6/11 
+        bg-[url('/icon/login_banner.png')] 
+        bg-cover bg-no-repeat text-white 
+        flex-col justify-end 
+        order-first lg:order-last
+        
+        hidden lg:flex 
+        
+        lg:p-12 lg:px-10
+    ">
+
             <div class="w-full mx-auto lg:px-3">
                 <span
                     class="text-white font-poppins bg-[#474747] bg-transparent-50 rounded-md box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2 mb-3 focus:outline-none">
@@ -71,7 +81,7 @@ const router = useRouter();
 // State untuk status login (global)
 const isLoggedIn = useState('isLoggedIn', () => false)
 // [DIBAH] State untuk menyimpan data user yang login (dibutuhkan oleh /profile)
-const currentUser = useState('currentUser', () => null) 
+const currentUser = useState('currentUser', () => null)
 
 // State untuk form
 const email = ref('');
@@ -97,7 +107,7 @@ function handleSubmit() {
 
     if (user) {
         console.log("Login berhasil!", user);
-        
+
         // Set status login global menjadi true
         isLoggedIn.value = true;
 
