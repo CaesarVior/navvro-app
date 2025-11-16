@@ -55,44 +55,47 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <h4 class="uppercase text-white font-bebas-neue text-2xl">Umum</h4>
-              <ul class="mt-4 space-y-3">
-                <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Produk</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Kategori</a></li>
-              </ul>
-            </div>
+  <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+        <h4 class="uppercase text-white font-bebas-neue text-2xl">Umum</h4>
+        <ul class="mt-4 space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
+            <li><a href="/product" class="text-gray-400 hover:text-white">Produk</a></li>
+            <li><a href="/umkm" class="text-gray-400 hover:text-white">UMKM</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Blog & Inspirasi</a></li>
+        </ul>
+    </div>
 
-            <div>
-              <h4 class="uppercase text-white font-bebas-neue text-2xl">Lorem</h4>
-              <ul class="mt-4 space-y-3">
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-              </ul>
-            </div>
+    <div>
+        <h4 class="uppercase text-white font-bebas-neue text-2xl">Bantuan</h4>
+        <ul class="mt-4 space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white">Pusat Bantuan (FAQ)</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Hubungi Kami</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
+        </ul>
+    </div>
 
-            <div>
-              <h4 class="uppercase text-white font-bebas-neue text-2xl">Lorem</h4>
-              <ul class="mt-4 space-y-3">
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-              </ul>
-            </div>
+    <div>
+        <h4 class="uppercase text-white font-bebas-neue text-2xl">Tentang NAVVRO</h4>
+        <ul class="mt-4 space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Komunitas</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Kisah Sukses</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Gabung Menjadi Mitra</a></li>
+        </ul>
+    </div>
 
-            <div>
-              <h4 class="uppercase text-white font-bebas-neue text-2xl">Lorem</h4>
-              <ul class="mt-4 space-y-3">
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-              </ul>
-            </div>
-
-          </div>
+    <div>
+        <h4 class="uppercase text-white font-bebas-neue text-2xl">Ikuti Kami</h4>
+        <ul class="mt-4 space-y-3">
+            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">YouTube</a></li>
+        </ul>
+    </div>
+</div>
         </div>
       </div>
     </div>

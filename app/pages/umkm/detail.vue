@@ -60,7 +60,7 @@
                                 <div>
                                     <span class="text-gray-500 text-sm font-poppins">Makanan</span>
                                     <h3 class="font-semibold text-gray-800 text-lg leading-tight mt-0.5">{{ product.name
-                                        }}</h3>
+                                    }}</h3>
                                     <span class="text-green-600 text-sm font-poppins">Rp. 10.000</span>
                                 </div>
                                 <div class="flex items-center gap-1 mt-1 flex-shrink-0">
@@ -74,33 +74,47 @@
             </section>
 
 
-            <section class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-orange-100 rounded-lg p-6 flex items-center justify-between shadow-sm">
-                    <div>
-                        <h3 class="font-bold text-gray-800 text-xl">HARI UMKM NASIONAL 2025</h3>
-                        <p class="text-gray-700 text-sm mt-1 mb-4">Dapatkan diskon spesial untuk merayakan hari UMKM.
-                        </p>
-                        <button
-                            class="bg-[#3a6b5a] text-white text-xs font-semibold py-2 px-4 rounded-full hover:bg-[#2f5a4a]">
-                            Ambil Kupon
-                        </button>
-                    </div>
-                    <Icon name="heroicons:building-storefront" class="w-20 h-20 text-orange-400 opacity-60" />
-                </div>
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-25 gap-6 sm:gap-8 mb-20">
+                    <div class="col-span-1 bg-[#FFEBDF] px-5 py-6 rounded-lg">
+                        <span class="text-white bg-[#3a6b5a] p-2 rounded-lg text-[50%] md:text-xs font-poppins">
+                            Diskon 50%
+                        </span>
+                        <div class="mt-6 flex justify-between items-center">
+                            <span class="font-bebas-neue text-4xl">HARI UMKM <br /> NASIONAL 20205</span>
+                            <img src="/images/toko2.png" alt="gambar toko">
 
-                <div class="bg-orange-800 rounded-lg p-6 flex items-center justify-between shadow-sm text-white">
-                    <div>
-                        <h3 class="font-bold text-xl">FESTIVAL UMKM 2025</h3>
-                        <p class="text-orange-100 text-sm mt-1 mb-4">Ikuti acara dan menangkan hadiah menarik. Mulai
-                            20-25 Des.</p>
-                        <button
-                            class="bg-white text-orange-800 text-xs font-semibold py-2 px-4 rounded-full hover:bg-gray-200">
-                            Detail Acara
-                        </button>
+                        </div>
+                        <p class="font-poppins text-sm">Lorem Ipsum Dolor Sit Amet <br /> Consectur Sit Amet</p>
+                        <div class="mt-7 flex justify-center gap-1">
+                            <button
+                                class="bg-[#3a6b5a] hover:bg-[#2f5a4a] flex justify-center gap-1 text-white text-xs xl:text-sm font-poppins px-3 py-3 rounded-2xl mx-auto lg:mx-0 shadow-lg transition-colors">
+                                <Icon class=" text-white w-3 h-3" name="solar:cart-bold" />
+                                <span class=" font-poppins text-xs">Belanja sekarang</span>
+                            </button>
+                        </div>
                     </div>
-                    <Icon name="heroicons:ticket" class="w-20 h-20 text-orange-300 opacity-60" />
+                    <div class="col-span-1 bg-[#BB5E27] px-5 py-6 rounded-lg">
+                        <span class="text-white bg-[#3a6b5a] p-2 rounded-lg text-[50%] md:text-xs font-poppins">
+                            Diskon 50%
+                        </span>
+                        <div class="mt-6 flex justify-between items-center text-white">
+                            <span class="font-bebas-neue text-4xl">FESTIVAL <br /> UMKM 2025</span>
+                            <img src="/images/toko2.png" alt="gambar toko">
+                        </div>
+                        <p class="font-poppins text-sm text-white">Lorem Ipsum Dolor Sit Amet <br /> Consectur Sit Amet
+                        </p>
+                        <div class="mt-7 flex justify-center gap-1">
+                            <button
+                                class="bg-[#C2C2C2] flex justify-center gap-1 text-xs xl:text-sm font-poppins px-3 py-2 rounded-full mx-auto lg:mx-0 shadow-lg transition-colors">
+                                <Icon class="w-3 h-3" name="mdi:clock-outline" />
+                                <span class="font-poppins text-xs">23:59:58</span>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
+            </div>
 
 
             <section class="py-20">
@@ -122,14 +136,14 @@
 
 
             <section class="mt-16">
-                <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-1 items-center">
                     <div class="items-center justify-center">
                         <h2 class="text-4xl font-bebas-neue text-gray-900 mb-6 tracking-wide">
                             PRODUK LAIN DARI TOKO INI
                         </h2>
                     </div>
                     <div class="col-span-2 gap-6">
-                        <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div v-for="product in allProducts" :key="product.id">
                                 <div>
 
@@ -187,8 +201,6 @@
 
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                </div>
             </section>
 
 
@@ -204,7 +216,7 @@
                 <br> produk dan layanan toko ini.
             </p>
 
-            <div class="justify-end text-end">
+            <div class="justify-end text-end mb-3">
                 <div class="flex items-center text-end justify-end">
                     <p class="font-poppins text-gray-800 me-3">Urutkan</p>
                     <div class="relative max-w-xs">
@@ -240,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-5 lg:grid-cols-5 sm:grid-cols-1 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 sm:grid-cols-1 gap-6">
                 <div v-for="review in reviews" :key="review.id" class="bg-white rounded-lg shadow-md p-4 ">
                     <div class="flex justify-between items-start">
                         <div>

@@ -4,7 +4,7 @@
 
             <div class="text-center">
                 <h2 class="text-5xl font-bebas-neue text-gray-900 uppercase">
-                    Produk <span class="text-orange-500">UMKM Baru</span>
+                    Produk <span class="orange-primary">UMKM</span> baru
                 </h2>
                 <p class="mt-4 max-w-2xl mx-auto text-lg font-poppins">
                     Koleksi baru yang tengah naik daun dari pelaku usaha kecil dan menengah di seluruh Indonesia.
