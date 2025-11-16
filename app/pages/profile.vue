@@ -98,9 +98,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from 'vue';
-// Impor header dan footer Anda
-import ListProductHeader from '~/components/SecondHeader.vue';
-import TheFooter from '~/components/TheFooter.vue';
+// ...impor Anda yang lain...
 
 const router = useRouter();
 
@@ -112,67 +110,88 @@ const usersDB = useState('usersDB'); // "Database"
 // State lokal untuk form
 const isEditing = ref(false);
 const profileForm = reactive({
-    nama: '',
-    email: '',
-    telepon: ''
+    nama: '',
+    email: '',
+    telepon: ''
 });
 
-// Computed property untuk keamanan (jika currentUser null)
+// Computed property untuk keamanan
 const user = computed(() => currentUser.value || { nama: 'Tamu', email: 'Tidak login' });
 
-// --- PERLINDUNGAN HALAMAN (ROUTE GUARD) ---
+// --- MODIFIKASI onMounted ---
 onMounted(() => {
-    if (!isLoggedIn.value || !currentUser.value) {
-        alert('Anda harus login untuk mengakses halaman ini.');
-        router.push('/login');
-    } else {
-        // Isi form dengan data user yang sedang login
-        profileForm.nama = currentUser.value.nama;
-        profileForm.email = currentUser.value.email;
-        profileForm.telepon = currentUser.value.telepon;
+    // -----------------------------------------------------------
+    // BLOK TAMBAHAN: Coba pulihkan sesi dari localStorage
+    // -----------------------------------------------------------
+    // Kita cek 'isLoggedIn.value' dulu agar ini tidak berjalan
+    // jika pengguna baru saja login (navigasi normal).
+    // Ini hanya berjalan saat refresh halaman (saat state hilang).
+    if (!isLoggedIn.value && process.client) { // 'process.client' memastikan ini hanya di browser
+        const storedIsLoggedIn = localStorage.getItem('isLoggedIn');
+        const storedUser = localStorage.getItem('currentUser');
+
+        if (storedIsLoggedIn === 'true' && storedUser) {
+            isLoggedIn.value = true;
+            currentUser.value = JSON.parse(storedUser);
+            console.log('Sesi dipulihkan dari localStorage');
+        }
     }
+    // -----------------------------------------------------------
+    // AKHIR BLOK TAMBAHAN
+    // -----------------------------------------------------------
+
+    // Kode pengecekan asli Anda sekarang akan berjalan
+    // setelah kita mencoba memulihkan sesi.
+    if (!isLoggedIn.value || !currentUser.value) {
+        alert('Anda harus login untuk mengakses halaman ini.');
+        router.push('/login');
+    } else {
+        // Isi form dengan data user yang sedang login
+        profileForm.nama = currentUser.value.nama;
+        profileForm.email = currentUser.value.email;
+        profileForm.telepon = currentUser.value.telepon;
+    }
 });
 
 // --- FUNGSI LOGOUT ---
 function handleLogout() {
-    if (confirm('Apakah Anda yakin ingin logout?')) {
-        isLoggedIn.value = false;
-        currentUser.value = null;
-        router.push('/login');
-    }
+    if (confirm('Apakah Anda yakin ingin logout?')) {
+        // HAPUS JUGA DARI LOCALSTORAGE
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('currentUser');
+        
+        // Reset state
+        isLoggedIn.value = false;
+        currentUser.value = null;
+        router.push('/login');
+    }
 }
 
 // --- FUNGSI UPDATE PROFIL ---
 function updateProfile() {
-    // 1. Validasi (opsional)
-    if (!profileForm.nama || !profileForm.email || !profileForm.telepon) {
-        alert('Semua data harus diisi!');
-        return;
+    // ...logika update Anda...
+    // ...
+    
+    // 3. Update state global (currentUser)
+    currentUser.value = {
+        ...currentUser.value,
+        nama: profileForm.nama,
+        email: profileForm.email,
+        telepon: profileForm.telepon
+    };
+
+    // UPDATE JUGA LOCALSTORAGE
+    if (process.client) {
+        localStorage.setItem('currentUser', JSON.stringify(currentUser.value));
     }
 
-    // 2. Update "database" global (usersDB)
-    const userInDB = usersDB.value.find(u => u.id === currentUser.value.id);
-    if (userInDB) {
-        userInDB.nama = profileForm.nama;
-        userInDB.email = profileForm.email;
-        userInDB.telepon = profileForm.telepon;
-    }
-
-    // 3. Update state global (currentUser)
-    currentUser.value = {
-        ...currentUser.value,
-        nama: profileForm.nama,
-        email: profileForm.email,
-        telepon: profileForm.telepon
-    };
-
-    // 4. Selesai
-    isEditing.value = false;
-    alert('Profil berhasil diperbarui!');
-    console.log("Database users terupdate:", usersDB.value);
+    // 4. Selesai
+    isEditing.value = false;
+    alert('Profil berhasil diperbarui!');
+    console.log("Database users terupdate:", usersDB.value);
 }
 
 useHead({
-    title: 'Profil Saya'
+    title: 'Profil Saya'
 });
 </script>
