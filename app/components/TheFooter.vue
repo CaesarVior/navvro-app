@@ -1,7 +1,7 @@
 <template>
   <footer class="border-t border-gray-200">
 
-    <div class="bg-emerald-900 pt-20 pb-10 text-white">
+    <div class="bg-emerald-900 pt-7 pb-4 text-white">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
 
@@ -10,7 +10,7 @@
               <div class="flex h-40 w-full items-center justify-center rounded-lg">
                 <img src="/icon/no-img.png" alt="" class="w-50">
               </div>
-  
+
               <div class="mt-6 flex items-center justify-center space-x-2">
                 <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
@@ -51,57 +51,57 @@
               </div>
             </div>
             <div class="text-center sm:pe-0 lg:ps-15">
-              <h4 class="uppercase font-bebas-neue text-2xl orange-primary">Navvro</h4>
+              <h4 class="uppercase font-bebas-neue text-lg orange-primary">Navvro</h4>
             </div>
           </div>
 
-  <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
-    <div>
-        <h4 class="uppercase text-white font-bebas-neue text-2xl">Umum</h4>
-        <ul class="mt-4 space-y-3">
-            <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
-            <li><a href="/product" class="text-gray-400 hover:text-white">Produk</a></li>
-            <li><a href="/umkm" class="text-gray-400 hover:text-white">UMKM</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Blog & Inspirasi</a></li>
-        </ul>
-    </div>
+          <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <h4 class="uppercase text-white font-bebas-neue text-lg">Umum</h4>
+              <ul class="mt-4 space-y-3 text-xs">
+                <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
+                <li><a href="/product" class="text-gray-400 hover:text-white">Produk</a></li>
+                <li><a href="/umkm" class="text-gray-400 hover:text-white">UMKM</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Blog & Inspirasi</a></li>
+              </ul>
+            </div>
 
-    <div>
-        <h4 class="uppercase text-white font-bebas-neue text-2xl">Bantuan</h4>
-        <ul class="mt-4 space-y-3">
-            <li><a href="#" class="text-gray-400 hover:text-white">Pusat Bantuan (FAQ)</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Hubungi Kami</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
-        </ul>
-    </div>
+            <div>
+              <h4 class="uppercase text-white font-bebas-neue text-lg">Bantuan</h4>
+              <ul class="mt-4 space-y-3 text-xs">
+                <li><a href="#" class="text-gray-400 hover:text-white">Pusat Bantuan (FAQ)</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Hubungi Kami</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
+              </ul>
+            </div>
 
-    <div>
-        <h4 class="uppercase text-white font-bebas-neue text-2xl">Tentang NAVVRO</h4>
-        <ul class="mt-4 space-y-3">
-            <li><a href="#" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Komunitas</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Kisah Sukses</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Gabung Menjadi Mitra</a></li>
-        </ul>
-    </div>
+            <div>
+              <h4 class="uppercase text-white font-bebas-neue text-lg">Tentang NAVVRO</h4>
+              <ul class="mt-4 space-y-3 text-xs">
+                <li><a href="#" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Komunitas</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Kisah Sukses</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Gabung Menjadi Mitra</a></li>
+              </ul>
+            </div>
 
-    <div>
-        <h4 class="uppercase text-white font-bebas-neue text-2xl">Ikuti Kami</h4>
-        <ul class="mt-4 space-y-3">
-            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">LinkedIn</a></li>
-            <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">YouTube</a></li>
-        </ul>
-    </div>
-</div>
+            <div>
+              <h4 class="uppercase text-white font-bebas-neue text-lg">Ikuti Kami</h4>
+              <ul class="mt-4 space-y-3 text-xs">
+                <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">Instagram</a></li>
+                <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+                <li><a href="#" target="_blank" rel="noopener" class="text-gray-400 hover:text-white">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="bg-gray-100 py-2">
-      <div class="container mx-auto px-4 text-center text-sm text-gray-600">
+      <div class="container mx-auto px-4 text-center text-xs text-gray-600">
         &copy;2025 by <span class="font-semibold text-amber-500">Navvro</span> Team. All Right Reserved
       </div>
     </div>
