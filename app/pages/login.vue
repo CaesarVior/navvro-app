@@ -7,7 +7,7 @@
                     SELAMAT DATANG
                 </h1>
                 <p class="text-gray-500 font-poppins mb-8 text-center">
-                    Silahkan daftarkan diri anda
+                    Silahkan masuk ke akun anda
                 </p>
                 <form @submit.prevent="handleSubmit">
                     <div class="mb-4">
@@ -36,7 +36,7 @@
                     </button>
                 </form>
                 <p class="font-poppins text-center text-xs text-gray-500 mt-8">
-                    Apakah anda tidak mempunyai akun?
+                    Belum mempunyai akun?
                     <a href="/register" class="font-semibold text-[#3a6b5a] hover:underline">
                         Daftar Sekarang
                     </a>
@@ -51,23 +51,13 @@
                     class="text-white font-poppins bg-[#474747] bg-transparent-50 rounded-md box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2 mb-3 focus:outline-none">
                     Sudah dipercaya oleh 1000 pelaku UMKM
                 </span>
-
                 <h2 class="lg:text-6xl font-bebas-neue mb-4 mt-4 leading-tight">
                     BERGABUNG DENGAN <br> NAVVRO
                 </h2>
-
                 <p class="text-md font-poppins text-gray-200 mb-8">
                     Jadilah bagian dari komunitas UMKM yang tumbuh <br> bersama. Jual produkmu, didukung sesama, dan
                     <br> bangun usaha dengan lebih cerdas.
                 </p>
-
-                <!-- <div class="mt-8">
-                    <img 
-            src="/icon/login_banner.png" 
-            alt="Ilustrasi UMKM" 
-            class="w-full h-auto rounded-lg object-cover"
-          >
-        </div> -->
             </div>
         </div>
 
@@ -78,38 +68,56 @@
 import { ref } from 'vue'
 const router = useRouter();
 
+// State untuk status login (global)
 const isLoggedIn = useState('isLoggedIn', () => false)
+// [DIBAH] State untuk menyimpan data user yang login (dibutuhkan oleh /profile)
+const currentUser = useState('currentUser', () => null) 
 
-const email = ref(''); 
+// State untuk form
+const email = ref('');
 const password = ref('');
 const errorMsg = ref('');
 
-const users = [
-  { id: 1, email: 'admin@navvro.com', password: 'password123' },
-  { id: 2, email: 'user@gmail.com', password: '123' }
-];
+// --- [INI PERBAIKANNYA] ---
+// Anda HARUS menyediakan data default yang sama seperti di halaman register.
+// Nuxt hanya akan menjalankan fungsi ini () => [...] satu kali saat state pertama kali dibuat.
+const usersDB = useState('usersDB', () => [
+    { id: 1, email: 'admin@navvro.com', password: 'password123', nama: 'Admin Navvro', telepon: '0812345678' },
+    { id: 2, email: 'user@gmail.com', password: '123', nama: 'User Biasa', telepon: '0876543210' }
+]);
+// --- [SELESAI PERBAIKAN] ---
 
 function handleSubmit() {
-  errorMsg.value = '';
+    errorMsg.value = '';
 
-  const user = users.find(u => 
-    u.email === email.value && u.password === password.value
-  );
+    // Sekarang usersDB.value dijamin berisi array
+    const user = usersDB.value.find(u =>
+        u.email === email.value && u.password === password.value
+    );
 
-  if (user) {
-    console.log("Login berhasil!", user);
-    
-    isLoggedIn.value = true; 
+    if (user) {
+        console.log("Login berhasil!", user);
+        
+        // Set status login global menjadi true
+        isLoggedIn.value = true;
 
-    alert('Login Berhasil! Mengalihkan ke halaman utama...');
-    router.push('/');  
-  } else {
-    console.log("Email atau password salah!");
-    errorMsg.value = 'Email atau password salah. Silakan coba lagi.'; // <-- DIUBAH
-  }
+        // [DIBAH] Simpan data user ke state global
+        currentUser.value = {
+            id: user.id,
+            nama: user.nama,
+            telepon: user.telepon,
+            email: user.email
+        };
+
+        alert('Login Berhasil! Mengalihkan ke halaman utama...');
+        router.push('/');
+    } else {
+        console.log("Email atau password salah!");
+        errorMsg.value = 'Email atau password salah. Silakan coba lagi.';
+    }
 }
 
 useHead({
-  title: 'Selamat Datang - Login NAVVRO'
+    title: 'Selamat Datang - Login NAVVRO'
 })
 </script>
