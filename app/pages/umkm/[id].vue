@@ -3,9 +3,11 @@
     background-color: #ffffff;
 }
 </style>
+
 <template>
-    <SecondHeader></SecondHeader>
-    <MarketPlaceBanner />
+    <SecondHeader />
+    <MarketPlaceBanner :store="store" />
+
     <div class="bg-stone-50">
         <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
 
@@ -19,11 +21,12 @@
                 </p>
 
                 <div class="flex space-x-6 overflow-x-auto pb-6 pt-12 items-center justify-center gap-8">
-                    <div v-for="product in featuredProducts" :key="product.id"
+                    <div v-for="product in featuredProducts.slice(0, 3)" :key="product.id"
                         class="bg-white rounded-lg shadow-md w-80 flex-shrink-0 transition-all duration-300 hover:shadow-xl">
 
                         <div class="relative h-65 w-full overflow-hidden rounded-t-lg">
-                            <img :src="product.image" :alt="product.name" class="h-full w-full object-cover">
+                            <img :src="product.images[0] || '/icon/no-img.png'" :alt="product.name"
+                                class="h-full w-full object-cover">
 
                             <div
                                 class="absolute bottom-0 rounded-lg left-0 right-0 bg-[#3a6b5a] bg-opacity-90 text-white text-center py-2 text-sm font-semibold">
@@ -42,30 +45,30 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </button>
-
                             </div>
                             <div class="absolute top-13 right-3 space-y-2">
                                 <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition-colors"
-                                    aria-label="Tambah ke keranjang">
+                                    aria-label="Lihat Produk">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="black"
                                             d="M12 9a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5c-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0a9.821 9.821 0 0 0-17.64 0" />
                                     </svg>
                                 </button>
-
                             </div>
                         </div>
                         <div class="p-4 pt-2">
                             <div class="flex justify-between items-start">
                                 <div>
-                                    <span class="text-gray-500 text-sm font-poppins">Makanan</span>
-                                    <h3 class="font-semibold text-gray-800 text-lg leading-tight mt-0.5">{{ product.name
-                                    }}</h3>
-                                    <span class="text-green-600 text-sm font-poppins">Rp. 10.000</span>
+                                    <span class="text-gray-500 text-sm font-poppins">{{ product.category }}</span>
+                                    <h3 class="font-semibold text-gray-800 text-lg leading-tight mt-0.5">{{
+                                        product.name }}</h3>
+                                    <span class="text-green-600 text-sm font-poppins">{{ formatCurrency(product.price)
+                                        }}</span>
                                 </div>
                                 <div class="flex items-center gap-1 mt-1 flex-shrink-0">
                                     <Icon name="heroicons:star-solid" class="w-5 h-5 text-yellow-400" />
-                                    <span class="text-md font-semibold text-gray-700">{{ product.rating }}</span>
+                                    <span class="text-md font-semibold text-gray-700">{{ product.rating.average
+                                        }}</span>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +86,6 @@
                         <div class="mt-6 flex justify-between items-center">
                             <span class="font-bebas-neue text-4xl">HARI UMKM <br /> NASIONAL 20205</span>
                             <img src="/images/toko2.png" alt="gambar toko">
-
                         </div>
                         <p class="font-poppins text-sm">Lorem Ipsum Dolor Sit Amet <br /> Consectur Sit Amet</p>
                         <div class="mt-7 flex justify-center gap-1">
@@ -112,28 +114,23 @@
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
-
 
             <section class="py-20">
                 <h2 class="text-4xl font-bebas-neue text-primary text-center mb-2 tracking-wide">
                     LOKASI
                 </h2>
                 <p class="text-center text-gray-600 text-sm mb-10">
-                    Temukan toko ini dengan cepat di area terdekat Anda.
+                    Temukan toko ini di: <strong>{{ store.lokasi }}</strong>
                 </p>
 
                 <div class="rounded-lg shadow-lg overflow-hidden h-[450px] w-full">
-
-                    <iframe src="https://maps.app.goo.gl/wY7DYigQ1GMAnSGLA" width="100%" height="450" style="border:0;"
+                    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-
                 </div>
             </section>
-
 
             <section class="mt-16">
                 <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-1 items-center">
@@ -144,32 +141,29 @@
                     </div>
                     <div class="col-span-2 gap-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div v-for="product in allProducts" :key="product.id">
+                            <div v-for="product in allProducts.slice(0, 6)" :key="product.id">
                                 <div>
-
                                     <div class="p-4 flex items-center space-x-3">
-                                        <img src="https://via.placeholder.com/40" alt="Seller"
+                                        <img :src="product.seller.logo" :alt="product.seller.name"
                                             class="w-10 h-10 rounded-full bg-gray-300">
                                         <div>
-                                            <p class="font-semibold text-sm text-gray-800">{{ product.nama_toko }}</p>
-                                            <p class="text-xs text-gray-500">{{ product.kategori }} - {{ product.nama }}
+                                            <p class="font-semibold text-sm text-gray-800">{{ product.seller.name }}</p>
+                                            <p class="text-xs text-gray-500">{{ product.category }} - {{ product.name }}
                                             </p>
                                         </div>
                                     </div>
-
                                     <div class="relative">
                                         <span v-if="product.isTopSeller"
-                                            class="absolute top-2 left-2 bg-yellow-300 text-yellow-800 text-xs font-bold px-2 py-1 rounded">
+                                            class="absolute top-2 left-2 bg-yellow-300 text-yellow-800 text-xs font-bold px-2 py-1 rounded z-10">
                                             Penjualan Teratas
                                         </span>
                                         <div
                                             class="w-full rounded-2xl h-48 flex items-center justify-center images-cover p-4">
-                                            <img src="/images/banner.png"
-                                                class="w-full h-full rounded-lg text-gray-400 hover:scale-[1.03]"
+                                            <img :src="product.images[0] || '/icon/no-img.png'" :alt="product.name"
+                                                class="w-full h-full rounded-lg text-gray-400 hover:scale-[1.03] object-cover"
                                                 fill="none"></img>
                                         </div>
                                     </div>
-
                                     <div class="p-4">
                                         <div class="flex justify-center items-center mb-3">
                                             <div class="flex items-center space-x-2">
@@ -177,37 +171,30 @@
                                                 <span class="text-sm font-medium">1 pc</span>
                                                 <button class="w-6 h-6 rounded-full border text-gray-500">+</button>
                                             </div>
-
                                         </div>
                                         <div class="flex justify-center items-center mb-3">
-
-                                            <p class="text-gray-500 font-poppins">Rp. {{ product.harga }}</p>
+                                            <p class="text-gray-500 font-poppins">{{ formatCurrency(product.price) }}
+                                            </p>
                                         </div>
-
                                         <div class="space-y-2">
                                             <button class="w-full py-2 rounded-lg text-sm font-medium transition-colors
-                       text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
+                        text-green-600 border border-green-600 hover:bg-green-600 hover:text-white">
                                                 Masukkan ke Keranjang
                                             </button>
-                                            <NuxtLink to="/product/detail" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
-                bg-green-700 text-white hover:bg-green-800">Lihat Produk</NuxtLink>
+                                            <!-- <NuxtLink :to="'/product/detail/' + product.id" class="w-full flex text-center justify-center py-2 rounded-lg text-sm font-medium transition-colors
+                        bg-green-700 text-white hover:bg-green-800">Lihat Produk</NuxtLink> -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </section>
-
-
-
         </main>
     </div>
-    <section class="mt-16 bg-[#F6F1E9] py-20">
+
+    <section class="mt-16 bg-[#F6F1E9] py-15 pb-20">
         <div class="container">
             <h2 class="text-4xl font-bebas-neue text-primary text-center tracking-wide">
                 KATA MEREKA
@@ -220,12 +207,10 @@
                 <div class="flex items-center text-end justify-end">
                     <p class="font-poppins text-gray-800 me-3">Urutkan</p>
                     <div class="relative max-w-xs">
-
                         <button @click="isOpen = !isOpen"
                             class="relative w-full cursor-pointer rounded-lg bg-gray-100 py-2.5 pl-4 pr-10 text-left shadow-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 sm:text-sm">
                             <span class="flex items-center">
                                 <Icon name="heroicons:bars-3-bottom-left-20-solid" class="w-5 h-5 text-gray-500" />
-
                                 <span class="ml-2 block truncate">
                                     <span class="font-medium text-gray-900">{{ selectedSortOption.name }}</span>
                                 </span>
@@ -235,7 +220,6 @@
                                     aria-hidden="true" />
                             </span>
                         </button>
-
                         <div v-if="isOpen"
                             class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm z-10">
                             <ul>
@@ -252,22 +236,23 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-5 sm:grid-cols-1 gap-6">
-                <div v-for="review in reviews" :key="review.id" class="bg-white rounded-lg shadow-md p-4 ">
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 sm:grid-cols-1 gap-6 mb-12">
+                <div v-for="(review, index) in sortedReviews.slice(0, 5)" :key="index"
+                    class="bg-white rounded-lg shadow-md p-4 ">
                     <div class="flex justify-between items-start">
                         <div>
-                            <span class="text-gray-500 text-xs font-poppins">Ahmad Raffi</span>
+                            <span class="text-gray-500 text-xs font-poppins">{{ review.user }}</span>
                         </div>
                         <div class="flex items-center gap-1 mt-1 flex-shrink-0">
                             <Icon name="heroicons:star-solid" class="w-5 h-5 text-yellow-400" />
-                            <span class="text-md font-bebas-neue text-gray-700">4.5</span>
+                            <span class="text-md font-bebas-neue text-gray-700">{{ review.stars }}</span>
                         </div>
                     </div>
-                    <p class="text-sm font-semibold">Bilh 7 Muaro</p>
-                    <p class="text-xs text-green-700">Rp. 10.000</p>
+                    <p class="text-sm font-semibold">{{ review.productName }}</p>
+                    <p class="text-xs text-green-700">{{ formatCurrency(review.productPrice) }}</p>
                     <div class="h-20 justify-center items-center mt-3">
                         <p class="text-xs text-gray-500 font-poppins">"{{ review.comment }}"</p>
-
                     </div>
                     <a href="" class="text-sm text-green-800 flex hover:text-black">Belanja Sekarang
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-green-800 ms-2 hover:text-black" width="20"
@@ -276,66 +261,105 @@
                                 d="M17.073 12.5H5.5q-.213 0-.357-.143T5 12t.143-.357t.357-.143h11.573l-3.735-3.734q-.146-.147-.152-.345t.152-.363q.166-.166.357-.168t.357.162l4.383 4.383q.13.13.183.267t.053.298t-.053.298t-.183.268l-4.383 4.382q-.146.146-.347.153t-.367-.159q-.16-.165-.162-.354t.162-.354z" />
                         </svg>
                     </a>
-                    <!-- <p class="text-xs text-gray-400 pt-2">Produk: {{ review.productName }}</p> -->
                 </div>
             </div>
-            <section class="mt-12 text-center">
+
+            <!-- <section class="mt-12 text-center">
                 <button
                     class="bg-green-700 hover:bg-green-800 text-white font-medium py-3 px-8 rounded-lg shadow-lg transition-colors text-lg">
                     Tambahkan Komentar
                 </button>
-            </section>
-
+            </section> -->
         </div>
     </section>
-
 
     <TheFooter />
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
+import allStoresData from '~/data/products.json';
 
+const route = useRoute();
+const storeId = parseInt(route.params.id);
+
+// 2. Cari toko yang sesuai di dalam file JSON
+const store = allStoresData.find(s => s.id === storeId);
+
+// 3. Jika toko tidak ditemukan, tampilkan halaman error 404
+if (!store) {
+    throw createError({ statusCode: 404, statusMessage: 'Toko tidak ditemukan', fatal: true });
+}
+
+// 4. Set judul halaman berdasarkan nama toko
 useHead({
-    title: 'Toko Ragnarok - NAVVR0'
-})
+    title: `${store.name} - NAVVR0`
+});
 
-// Data dummy untuk "Produk Terbaik"
-const featuredProducts = ref([
-    { id: 1, name: 'Gado-Gado Urap Pilihan', rating: 4.8, image: '/images/product/makanan.jpg' },
-    { id: 2, name: 'Kangkung Pedas Spesial', rating: 4.9, image: '/images/product/makanan.jpg' },
-    { id: 3, name: 'Gado-Gado Urap Nikmat', rating: 4.8, image: '/images/product/makanan.jpg' },
-]);
+// --- Buat data dinamis dari 'store' ---
 
-// Data dummy untuk "Produk Lain"
-const allProducts = ref([
-    { id: 1, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
-    { id: 2, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
-    { id: 3, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
-    { id: 4, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
-    { id: 5, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
-    { id: 6, seller: 'Raffi Ahmad', name: 'Makanan', price: 'Rp 2.000.000', views: 1024, likes: 200, comments: 15 },
-]);
+// 5. Ambil produk terbaik (yang isTopSeller) dari toko ini
+const featuredProducts = computed(() => {
+    return store.product.filter(p => p.isTopSeller);
+});
 
-// Data dummy untuk "Ulasan"
-const reviews = ref([
-    { id: 1, name: 'Nita W.', rating: 5.0, productName: 'Gado-Gado Urap', comment: 'Bumbunya mantap, sayurnya segar. Pengiriman juga cepat. Pasti pesan lagi!' },
-    { id: 2, name: 'Budi S.', rating: 4.5, productName: 'Kangkung Pedas', comment: 'Enak, tapi buat saya agak terlalu pedas. Overall oke.' },
-    { id: 3, name: 'Citra L.', rating: 5.0, productName: 'Gado-Gado Urap', comment: 'Porsinya banyak, harganya pas. Langganan!' },
-]);
+// 6. Ambil semua produk dari toko ini
+const allProducts = computed(() => {
+    return store.product;
+});
 
+// 7. Kumpulkan semua ulasan dari semua produk di toko ini
+const reviews = computed(() => {
+    return store.product.flatMap(p =>
+        (p.reviews || []).map(r => ({
+            ...r, // (user, stars, date, comment)
+            productName: p.name, // Tambahkan nama produk ke ulasan
+            productPrice: p.price // Tambahkan harga produk
+        }))
+    );
+});
 
+// Helper untuk format mata uang
+const formatCurrency = (value) => {
+    if (!value) return 'Rp 0';
+    return new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0
+    }).format(value);
+};
+
+// --- Logika untuk Sortir Ulasan ---
 const sortOptions = [
-    { id: 1, name: 'Harga terendah' },
-    { id: 2, name: 'Harga tertinggi' },
-    { id: 3, name: 'Pembelian terbanyak' },
-    { id: 4, name: 'Dilihat terbanyak' },
-    { id: 5, name: 'Pembaruan terbaru' },
+    { id: 1, name: 'Rating Tertinggi' },
+    { id: 2, name: 'Rating Terendah' },
+    { id: 3, name: 'Pembaruan Terbaru' },
 ]
-
 const isOpen = ref(false)
-
 const selectedSortOption = ref(sortOptions[0])
+
+// Buat ulasan yang sudah disortir
+const sortedReviews = computed(() => {
+    const allReviews = [...reviews.value]; // Salin array
+
+    switch (selectedSortOption.value.id) {
+        case 1: // Rating Tertinggi
+            return allReviews.sort((a, b) => b.stars - a.stars);
+        case 2: // Rating Terendah
+            return allReviews.sort((a, b) => a.stars - b.stars);
+        case 3: // Pembaruan Terbaru (Asumsi format '27 Oktober 2025' bisa di-parse)
+            // Ini cara aman untuk mengurai tanggal 'DD MMMM YYYY'
+            const parseDate = (dateStr) => {
+                const parts = dateStr.split(' ');
+                const months = ["januari", "februari", "maret", "april", "mei", "juni", "juli", "agustus", "september", "oktober", "november", "desember"];
+                return new Date(parseInt(parts[2]), months.indexOf(parts[1].toLowerCase()), parseInt(parts[0]));
+            };
+            return allReviews.sort((a, b) => parseDate(b.date) - parseDate(a.date));
+        default:
+            return allReviews;
+    }
+});
 
 function selectOption(option) {
     selectedSortOption.value = option

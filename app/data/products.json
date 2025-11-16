@@ -1,0 +1,381 @@
+[
+  {
+    "id": 1,
+    "name": "Warung Ikan Bakar Mr. Raffi",
+    "category": "fnb",
+    "lokasi": "Jl. Kembang Kertas no.28, Kota Malang",
+    "detail": "Toko ini menyediakan berbagai macam makanan dan minuman, spesialis ikan bakar segar.",
+    "fotoToko": "/images/toko/toko-1.jpg",
+    "product": [
+      {
+        "id": 1,
+        "name": "Ikan Bakar Gurame (L)",
+        "isTopSeller": true,
+        "price": 125000,
+        "category": "Makanan",
+        "stock": 20,
+        "variants": [
+          "Pedas",
+          "Manis",
+          "Original"
+        ],
+        "images": [
+          "/images/product/gurame-1.jpg",
+          "/images/product/gurame-2.jpg",
+          "/icon/no-img.png"
+        ],
+        "description": "Ikan gurame segar ukuran L (700-800g) dibakar sempurna di atas bara arang dengan bumbu kecap pedas manis rahasia. Disajikan dengan lalapan segar.",
+        "seller": {
+          "name": "Raffi Ahmad",
+          "logo": "/images/RagnaTent_Logo.png",
+          "location": "Kota Malang"
+        },
+        "rating": {
+          "average": 4.5,
+          "count": 120,
+          "stars": {
+            "5": 80,
+            "4": 15,
+            "3": 5,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Nivor Caevan",
+            "stars": 5,
+            "date": "27 Oktober 2025",
+            "comment": "Luar biasa! Ikannya segar, bumbunya meresap, dan porsinya besar. Pengiriman juga cepat. Sangat direkomendasikan."
+          },
+          {
+            "user": "Pengguna Lain",
+            "stars": 4,
+            "date": "25 Oktober 2025",
+            "comment": "Enak, tapi varian pedasnya kurang nampol buat saya. Overall oke."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Es Teh Manis Jumbo",
+        "isTopSeller": false,
+        "price": 8000,
+        "category": "Minuman",
+        "stock": 100,
+        "variants": [
+          "Gula Normal",
+          "Gula Sedikit"
+        ],
+        "images": [
+          "/images/product/es-teh-1.jpg"
+        ],
+        "description": "Teh wangi disajikan dingin dengan es batu, ukuran jumbo. Pelenyap dahaga terbaik.",
+        "seller": {
+          "name": "Raffi Ahmad",
+          "logo": "https://via.placeholder.com/40",
+          "location": "Kota Malang"
+        },
+        "rating": {
+          "average": 4.2,
+          "count": 50,
+          "stars": {
+            "5": 60,
+            "4": 30,
+            "3": 10,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Andi",
+            "stars": 5,
+            "date": "26 Oktober 2025",
+            "comment": "Segar dan besar, mantap."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Lokal Craft Yogyakarta",
+    "category": "fashion",
+    "lokasi": "Jl. Malioboro no. 10, Yogyakarta",
+    "detail": "Menjual tas anyaman dan kerajinan tangan lokal. 100% handmade.",
+    "fotoToko": "/images/product/makanan.jpg",
+    "product": [
+      {
+        "id": 3,
+        "name": "Tas Anyam Rotan Bulat",
+        "isTopSeller": true,
+        "price": 150000,
+        "category": "Tas",
+        "stock": 15,
+        "variants": [
+          "Natural",
+          "Coklat Tua"
+        ],
+        "images": [
+          "/images/product/tas-rotan-1.jpg",
+          "/images/product/tas-rotan-2.jpg"
+        ],
+        "description": "Tas selempang bulat dari anyaman rotan asli, dengan lining batik di dalam. Dikerjakan oleh pengrajin lokal.",
+        "seller": {
+          "name": "Pengrajin Lokal",
+          "logo": "/images/RagnaTent_Logo.png",
+          "location": "Yogyakarta"
+        },
+        "rating": {
+          "average": 4.8,
+          "count": 210,
+          "stars": {
+            "5": 90,
+            "4": 8,
+            "3": 2,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Siska",
+            "stars": 5,
+            "date": "28 Oktober 2025",
+            "comment": "Cantik banget tasnya! Kualitasnya rapi dan harganya oke."
+          },
+          {
+            "user": "Turis",
+            "stars": 5,
+            "date": "27 Oktober 2025",
+            "comment": "Very good quality, authentic Indonesian craft."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Kain Batik Tulis Motif Parang",
+        "isTopSeller": false,
+        "price": 750000,
+        "category": "Kain",
+        "stock": 5,
+        "variants": [
+          "Biru",
+          "Coklat"
+        ],
+        "images": [
+          "/images/product/batik-1.jpg"
+        ],
+        "description": "Kain batik tulis asli 100% katun primisima, panjang 2.5 meter. Motif Parang klasik.",
+        "seller": {
+          "name": "Pengrajin Lokal",
+          "logo": "https://via.placeholder.com/40",
+          "location": "Yogyakarta"
+        },
+        "rating": {
+          "average": 4.9,
+          "count": 80,
+          "stars": {
+            "5": 95,
+            "4": 5,
+            "3": 0,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Kolektor",
+            "stars": 5,
+            "date": "25 Oktober 2025",
+            "comment": "Kualitas tulisannya halus, warnanya juga bagus. Puas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sambal Bu'de",
+    "category": "fnb",
+    "lokasi": "Jl. Diponegoro no. 15, Surabaya",
+    "detail": "Produsen sambal kemasan rumahan, pedasnya nampol! Tanpa pengawet.",
+    "fotoToko": "/images/product/makanan.jpg",
+    "product": [
+      {
+        "id": 5,
+        "name": "Sambal Bawang Bu'de (Level 3)",
+        "isTopSeller": true,
+        "price": 35000,
+        "category": "Bumbu",
+        "stock": 50,
+        "variants": [
+          "Level 1",
+          "Level 2",
+          "Level 3"
+        ],
+        "images": [
+          "/images/product/sambal-bawang-1.jpg"
+        ],
+        "description": "Sambal bawang pedas gila dengan minyak kelapa murni. Dibuat dari cabai segar pilihan. Awas ketagihan!",
+        "seller": {
+          "name": "Bu'de",
+          "logo": "/images/RagnaTent_Logo.png",
+          "location": "Surabaya"
+        },
+        "rating": {
+          "average": 4.7,
+          "count": 450,
+          "stars": {
+            "5": 85,
+            "4": 10,
+            "3": 5,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Pecinta Pedas",
+            "stars": 5,
+            "date": "29 Oktober 2025",
+            "comment": "INI BARU SAMBAL! Pedesnya mantap, bawangnya berasa."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Sambal Teri Medan",
+        "isTopSeller": false,
+        "price": 40000,
+        "category": "Bumbu",
+        "stock": 30,
+        "variants": [
+          "Original"
+        ],
+        "images": [
+          "/images/product/sambal-teri-1.jpg"
+        ],
+        "description": "Sambal dengan teri medan berkualitas, gurih dan pedasnya pas. Enak untuk teman makan nasi hangat.",
+        "seller": {
+          "name": "Bu'de",
+          "logo": "https://via.placeholder.com/40",
+          "location": "Surabaya"
+        },
+        "rating": {
+          "average": 4.6,
+          "count": 150,
+          "stars": {
+            "5": 80,
+            "4": 15,
+            "3": 5,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Rina",
+            "stars": 5,
+            "date": "24 Oktober 2025",
+            "comment": "Terinya banyak, gak pelit. Rasanya pas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Aksara Jewelry",
+    "category": "craft",
+    "lokasi": "Kuta, Bali",
+    "detail": "Perhiasan perak dan batu alam handmade dari Bali.",
+    "fotoToko": "/images/product/makanan.jpg",
+    "product": [
+      {
+        "id": 7,
+        "name": "Kalung Batu Amethyst",
+        "isTopSeller": true,
+        "price": 250000,
+        "category": "Aksesoris",
+        "stock": 25,
+        "variants": [
+          "Silver Chain",
+          "Leather Cord"
+        ],
+        "images": [
+          "/images/product/kalung-amethyst.jpg"
+        ],
+        "description": "Kalung dengan liontin batu amethyst asli dan rantai perak 925. Desain simpel dan elegan.",
+        "seller": {
+          "name": "Aksara Silver",
+          "logo": "/images/RagnaTent_Logo.png",
+          "location": "Bali"
+        },
+        "rating": {
+          "average": 4.8,
+          "count": 95,
+          "stars": {
+            "5": 90,
+            "4": 10,
+            "3": 0,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Maria",
+            "stars": 5,
+            "date": "22 Oktober 2025",
+            "comment": "Batunya asli, cantik banget. Rantainya juga berkilau."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Cincin Perak Polos",
+        "isTopSeller": false,
+        "price": 180000,
+        "category": "Aksesoris",
+        "stock": 40,
+        "variants": [
+          "Ukuran 16",
+          "Ukuran 17",
+          "Ukuran 18"
+        ],
+        "images": [
+          "/images/product/cincin-perak.jpg"
+        ],
+        "description": "Cincin perak 925 polos, desain minimalis, cocok untuk pria dan wanita.",
+        "seller": {
+          "name": "Aksara Silver",
+          "logo": "https://via.placeholder.com/40",
+          "location": "Bali"
+        },
+        "rating": {
+          "average": 4.7,
+          "count": 130,
+          "stars": {
+            "5": 85,
+            "4": 15,
+            "3": 0,
+            "2": 0,
+            "1": 0
+          }
+        },
+        "reviews": [
+          {
+            "user": "Bagus",
+            "stars": 5,
+            "date": "21 Oktober 2025",
+            "comment": "Simpel tapi keren. Sesuai ukuran."
+          }
+        ]
+      }
+    ]
+  }
+]
+
+
