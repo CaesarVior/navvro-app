@@ -17,7 +17,7 @@
                     class="bg-white rounded-xl shadow-lg flex transition-all duration-300 hover:shadow-2xl overflow-hidden">
 
                     <div class="w-2/5 bg-gray-100 p-4 flex items-center justify-center rounded-l-xl">
-                        <img :src="product.image" :alt="product.name"
+                        <img :src="product.image"
                             class="max-w-full max-h-40 object-contain">
                     </div>
 
@@ -30,14 +30,14 @@
                             </div>
                         </div>
 
-                        <h3 class="text-sm font-semibold text-gray-800 leading-tight">{{ product.name }}</h3>
-                        <p class="mt-1 text-sm text-[#3a6b5a]">Rp. {{ product.price }}</p>
+                        <h3 class="text-md font-semibold text-gray-800 leading-tight">{{ product.name }}</h3>
+                        <p class="mt-1 text-sm text-[#3a6b5a]">Rp{{ product.price }}</p>
 
                         <p class="mt-3 text-xs font-poppins text-gray-500 line-clamp-2 flex-1">
                             {{ product.description }}
                         </p>
 
-                        <a href="#"
+                        <a href="/product"
                             class="mt-4 text-sm font-semibold text-[#3a6b5a] hover:text-[#2f5a4a] flex items-center gap-1">
                             Belanja Sekarang
                             <Icon name="heroicons:arrow-right" class="w-4 h-4" />
@@ -48,10 +48,10 @@
             </div>
             
             <div class="mt-16 text-center">
-                <button
+                <a href="/product"
                     class="bg-[#3a6b5a] hover:bg-[#2f5a4a] text-white font-medium py-3 px-8 rounded-full shadow-lg transition-colors text-lg">
                     Lihat lebih banyak
-                </button>
+                </a>
             </div>
 
         </div>
@@ -73,19 +73,13 @@ const formatPrice = (value) => {
     return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
-const truncateText = (text, length) => {
-    if (text.length <= length) {
-        return text;
-    }
-    return text.substring(0, length) + '...';
-}
-
 const products = computed(() => {
     if (!storeData || !Array.isArray(storeData)) {
         return [];
     }
 
     const allProducts = storeData.flatMap(store => store.product);
+
     const newProducts = allProducts.filter(product => product.isTopSeller === false);
 
     const formattedProducts = newProducts.map(product => ({
@@ -94,7 +88,7 @@ const products = computed(() => {
         category: product.category,
         rating: product.rating.average,
         price: formatPrice(product.price),
-        description: truncateText(product.description, 40), 
+        description: product.description,
         image: product.images[0] || '/images/product/makanan.jpg'
     }));
 
