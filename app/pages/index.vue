@@ -7,7 +7,7 @@
   <MobileMenu v-if="isMobileMenuOpen" @close="handleToggle" />
   <TheAbout />
   <CategoryCard />
-  <BestMSME/>
+  <!-- <BestMSME/> -->
   <ProductCollection />
   <TheSwap/>
   <TestimonialCarrousel/>
