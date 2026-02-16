@@ -20,8 +20,8 @@
           "Original"
         ],
         "images": [
-          "/images/product/gurame-1.jpg",
-          "/images/product/gurame-2.jpg",
+          "/images/product/gurame-1.png",
+          "/images/product/gurame-2.png",
           "/icon/no-img.png"
         ],
         "description": "Ikan gurame segar ukuran L (700-800g) dibakar sempurna di atas bara arang dengan bumbu kecap pedas manis rahasia. Disajikan dengan lalapan segar.",
@@ -68,7 +68,7 @@
           "Gula Sedikit"
         ],
         "images": [
-          "/images/product/es-teh-1.jpg"
+          "/images/product/22ed00ce-3272-433e-9e0b-e88cfe030f33.jpeg"
         ],
         "description": "Teh wangi disajikan dingin dengan es batu, ukuran jumbo. Pelenyap dahaga terbaik.",
         "seller": {
@@ -118,8 +118,8 @@
           "Coklat Tua"
         ],
         "images": [
-          "/images/product/tas-rotan-1.jpg",
-          "/images/product/tas-rotan-2.jpg"
+          "/images/product/tas-rotan-1.png",
+          "/images/product/tas-rotan-2.png"
         ],
         "description": "Tas selempang bulat dari anyaman rotan asli, dengan lining batik di dalam. Dikerjakan oleh pengrajin lokal.",
         "seller": {
@@ -216,7 +216,7 @@
           "Level 3"
         ],
         "images": [
-          "/images/product/sambal-bawang-1.jpg"
+          "/images/product/sambal-bawang-1.png"
         ],
         "description": "Sambal bawang pedas gila dengan minyak kelapa murni. Dibuat dari cabai segar pilihan. Awas ketagihan!",
         "seller": {
@@ -389,7 +389,6 @@
         "name": "Java Robusta",
         "category": "Minuman",
         "price": 56000,
-        "category": "Minuman",
         "images": [
           "/images/product/9277766a-6b69-4e22-a5df-a34f1a54ff1f.jpeg"
         ],
