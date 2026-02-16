@@ -73,3 +73,12 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+Download nvm 20.19.0 
+```
+nvm install 20.19.0 
+nvm use 20.19.0 
+
+node -v
+npm -v
+```
