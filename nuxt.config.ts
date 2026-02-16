@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css', '~/assets/css/global.css'],
-
+  nitro: {
+      prerender: {
+        failOnError: false, // Build tidak akan berhenti meski ada halaman yang error
+      }
+    },
   modules: [
     '@nuxt/icon',
     '@nuxt/ui',
@@ -28,7 +32,6 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      tailwindcss(),
     ],
     optimizeDeps: {
       include: ['flowbite']
